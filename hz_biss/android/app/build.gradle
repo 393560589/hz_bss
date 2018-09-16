@@ -130,6 +130,7 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
@@ -148,6 +149,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-image-picker')
+    compile project(':react-native-device-info')
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"

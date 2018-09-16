@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/04fd016415a3934b772509242b5ee65c/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/04fd016415a3934b772509242b5ee65c/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]
