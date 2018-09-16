@@ -6,7 +6,7 @@ import React,{Component} from 'react'
 import {
     Platform
 } from 'react-native';
-var DeviceInfo = require('react-native-device-info');
+//var DeviceInfo = require('react-native-device-info');
 
 import axios from 'axios';
 import { StorageUtil } from "./storage";
