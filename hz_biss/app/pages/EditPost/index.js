@@ -16,7 +16,7 @@ import ImagePicker from 'react-native-image-picker'
 
 const styles = StyleSheet.create({
   headerRight: {
-    fontSize: px2p(18),
+    fontSize: px2p(16),
     fontWeight: '500',
   },
   title: {
@@ -54,6 +54,7 @@ const HeaderRight = ({onPress, disabled}) => {
   return (
     <TouchableOpacity
       onPress={onPress}
+      style={{marginRight: px2p(12), padding: px2p(5)}}
     >
       <Text style={[styles.headerRight, {color: disabled ? '#999' : '#4E8CEE'}]}>发布</Text>
     </TouchableOpacity>
@@ -64,10 +65,10 @@ export default class EditPost extends PureComponent {
   static navigationOptions = ({navigation}) => {
     const params = navigation.state.params
     return {
-      headerStyle: {paddingLeft: px2p(12), paddingRight: px2p(17)},
-      headerTitleStyle: {fontSize: px2p(20)},
+      // headerStyle: { paddingLeft: px2p(12), paddingRight: px2p(17) },
+      headerTitleStyle: {fontSize: px2p(18)},
       title: params.title || '发帖',
-      headerBackImage: <Image source={require('../../image/editPost/close.png')}/>,
+      headerBackImage: <Image source={require('../../image/editPost/close.png')} style={{marginLeft: px2p(12)}}/>,
       headerBackTitle: null,
       headerRight: <HeaderRight onPress={params && params.post}/>
     }

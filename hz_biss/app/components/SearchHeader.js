@@ -65,8 +65,10 @@ class SearchBar extends PureComponent {
           style={{padding: px2p(5)}}
           placeholder="eos"
           onSubmitEditing={this.props.onSubmit}
+          onFocus={this.props.onFocus}
           clearButtonMode={'always'}
           returnKeyType={'search'}
+          onBlur={this.props.onBlur}
         />
       </View>
     )
@@ -92,23 +94,39 @@ class PhoneHeader extends PureComponent {
 
   loadHistory = async () => {
     const history = await StorageUtil.get('searchHistoty')
-    this.history = history
+    // this.history = history
     this.props.navigation.setParams({historyList: history})
   }
 
-  onSubmit = ({nativeEvent}) => {
+  onSubmit = async ({nativeEvent}) => {
     const value = nativeEvent.text
-    this.history = [value, ...this.history]
-    this.props.navigation.setParams({historyList: [...this.history]})
-    StorageUtil.save('searchHistoty', [...this.history])
-    // 请求
+    if (value) {
+      const history = await StorageUtil.get('searchHistoty')
+      const _history = [value, ...history].slice(0, 6)
+      this.props.navigation.setParams({historyList: [..._history], keyword: value})
+      StorageUtil.save('searchHistoty', [..._history])
+    }
+  }
+  
+  onFocus = () => {
+    this.props.navigation.setParams({isHistoryVisiable: true, inputRef: this.input})
+  }
+
+  onBlur = () => {
+    this.props.navigation.setParams({isHistoryVisiable: false})
   }
 
   render() {
     return (
       <SafeAreaView backgroundColor="#fff">
         <View style={styles.container}>
-          <SearchBar navigation={this.props.navigation} inputRef={view => this.input = view} onSubmit={this.onSubmit}/>
+          <SearchBar
+            navigation={this.props.navigation}
+            inputRef={view => this.input = view}
+            onSubmit={this.onSubmit}
+            onFocus={this.onFocus}
+            onBlur={this.onBlur}
+          />
           <TouchableOpacity onPress={this.goBack}>
             <Text style={{fontSize: px2p(15), color: '#070002'}}>取消</Text>
           </TouchableOpacity>

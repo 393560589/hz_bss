@@ -62,16 +62,10 @@ class Home extends Component {
         type: 'home/getNavigation'
     })
 
-    dispatch({
-      type: 'home/getNews',
-      payload: {
-        page: this.state.pageIndex
-      }
-    })
+    this.fetchNews()
   }
 
   fetchNews = () => {
-    console.log(this.props.loading, 'loading')
     this.props.dispatch({
       type: 'home/getNews',
       payload: this.state.pageIndex
