@@ -8,7 +8,8 @@ import {
   StyleSheet,
   KeyboardAvoidingView,
   SafeAreaView,
-  ScrollView
+  ScrollView,
+  Platform
 } from 'react-native';
 import { px2p } from '../../utils';
 import ImagePicker from 'react-native-image-picker'
@@ -75,7 +76,7 @@ export default class EditPost extends PureComponent {
   render() {
     return (
       <SafeAreaView flex={1}>
-      <KeyboardAvoidingView behavior="padding" style={[styles.container]}>
+      <KeyboardAvoidingView behavior="padding" style={[styles.container]} keyboardVerticalOffset={Platform.select({ios: 90, android: 50})}>
         <ScrollView contentContainerStyle={{flex: 1}}>
           <View>
             <TextInput
@@ -89,15 +90,15 @@ export default class EditPost extends PureComponent {
               multiline={true}
             />
           </View>
-          <View style={styles.imageUploadContainer}>
-            <View style={styles.imageUpload}>
-              <Image
-                source={require('../../image/editPost/add.png')}
-              />
-            </View>
-            <Text style={{color: '#999', fontSize: px2p(12)}}>(您最多可以上传3张图片哟)</Text>
-          </View>
         </ScrollView>
+        <View style={styles.imageUploadContainer}>
+        <View style={styles.imageUpload}>
+          <Image
+            source={require('../../image/editPost/add.png')}
+          />
+        </View>
+        <Text style={{color: '#999', fontSize: px2p(12)}}>(您最多可以上传3张图片哟)</Text>
+      </View>
       </KeyboardAvoidingView>
       </SafeAreaView>
     )

@@ -31,7 +31,6 @@
     "react": "16.3.1",
     "react-dom": "^16.4.1",
     "react-native": "~0.55.2",
-    "react-native-axios": "^0.17.1",
     "react-native-device-info": "^0.21.5",
     "react-native-image-picker": "^0.26.10",
     "react-native-storage": "^0.2.2",
