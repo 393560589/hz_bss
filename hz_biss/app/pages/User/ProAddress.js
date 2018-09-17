@@ -3,7 +3,7 @@ import {
     StyleSheet,
     Text,
     ScrollView,
-    Image,
+    TouchableOpacity,
     View
 } from 'react-native';
 import { Radio,List } from 'antd-mobile-rn'
@@ -14,20 +14,46 @@ import {px2dp} from "../../utils";
 //import { ,ListItem } from '../../components/ListItem'
 
 import {connect} from "../../utils/dva";
+import {common} from "../../styles";
 const RadioItem = Radio.RadioItem;
 @connect(({User})=>({...User}))
 export default class ProAddress extends PureComponent {
     constructor(props){
         super(props)
         this.state={
-            value:''
+            value:this.props.userInfo.city
+        }
+    }
+    static navigationOptions =({navigation}) =>{
+        return {
+            headerTitle: '市选择',
+            headerRight: (
+                <TouchableOpacity
+                    onPress={navigation.getParam('setCity')}
+                    style={{marginRight:px2dp(20)}}>
+                    <Text style={[common.font_h2,{color:common.theme}]}>保存</Text>
+                </TouchableOpacity>
+            ),
         }
     }
     componentDidMount(){
-        //console.log(this.state.data)
+        this.props.navigation.setParams({ setCity: this._setCity.bind(this) });
     }
-    ChooseCity(item){
+    _setCity(){
+        const { dispatch,phone,navigation,province } = this.props;
 
+        dispatch({
+            type:'User/setCity',
+            payload:{
+                phone:phone,
+                province:province,
+                city:this.state.value
+            },
+            callback:(data)=>{
+                console.log(data);
+                navigation.pop(2);
+            }
+        })
     }
     onPushPage(page){
         this.props.navigation.navigate(page)

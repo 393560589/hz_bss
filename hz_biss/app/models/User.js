@@ -7,6 +7,8 @@ export default {
     namespace: 'User',
     state: {
         userInfo:undefined,
+        province:'',
+        city:'',
         citylist:[],
         islogin:false,
         phone:'',
@@ -103,6 +105,22 @@ export default {
         *findpass({callback=()=>{},payload},{call,put,select}){
             const response = yield call(server.findpass,payload);
             console.log(response)
+            callback(response)
+        },
+        *headerimg({callback=()=>{},payload},{call,put,select}){
+            const response = yield call(server.headerimg,payload)
+            callback(response)
+        },
+        *setCity({callback=()=>{},payload},{call,put,select}){
+            const { phone } = yield select(state => state.User);
+            const response = yield call(server.setCity,payload);
+            if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
+            yield put({
+                type:'userInfo',
+                payload:{
+                    phone:phone
+                }
+            });
             callback(response)
         }
     }

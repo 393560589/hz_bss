@@ -12,7 +12,7 @@ import {px2dp} from "../../utils";
 import {common, deviceWidth} from '../../styles'
 import {user} from "../../config/image"
 
-//import ImagePicker from 'react-native-image-picker'
+import ImagePicker from 'react-native-image-picker'
 import {StorageUtil} from "../../utils/storage";
 const prompt = Modal.prompt;
 const operation = Modal.operation;
@@ -47,6 +47,7 @@ class SetUser extends PureComponent{
 
     }
     chooseAction = () => {
+        const {dispatch,phone} = this.props;
         const options = {
             title: '选择方式',
             quality:0.5,
@@ -75,16 +76,27 @@ class SetUser extends PureComponent{
             (buttonIndex) => {
                 console.log(buttonIndex)
             if(buttonIndex === 0){
-               /* ImagePicker.launchCamera(options, (response)  => {
+                ImagePicker.launchCamera(options, (response)  => {
                     // Same code as in above section!
                     console.log(response)
-                });*/
+
+                });
             }
             if(buttonIndex === 1){
-               /* ImagePicker.launchImageLibrary(options, (response)  => {
+                ImagePicker.launchImageLibrary(options, (response)  => {
                     // Same code as in above section!
-                    console.log(response)
-                });*/
+                    //console.log(response)
+                    dispatch({
+                        type:'User/headerimg',
+                        payload:{
+                            phone:phone,
+                            image:response
+                        },
+                        callback:(data)=>{
+                            console.log(data)
+                        }
+                    })
+                });
             }
 
                 //this.setState({ clicked: BUTTONS[buttonIndex] });
@@ -134,7 +146,7 @@ class SetUser extends PureComponent{
                         </ListItem>
                         <ListItem
                             Icons={'arrow'}
-                            extra={'无'}
+                            extra={`${userInfo && userInfo.province && userInfo.province}/${userInfo && userInfo.city && userInfo.city}`}
                             hasborder
                             onClick={()=>this.onPushPage('CityAddress')}>
                             <Text style={common.font_h2}>地址设置</Text>

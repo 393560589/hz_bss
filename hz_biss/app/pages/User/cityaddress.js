@@ -27,11 +27,12 @@ class Cityaddress extends PureComponent {
        console.log(this.state.data)
     }
     ChooseCity(item){
-        console.log(item);
+        //console.log(item);
         const { dispatch } = this.props;
         dispatch({
             type:'User/update',
             payload:{
+                province:item.label,
                 citylist:item
             },
         })
@@ -41,7 +42,7 @@ class Cityaddress extends PureComponent {
      this.props.navigation.navigate(page)
     }
     render() {
-        const { getFieldProps } = this.props.form;
+
         return (
             <ScrollView style={styles.container}>
                <Text style={styles.textStyle}>
@@ -51,7 +52,7 @@ class Cityaddress extends PureComponent {
                     <ListItem
                         thumb={<Image style={{width:px2dp(22),height:px2dp(22)}} source={user.gps}/>}
                     >
-                        浙江 杭州
+                        浙江省/杭州市
                     </ListItem>
                 </List>
                 <Text style={styles.textStyle}>
@@ -90,4 +91,4 @@ const styles = StyleSheet.create({
        marginLeft:px2dp(10),
    }
 });
-export default createForm()(Cityaddress)
+export default Cityaddress

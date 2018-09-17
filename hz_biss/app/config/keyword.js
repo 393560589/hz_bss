@@ -11,7 +11,9 @@ export const API = {
     content:'mobile_interface/suggest',
     indexNews: 'mobile_interface/index_news_list',
     invite:'mobile_interface/invite_friend',
-    findpass:'mobile_interface/forget'
+    findpass:'mobile_interface/forget',
+    headerimg:'mobile_interface/upload_head_img',
+    setCity:'mobile_interface/set_area'
 };
 export const StringName={
     USER_INFO:'USERINFO'  //储存登录字段，加密用

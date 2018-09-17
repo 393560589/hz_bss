@@ -41,3 +41,9 @@ export const invite = (params) =>{
 export const findpass=(params)=>{
     return instance.post(API.findpass,params)
 }
+export const headerimg=(params)=>{
+    return instance.post(API.headerimg,params)
+}
+export const setCity = (params)=>{
+    return instance.post(API.setCity,params)
+}
