@@ -6,7 +6,8 @@ export default {
         play:'ffff',
         hotKey: [],
         nav: [],
-        newsList: []
+        newsList: [],
+        loading: false
     },
     reducers: {
         /**
@@ -52,7 +53,19 @@ export default {
         },
 
         *getNews ({payload}, {call, put}) {
+            yield put({
+                type: 'update',
+                payload: {
+                    loading: true
+                }
+            })
             const res = yield call(server.indexNews, payload);
+            yield put({
+                type: 'update',
+                payload: {
+                    loading: false
+                }
+            })
             if (res.status === 200) {
                 yield put({
                     type: 'updateNewsList',
