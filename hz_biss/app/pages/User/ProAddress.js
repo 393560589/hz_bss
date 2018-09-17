@@ -50,7 +50,7 @@ export default class ProAddress extends PureComponent {
                 city:this.state.value
             },
             callback:(data)=>{
-                console.log(data);
+                //console.log(data);
                 navigation.pop(2);
             }
         })
