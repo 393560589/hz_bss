@@ -80,6 +80,10 @@ export default class Search extends PureComponent {
     this.setState({isWebViewVisiable: false})
   }
 
+  onMessage = ({nativeEvent}) => {
+    console.log(nativeEvent)
+  }
+
   renderHistoryCell = (item, index) => (
     <View style={styles.cellContainer}>
       <Text
@@ -116,6 +120,7 @@ export default class Search extends PureComponent {
       <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
         <WebView
           source={{uri: `http://192.168.123.208:8000/SearchResult?keyword=${keyword}`}}
+          onMessage={this.onMessage}
         >
         </WebView>
       </View>

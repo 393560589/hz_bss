@@ -117,9 +117,13 @@ class PhoneHeader extends PureComponent {
   }
 
   render() {
+    const headerType = this.props.navigation.getParam('headerType', 1)
+    const backAction = this.props.navigation.getParam('backAction', null)
+    const Back = (<TouchableOpacity style={{marginRight: px2p(14)}} onPress={backAction}><Image source={require('../image/search/back.png')}/></TouchableOpacity>)
     return (
       <SafeAreaView backgroundColor="#fff">
         <View style={styles.container}>
+          {headerType === 1 && Back}
           <SearchBar
             navigation={this.props.navigation}
             inputRef={view => this.input = view}
@@ -127,9 +131,9 @@ class PhoneHeader extends PureComponent {
             onFocus={this.onFocus}
             onBlur={this.onBlur}
           />
-          <TouchableOpacity onPress={this.goBack}>
+          {headerType === 0 && <TouchableOpacity onPress={this.goBack}>
             <Text style={{fontSize: px2p(15), color: '#070002'}}>取消</Text>
-          </TouchableOpacity>
+          </TouchableOpacity>}
         </View>
       </SafeAreaView>
     )
