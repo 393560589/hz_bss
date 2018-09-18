@@ -1,607 +1,607 @@
 -- Merging decision tree log ---
 meta-data#JPUSH_APPKEY
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:42:5-44:43
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:42:5-44:43
 	android:value
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:44:9-40
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:44:9-40
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:43:9-36
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:43:9-36
 meta-data#JPUSH_CHANNEL
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:45:5-47:42
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:45:5-47:42
 	android:value
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:47:9-39
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:47:9-39
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:46:9-37
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:46:9-37
 manifest
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
-MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-60:12
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-104:12
-MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-22:12
-MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:17:1-31:12
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/1d6bb2511f57fd7a2b636ee044170d35/AndroidManifest.xml:10:1-18:12
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/8256651f0b2c566cc6b336e90940d744/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3319e1135f5156770d71a0fe4176de3c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:1:1-4:12
-MERGED from [org.webkit:android-jsc:r174650] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/1ff0fdb95e734702585655cc96d3ad4f/AndroidManifest.xml:1:1-3:12
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:17:1-31:12
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0ebb9b22e55400d43e42480ff4171ed9/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/137c4167134800cac8093a450735b5ff/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a70b8565cce5998e83cafdaa423835c5/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/49028dcf886ff0a9b3e2e6d49cf396e6/AndroidManifest.xml:2:1-9:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+MERGED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-60:12
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-104:12
+MERGED from [:react-native-svg] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:react-native-vector-icons] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/claude/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/089e780fd0e63c984d73938a11120121/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f824d444aef814654c354d5245d5f936/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/a380cc3c1600ede75df50399afab3e7b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/48ca6bfd18b78e2f80d00d910e8bbe62/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b103d4dca86b0f1ef770d8c1f63f341e/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/cfae68766495392ab086788482c5c48e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/f036237962215d11149ee4a3a64b247c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/a5b0df560cc12205921d1a3952f977cc/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/claude/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3549e36067af7e387c340f32ecb6fc90/AndroidManifest.xml:1:1-3:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/90ad6e69cb9424ea3edf7584b2bab02f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f634ad82b91d02036b95959ec147bb2f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bc086d33e01320d625185d94f29a6f50/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b6a1c3ff08bfad701820f101c6c79105/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7d4dd18874edea0c2314df347ff02aa5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/31077ec73edb72b138f4d22962de8ea6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/18824d775ea54f89ff90ddc49e18d35d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/e08af14a9184416a7445e1130e00c317/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/978577503f32db1ada86032731875721/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce6e126b7935afe52e7eff6e36ea290b/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
 	package
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:2:5-26
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:2:5-26
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-52:12
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:5-79
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:5-79
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:5-79
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:5-79
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:5-79
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:5-79
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:22-76
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:5-76
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:5-76
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:5-76
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:5-76
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:5-76
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:5-76
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:22-73
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:8:5-76
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:5-76
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:5-76
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:8:5-76
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:5-76
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:5-76
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:8:22-73
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.CHANGE_CONFIGURATION
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:9:5-79
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:9:22-76
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:5-67
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:5-67
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:5-67
-MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:24:5-67
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:5-67
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:12:5-77
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:5-78
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:5-78
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:11:5-78
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:12:5-77
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:5-78
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/claude/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/089e780fd0e63c984d73938a11120121/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/claude/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/089e780fd0e63c984d73938a11120121/AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:12:22-75
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:12:22-75
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:13:5-79
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:5-79
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:5-79
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:13:5-79
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:5-79
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:5-79
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:13:22-76
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:15:5-81
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:31:5-81
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:31:5-81
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:15:5-81
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:31:5-81
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:31:5-81
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:15:22-78
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:15:22-78
 uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:5-89
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:5-89
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:5-89
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:5-89
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:5-89
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:5-89
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:22-86
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:22-86
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:5-81
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:5-81
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:5-81
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:5-81
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:5-81
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:5-81
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:22-78
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:5-80
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:5-80
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:5-80
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:5-80
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:5-80
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:5-80
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:22-77
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:22-77
 uses-permission#android.permission.CAMERA
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:5-65
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:5-65
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:22-62
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:22-62
 application
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:26:5-50:19
-MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-58:19
-MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-58:19
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:5-102:19
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:5-102:19
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
-MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:25:5-29:19
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:3:3-17
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/1ff0fdb95e734702585655cc96d3ad4f/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/1ff0fdb95e734702585655cc96d3ad4f/AndroidManifest.xml:2:3-17
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:24:5-28:19
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:26:5-50:19
+MERGED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-58:19
+MERGED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-58:19
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:5-102:19
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:5-102:19
+MERGED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
+MERGED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/claude/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/089e780fd0e63c984d73938a11120121/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/claude/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/089e780fd0e63c984d73938a11120121/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f824d444aef814654c354d5245d5f936/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f824d444aef814654c354d5245d5f936/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/a380cc3c1600ede75df50399afab3e7b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/a380cc3c1600ede75df50399afab3e7b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/48ca6bfd18b78e2f80d00d910e8bbe62/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/48ca6bfd18b78e2f80d00d910e8bbe62/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/a5b0df560cc12205921d1a3952f977cc/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/a5b0df560cc12205921d1a3952f977cc/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/claude/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3549e36067af7e387c340f32ecb6fc90/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/claude/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/3549e36067af7e387c340f32ecb6fc90/AndroidManifest.xml:2:3-17
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/90ad6e69cb9424ea3edf7584b2bab02f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/90ad6e69cb9424ea3edf7584b2bab02f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f634ad82b91d02036b95959ec147bb2f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f634ad82b91d02036b95959ec147bb2f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bc086d33e01320d625185d94f29a6f50/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bc086d33e01320d625185d94f29a6f50/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b6a1c3ff08bfad701820f101c6c79105/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b6a1c3ff08bfad701820f101c6c79105/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7d4dd18874edea0c2314df347ff02aa5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7d4dd18874edea0c2314df347ff02aa5/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce6e126b7935afe52e7eff6e36ea290b/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce6e126b7935afe52e7eff6e36ea290b/AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:28:7-39
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:28:7-39
 	android:icon
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:29:7-41
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:29:7-41
 	android:allowBackup
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:30:7-34
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:30:7-34
 	android:theme
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:31:7-38
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:31:7-38
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:27:7-38
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:27:7-38
 activity#com.hz_biss.MainActivity
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:32:7-41:18
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:32:7-41:18
 	android:label
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:34:9-41
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:34:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:36:9-51
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:36:9-51
 	android:configChanges
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:35:9-79
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:35:9-79
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:33:9-37
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:33:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:37:9-40:25
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:37:9-40:25
 action#android.intent.action.MAIN
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:38:13-65
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:38:13-65
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:38:21-62
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:38:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:39:13-73
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:39:13-73
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:39:23-70
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:39:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:49:7-84
+ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:49:7-84
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:49:17-81
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:49:17-81
 uses-sdk
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:21:5-23:54
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/1d6bb2511f57fd7a2b636ee044170d35/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/1d6bb2511f57fd7a2b636ee044170d35/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/8256651f0b2c566cc6b336e90940d744/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/8256651f0b2c566cc6b336e90940d744/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3319e1135f5156770d71a0fe4176de3c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3319e1135f5156770d71a0fe4176de3c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:2:3-70
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:21:5-23:58
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0ebb9b22e55400d43e42480ff4171ed9/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0ebb9b22e55400d43e42480ff4171ed9/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/137c4167134800cac8093a450735b5ff/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/137c4167134800cac8093a450735b5ff/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a70b8565cce5998e83cafdaa423835c5/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a70b8565cce5998e83cafdaa423835c5/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/49028dcf886ff0a9b3e2e6d49cf396e6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/49028dcf886ff0a9b3e2e6d49cf396e6/AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+MERGED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/claude/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/089e780fd0e63c984d73938a11120121/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/claude/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/089e780fd0e63c984d73938a11120121/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f824d444aef814654c354d5245d5f936/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/f824d444aef814654c354d5245d5f936/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/a380cc3c1600ede75df50399afab3e7b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/a380cc3c1600ede75df50399afab3e7b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/48ca6bfd18b78e2f80d00d910e8bbe62/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/48ca6bfd18b78e2f80d00d910e8bbe62/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b103d4dca86b0f1ef770d8c1f63f341e/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/b103d4dca86b0f1ef770d8c1f63f341e/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/cfae68766495392ab086788482c5c48e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/cfae68766495392ab086788482c5c48e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/f036237962215d11149ee4a3a64b247c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/f036237962215d11149ee4a3a64b247c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/a5b0df560cc12205921d1a3952f977cc/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/a5b0df560cc12205921d1a3952f977cc/AndroidManifest.xml:2:3-70
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/90ad6e69cb9424ea3edf7584b2bab02f/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/90ad6e69cb9424ea3edf7584b2bab02f/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f634ad82b91d02036b95959ec147bb2f/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f634ad82b91d02036b95959ec147bb2f/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bc086d33e01320d625185d94f29a6f50/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bc086d33e01320d625185d94f29a6f50/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b6a1c3ff08bfad701820f101c6c79105/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b6a1c3ff08bfad701820f101c6c79105/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7d4dd18874edea0c2314df347ff02aa5/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7d4dd18874edea0c2314df347ff02aa5/AndroidManifest.xml:21:5-23:58
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/31077ec73edb72b138f4d22962de8ea6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/31077ec73edb72b138f4d22962de8ea6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/18824d775ea54f89ff90ddc49e18d35d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/18824d775ea54f89ff90ddc49e18d35d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/e08af14a9184416a7445e1130e00c317/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/e08af14a9184416a7445e1130e00c317/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/978577503f32db1ada86032731875721/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/978577503f32db1ada86032731875721/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce6e126b7935afe52e7eff6e36ea290b/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce6e126b7935afe52e7eff6e36ea290b/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/claude/Desktop/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
 service#cn.jpush.android.service.PushService
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:9-26:19
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:9-26:19
 	android:enabled
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-35
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:13-35
 	android:exported
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:13-37
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-64
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-64
 intent-filter#action:name:cn.jpush.android.intent.PUSH_TIME+action:name:cn.jpush.android.intent.PushService+action:name:cn.jpush.android.intent.REGISTER+action:name:cn.jpush.android.intent.REPORT
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:13-25:29
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:13-25:29
 action#cn.jpush.android.intent.REGISTER
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:17-75
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:17-75
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:25-72
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:25-72
 action#cn.jpush.android.intent.REPORT
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:17-73
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:17-73
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:25-70
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:25-70
 action#cn.jpush.android.intent.PushService
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:17-78
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:17-78
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:25-75
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:25-75
 action#cn.jpush.android.intent.PUSH_TIME
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:17-76
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:17-76
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:25-73
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:25-73
 provider#cn.jpush.android.service.DataProvider
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:9-32:39
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:9-32:39
 	android:authorities
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:31:13-64
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:31:13-64
 	android:exported
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:13-36
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:13-65
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:13-65
 receiver#cn.jpush.android.service.PushReceiver
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:9-54:20
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:9-54:20
 	android:enabled
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:37:13-35
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:13-37
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:13-65
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:13-65
 intent-filter#action:name:cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+category:name:${applicationId}
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:13-42:29
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:13-42:29
 	android:priority
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:28-51
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:28-51
 intent-filter#action:name:cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+category:name:com.hz_biss
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:13-42:29
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:13-42:29
 	android:priority
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:28-51
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:28-51
 action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:40:17-94
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:40:17-94
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:40:25-91
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:40:25-91
 category#${applicationId}
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:17-61
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:17-61
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:27-58
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:27-58
 category#com.hz_biss
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:17-61
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:17-61
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:27-58
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:27-58
 intent-filter#action:name:android.intent.action.USER_PRESENT+action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:43:13-46:29
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:43:13-46:29
 action#android.intent.action.USER_PRESENT
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:44:17-77
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:44:25-74
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:44:25-74
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:45:17-79
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:45:17-79
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:45:25-76
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:45:25-76
 intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:48:13-53:29
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:48:13-53:29
 action#android.intent.action.PACKAGE_ADDED
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:17-78
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:17-78
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:25-75
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:25-75
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:50:17-80
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:50:17-80
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:50:25-77
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:50:25-77
 data
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:52:17-50
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:52:17-50
 	android:scheme
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:52:23-47
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:52:23-47
 receiver#cn.jpush.android.service.AlarmReceiver
-ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:57:9-75
+ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:57:9-75
 	android:name
-		ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:57:19-72
+		ADDED from [:jcore-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:57:19-72
 permission#${applicationId}.permission.JPUSH_MESSAGE
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-13:47
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-13:47
 	android:protectionLevel
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-44
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-44
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-65
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-65
 permission#com.hz_biss.permission.JPUSH_MESSAGE
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-13:47
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-13:47
 	android:protectionLevel
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-44
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-44
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-65
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-65
 uses-permission#${applicationId}.permission.JPUSH_MESSAGE
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-81
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:22-78
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:22-78
 uses-permission#com.hz_biss.permission.JPUSH_MESSAGE
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-81
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:22-78
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:22-78
 uses-permission#android.permission.RECEIVE_USER_PRESENT
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:5-79
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:5-79
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:22-76
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:5-68
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:5-68
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:22-65
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:22-65
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:5-75
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:5-75
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:22-72
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:22-72
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:5-73
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:5-73
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:22-70
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:22-70
 uses-permission#android.permission.VIBRATE
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-66
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-66
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:22-63
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:22-63
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-84
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-84
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:22-81
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:22-81
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:5-79
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:5-79
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:22-76
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:22-76
 uses-permission#android.permission.GET_TASKS
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:5-68
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:5-68
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:22-65
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:36:22-65
 activity#cn.jpush.android.ui.PushActivity
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:9-52:20
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:9-52:20
 	android:exported
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:44:13-37
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:44:13-37
 	android:configChanges
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:43:13-63
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:43:13-63
 	android:theme
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:45:13-60
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:45:13-60
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:42:13-60
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:42:13-60
 intent-filter#action:name:cn.jpush.android.ui.PushActivity+category:name:${applicationId}+category:name:android.intent.category.DEFAULT
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:46:13-51:29
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:46:13-51:29
 intent-filter#action:name:cn.jpush.android.ui.PushActivity+category:name:android.intent.category.DEFAULT+category:name:com.hz_biss
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:46:13-51:29
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:46:13-51:29
 action#cn.jpush.android.ui.PushActivity
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:47:17-75
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:47:17-75
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:47:25-72
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:47:25-72
 category#android.intent.category.DEFAULT
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:17-76
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:17-76
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:27-73
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:49:27-73
 activity#cn.jpush.android.ui.PopWinActivity
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:55:9-59:20
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:55:9-59:20
 	android:exported
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:57:13-37
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:57:13-37
 	android:theme
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:58:13-49
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:58:13-49
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:56:13-62
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:56:13-62
 service#cn.jpush.android.service.DownloadService
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:62:9-66:19
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:62:9-66:19
 	android:enabled
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:64:13-35
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:64:13-35
 	android:exported
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:65:13-37
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:65:13-37
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:63:13-68
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:63:13-68
 service#cn.jpush.android.service.DaemonService
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:69:9-78:19
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:69:9-78:19
 	android:enabled
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:71:13-35
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:71:13-35
 	android:exported
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:72:13-36
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:72:13-36
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:70:13-66
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:70:13-66
 intent-filter#action:name:cn.jpush.android.intent.DaemonService+category:name:${applicationId}
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:73:13-77:29
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:73:13-77:29
 intent-filter#action:name:cn.jpush.android.intent.DaemonService+category:name:com.hz_biss
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:73:13-77:29
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:73:13-77:29
 action#cn.jpush.android.intent.DaemonService
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:74:17-80
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:74:17-80
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:74:25-77
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:74:25-77
 receiver#cn.jpush.reactnativejpush.JPushModule$JPushReceiver
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:81:9-93:20
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:81:9-93:20
 	android:enabled
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:83:13-35
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:83:13-35
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:82:13-79
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:82:13-79
 intent-filter#action:name:cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK+action:name:cn.jpush.android.intent.CONNECTION+action:name:cn.jpush.android.intent.MESSAGE_RECEIVED+action:name:cn.jpush.android.intent.NOTIFICATION_OPENED+action:name:cn.jpush.android.intent.NOTIFICATION_RECEIVED+action:name:cn.jpush.android.intent.REGISTRATION+category:name:${applicationId}
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:84:13-92:29
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:84:13-92:29
 intent-filter#action:name:cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK+action:name:cn.jpush.android.intent.CONNECTION+action:name:cn.jpush.android.intent.MESSAGE_RECEIVED+action:name:cn.jpush.android.intent.NOTIFICATION_OPENED+action:name:cn.jpush.android.intent.NOTIFICATION_RECEIVED+action:name:cn.jpush.android.intent.REGISTRATION+category:name:com.hz_biss
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:84:13-92:29
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:84:13-92:29
 action#cn.jpush.android.intent.REGISTRATION
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:85:17-79
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:85:17-79
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:85:25-76
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:85:25-76
 action#cn.jpush.android.intent.MESSAGE_RECEIVED
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:86:17-83
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:86:17-83
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:86:25-80
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:86:25-80
 action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:87:17-88
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:87:17-88
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:87:25-85
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:87:25-85
 action#cn.jpush.android.intent.NOTIFICATION_OPENED
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:88:17-86
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:88:17-86
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:88:25-83
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:88:25-83
 action#cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:89:17-91
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:89:17-91
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:89:25-88
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:89:25-88
 action#cn.jpush.android.intent.CONNECTION
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:90:17-77
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:90:17-77
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:90:25-74
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:90:25-74
 receiver#cn.jpush.reactnativejpush.JPushModule$MyJPushMessageReceiver
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:95:9-101:20
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:95:9-101:20
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:95:19-94
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:95:19-94
 intent-filter#action:name:cn.jpush.android.intent.RECEIVE_MESSAGE+category:name:${applicationId}
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:96:13-100:29
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:96:13-100:29
 intent-filter#action:name:cn.jpush.android.intent.RECEIVE_MESSAGE+category:name:com.hz_biss
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:96:13-100:29
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:96:13-100:29
 action#cn.jpush.android.intent.RECEIVE_MESSAGE
-ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:97:17-82
+ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:97:17-82
 	android:name
-		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:97:25-79
+		ADDED from [:jpush-react-native] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:97:25-79
 provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-60
+		ADDED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-60
 	android:exported
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-56
+		ADDED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-56
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
+ADDED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
 	android:resource
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:17-55
+		ADDED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:17-55
 	android:name
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-image-picker] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:17-67
 receiver#com.learnium.RNDeviceInfo.RNDeviceReceiver
-ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-19:20
+ADDED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-19:20
 	android:enabled
-		ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-35
+		ADDED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-35
 	android:exported
-		ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-36
+		ADDED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-36
 	android:name
-		ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-70
+		ADDED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-70
 intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-18:29
+ADDED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-18:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:17-79
+ADDED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:17-79
 	android:name
-		ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:25-76
+		ADDED from [:react-native-device-info] /Users/claude/Desktop/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:25-76
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:23:5-82
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:23:5-82
-MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:23:5-82
+ADDED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/01a4b8d5a789366cbe50b21f087bee42/AndroidManifest.xml:23:5-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:23:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/AndroidManifest.xml:23:22-79
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/AndroidManifest.xml:24:13-58
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/90ad6e69cb9424ea3edf7584b2bab02f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/90ad6e69cb9424ea3edf7584b2bab02f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f634ad82b91d02036b95959ec147bb2f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f634ad82b91d02036b95959ec147bb2f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bc086d33e01320d625185d94f29a6f50/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/bc086d33e01320d625185d94f29a6f50/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b6a1c3ff08bfad701820f101c6c79105/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/b6a1c3ff08bfad701820f101c6c79105/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7d4dd18874edea0c2314df347ff02aa5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7d4dd18874edea0c2314df347ff02aa5/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/fd9898e00563598306393e1cf3c3d38f/AndroidManifest.xml:27:13-51
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce6e126b7935afe52e7eff6e36ea290b/AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce6e126b7935afe52e7eff6e36ea290b/AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/claude/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce6e126b7935afe52e7eff6e36ea290b/AndroidManifest.xml:26:13-58

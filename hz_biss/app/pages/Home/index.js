@@ -18,7 +18,7 @@ import { common } from '../../styles';
 import {StorageUtil} from "../../utils/storage";
 // import SearchBar from './components/SearchBar'
 import {BoxShadow} from 'react-native-shadow'
-import Jush from "jpush-react-native";
+import JPush from "jpush-react-native";
 
 @connect(({home}) => ({...home}))
 class Home extends Component {
@@ -33,9 +33,12 @@ class Home extends Component {
   }
 
   componentDidMount(){
+    JPush.addReceiveNotificationListener((map) => {
+      console.log(JSON.stringify(map));
+    })
+
     const {dispatch} = this.props;
 
-    console.log(Jush)
     dispatch({
         type:'home/getBanner',
         callback:(data)=>{
