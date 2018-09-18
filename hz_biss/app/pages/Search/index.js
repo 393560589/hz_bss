@@ -104,7 +104,9 @@ export default class Search extends PureComponent {
         <View style={styles.container}>
           <Text style={{fontSize: px2p(12), color: '#999'}}>搜索历史</Text>
           {this.state.historyList.map((item, index) => (
-            <TouchableOpacity key={item + index}>
+            <TouchableOpacity
+                activeOpacity={1}
+                key={item + index}>
               {this.renderHistoryCell(item, index)}
             </TouchableOpacity>
           ))}
@@ -115,7 +117,7 @@ export default class Search extends PureComponent {
   }
 
   renderWebView = ()=> {
-    const { keyword } = this.state
+    const { keyword } = this.state;
     return (
       <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
         <WebView

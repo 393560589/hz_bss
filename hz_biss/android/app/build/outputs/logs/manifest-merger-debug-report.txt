@@ -4,6 +4,7 @@ ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifes
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-22:12
 MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
@@ -180,6 +181,8 @@ uses-sdk
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41

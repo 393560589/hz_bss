@@ -17,6 +17,7 @@ import { px2p } from '../../utils';
 import { common } from '../../styles';
 import {StorageUtil} from "../../utils/storage";
 // import SearchBar from './components/SearchBar'
+import {BoxShadow} from 'react-native-shadow'
 
 @connect(({home}) => ({...home}))
 class Home extends Component {
@@ -86,17 +87,32 @@ class Home extends Component {
   // }
 
   renderSearchBar = () => {
+      const shadowOpt = {
+          width: px2p(355),
+          height: px2p(44),
+          color:'#eee',
+          border:2,
+          radius:5,
+          opacity:0.1,
+          x:0,
+          y:4,
+
+      }
     return (
-      <TouchableOpacity
-          style={styles.searchBarContainer}
-          activeOpacity={1}
-          onPress={() => this.props.navigation.navigate('Search')}>
-        <View style={styles.searchBar}>
-          <Image source={require('../../image/home/search.png')} style={{width: px2p(22), height: px2p(22), margin: px2p(10)}}/>
-          <View style={{width: px2p(1), height: px2p(15), backgroundColor: '#D2D2D2', marginRight: px2p(9)}}></View>
-          <Text style={{fontSize: px2p(12), color: '#CCC'}}>搜一下区块链资讯、交易所、项目、百科</Text>
-        </View>
-      </TouchableOpacity>
+
+          <TouchableOpacity
+              style={styles.searchBarContainer}
+              activeOpacity={1}
+              onPress={() => this.props.navigation.navigate('Search')}>
+              <BoxShadow setting={shadowOpt}>
+                <View style={styles.searchBar}>
+                  <Image source={require('../../image/home/search.png')} style={{width: px2p(22), height: px2p(22), margin: px2p(10)}}/>
+                  <View style={{width: px2p(1), height: px2p(15), backgroundColor: '#D2D2D2', marginRight: px2p(9)}}></View>
+                  <Text style={{fontSize: px2p(12), color: '#CCC'}}>搜一下区块链资讯、交易所、项目、百科</Text>
+                </View>
+              </BoxShadow>
+          </TouchableOpacity>
+
     )
   }
 
@@ -208,11 +224,8 @@ const styles = StyleSheet.create({
     // position: 'absolute',
     top: px2p(-25),
     width: px2p(355),
-    height: px2p(44),
+    height: px2p(50),
     alignSelf: 'center',
-    shadowColor: 'rgb(23, 22, 72)',
-    shadowOpacity: 0.2,
-    shadowRadius: px2p(5),
     zIndex: 20,
     elevation: 4
   },

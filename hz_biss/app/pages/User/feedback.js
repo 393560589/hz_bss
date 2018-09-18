@@ -54,9 +54,12 @@ export default class FeedBack extends PureComponent{
                         borderWidth:1,
                         marginBottom:px2dp(20),
                         borderColor:'#eee',
-                        padding:px2dp(6)
+                        padding:px2dp(6),
+                        textAlignVertical: 'top'
                     }}
+                    underlineColorAndroid='transparent'
                     multiline = {true}
+
                     onChangeText={text => this.setState({text})}
                     value={this.state.text}
                 />
