@@ -9,8 +9,7 @@ import {
 
 import {connect} from "../../utils/dva";
 import {px2dp} from "../../utils";
-import {set, user} from "../../config/image";
-import {common} from "../../styles";
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 import {WhiteSpace,Button} from 'antd-mobile-rn'
 import {commonStyle,deviceWidth} from "../../styles/common";
 //import User from "../../models/User";
@@ -38,8 +37,13 @@ export default class FeedBack extends PureComponent{
             }
         })
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render(){
         return (
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <View style={styles.container}>
                 <Text style={{fontSize:px2dp(14),lineHeight:px2dp(16)}}>请在下面填写您遇到的问题或意见建议，我们将为您提供更好的产品和服务。</Text>
                 <WhiteSpace/>
@@ -65,6 +69,7 @@ export default class FeedBack extends PureComponent{
                 />
                 <Button type={'primary'} onClick={()=>this.order()}>提交</Button>
             </View>
+            </AndroidBackHandler>
         )
     }
 }

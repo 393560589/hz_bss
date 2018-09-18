@@ -13,7 +13,7 @@ import {common, deviceWidth} from '../../styles'
 import {user} from "../../config/image"
 
 import ImagePicker from 'react-native-image-picker'
-import {StorageUtil} from "../../utils/storage";
+import {AndroidBackHandler} from 'react-navigation-backhandler'
 const prompt = Modal.prompt;
 const operation = Modal.operation;
 
@@ -105,11 +105,15 @@ class SetUser extends PureComponent{
 
 
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render(){
         const {dispatch,userInfo} = this.props;
         //const { getFieldProps } = this.props.form;
         return (
-            <View>
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
                 <View>
                     <List styles={{marginTop:px2dp(6)}}>
                         <ListItem
@@ -154,7 +158,7 @@ class SetUser extends PureComponent{
                     </List>
                 </View>
 
-            </View>
+            </AndroidBackHandler>
         )
     }
 }

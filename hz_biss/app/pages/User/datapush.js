@@ -9,9 +9,7 @@ import {
 import { Button,Switch } from 'antd-mobile-rn'
 import {connect} from "../../utils/dva";
 import {px2dp} from "../../utils";
-import {user} from "../../config/image";
-import {common} from "../../styles";
-import {commonStyle} from "../../styles/common";
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 import {createForm} from 'rc-form'
 import { ListItem,List } from '../../components/ListItem'
 
@@ -20,9 +18,14 @@ class DataPush extends PureComponent{
     onPushPage(page){
         this.props.navigation.navigate(page)
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render(){
         const { getFieldProps } = this.props.form;
         return (
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <View style={{flex:1}}>
                 <View>
                     <List styles={{marginTop:px2dp(6)}} border={false}>
@@ -83,6 +86,7 @@ class DataPush extends PureComponent{
                     </List>
                 </View>
             </View>
+            </AndroidBackHandler>
         )
     }
 }

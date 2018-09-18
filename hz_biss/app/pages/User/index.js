@@ -6,7 +6,7 @@ import {
     Image,
     ImageBackground,
     TouchableOpacity,
-    TouchableHighlight,
+    Platform,
     RefreshControl,
     ScrollView,
 
@@ -21,7 +21,7 @@ import {connect} from "../../utils/dva";
 import { ListItem,List } from '../../components/ListItem'
 import Geolocation from 'Geolocation';
 import {StorageUtil} from "../../utils/storage";
-
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 
 @connect(({User})=>({...User}))
@@ -139,116 +139,122 @@ export default class Users extends PureComponent {
             }
         })
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.navigate('Home')
+        return true
+    }
     render() {
         const {islogin,userInfo} = this.props;
         return (
-            <ScrollView style = {{flex:1,backgroundColor:'#f1f1f1'}}
-                        refreshControl={  //设置下拉刷新组件
-                            <RefreshControl
-                                refreshing={this.state.isRefreshing}
-                                onRefresh={this.onRefresh.bind(this)}  //(()=>this.onRefresh)或者通过bind来绑定this引用来调用方法
-                                tintColor='#333'
-                                titleColor="#333"
-                                title= {this.state.isRefreshing? '刷新中....':'下拉刷新'}
-                            />
-                        }
-            >
-                <View style={styles.container}>
-                    <ImageBackground
-                        style={[{width:deviceWidth,height:px2dp(270),paddingTop:px2dp(50),paddingBottom:px2dp(10)}]}
-                        source={user.topbanner}
-                    >
-                        <View style={styles.User_top}>
-                            <TouchableOpacity
-                                onPress={()=>this.onPushPage('SetUser')}
-                                activeOpacity={0.9}
-                            >
-                                <Image
-                                    style={{width:px2dp(90),height:px2dp(90)}}
-                                    source={user.tx}
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
+                <ScrollView style = {{flex:1,backgroundColor:'#f1f1f1'}}
+                            refreshControl={  //设置下拉刷新组件
+                                <RefreshControl
+                                    refreshing={this.state.isRefreshing}
+                                    onRefresh={this.onRefresh.bind(this)}  //(()=>this.onRefresh)或者通过bind来绑定this引用来调用方法
+                                    tintColor='#333'
+                                    titleColor="#333"
+                                    title= {this.state.isRefreshing? '刷新中....':'下拉刷新'}
                                 />
-                            </TouchableOpacity>
-
-                            <View style={styles.User_top_view}>
+                            }
+                >
+                    <View style={styles.container}>
+                        <ImageBackground
+                            style={[{width:deviceWidth,height:px2dp(270),paddingTop:px2dp(50),paddingBottom:px2dp(10)}]}
+                            source={user.topbanner}
+                        >
+                            <View style={styles.User_top}>
                                 <TouchableOpacity
-                                    onPress={() => {
-                                        this.onPushPage('SetUser')
-                                    }}
+                                    onPress={()=>this.onPushPage('SetUser')}
+                                    activeOpacity={0.9}
                                 >
-                                    <Text style={{
-                                        color:common.fff,
-                                        textAlign:'center',
-                                        marginTop:px2dp(10),
-                                        fontSize:px2dp(18),
-                                        marginBottom:px2dp(6)
-                                    }}>
-                                        {
-                                           islogin ? userInfo.username : '点击登录'
-                                        }
-                                    </Text>
+                                    <Image
+                                        style={{width:px2dp(90),height:px2dp(90)}}
+                                        source={user.tx}
+                                    />
                                 </TouchableOpacity>
-                                {
-                                    !islogin &&  <Text style={[common.font_h3,{color:common.fff}]}>
-                                        登陆后可享受更多服务
-                                    </Text>
-                                }
 
-                            </View>
-                        </View>
-                        <View style={styles.top_list}>
-                            <TouchableOpacity
-                                activeOpacity={0.9}
-                                style={[styles.top_item]}>
-                               <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>签到</Text>
-                              <Image source={user.qd} style={styles.Iconstyle}/>
-                           </TouchableOpacity>
-                            <Line/>
-                            <View style={styles.top_item}>
-                                <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>搜索令牌</Text>
-                                <Text style={styles.top_text}>{ userInfo ? userInfo.integral :0}</Text>
-                            </View>
-                            <Line />
-                            <TouchableOpacity
-                                activeOpacity={0.9}
-                                onPress={()=>this.showShareActionSheet()}
-                                style={styles.top_item}>
-                                <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>邀请好友</Text>
-                                <Image source={user.fx} style={styles.Iconstyle}/>
-                            </TouchableOpacity>
-                        </View>
-                    </ImageBackground>
-                    <List
-                        border={false}
-                        styles={{marginTop:px2dp(10)}}>
-                        <ListItem
-                            thumb={<Image style={styles.Iconstyle} source={user.contact}/>}
-                            hasborder
-                            onClick={()=>this.onPushPage('AboutUS')}
-                            Icons={'arrow'}>
-                            联系我们
-                        </ListItem>
-                        <ListItem
-                            thumb={<Image style={styles.Iconstyle} source={user.feedback}/>}
-                            Icons={'arrow'}
-                            onClick={()=>this.onPushPage('FeedBack')}
-                        >
-                            意见反馈
-                        </ListItem>
-                    </List>
-                    <List
-                        border={false}
-                        styles={{marginTop:px2dp(10)}}>
-                        <ListItem
-                            thumb={<Image style={styles.Iconstyle} source={user.sz}/>}
-                            Icons={'arrow'}
-                            onClick={()=>this.onPushPage('Settings')}
-                        >
-                            设置
-                        </ListItem>
-                    </List>
+                                <View style={styles.User_top_view}>
+                                    <TouchableOpacity
+                                        onPress={() => {
+                                            this.onPushPage('SetUser')
+                                        }}
+                                    >
+                                        <Text style={{
+                                            color:common.fff,
+                                            textAlign:'center',
+                                            marginTop:px2dp(10),
+                                            fontSize:px2dp(18),
+                                            marginBottom:px2dp(6)
+                                        }}>
+                                            {
+                                               islogin ? userInfo.username : '点击登录'
+                                            }
+                                        </Text>
+                                    </TouchableOpacity>
+                                    {
+                                        !islogin &&  <Text style={[common.font_h3,{color:common.fff}]}>
+                                            登陆后可享受更多服务
+                                        </Text>
+                                    }
 
-                </View>
-            </ScrollView>
+                                </View>
+                            </View>
+                            <View style={styles.top_list}>
+                                <TouchableOpacity
+                                    activeOpacity={0.9}
+                                    style={[styles.top_item]}>
+                                   <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>签到</Text>
+                                  <Image source={user.qd} style={styles.Iconstyle}/>
+                               </TouchableOpacity>
+                                <Line/>
+                                <View style={styles.top_item}>
+                                    <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>搜索令牌</Text>
+                                    <Text style={styles.top_text}>{ userInfo ? userInfo.integral :0}</Text>
+                                </View>
+                                <Line />
+                                <TouchableOpacity
+                                    activeOpacity={0.9}
+                                    onPress={()=>this.showShareActionSheet()}
+                                    style={styles.top_item}>
+                                    <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>邀请好友</Text>
+                                    <Image source={user.fx} style={styles.Iconstyle}/>
+                                </TouchableOpacity>
+                            </View>
+                        </ImageBackground>
+                        <List
+                            border={false}
+                            styles={{marginTop:px2dp(10)}}>
+                            <ListItem
+                                thumb={<Image style={styles.Iconstyle} source={user.contact}/>}
+                                hasborder
+                                onClick={()=>this.onPushPage('AboutUS')}
+                                Icons={'arrow'}>
+                                联系我们
+                            </ListItem>
+                            <ListItem
+                                thumb={<Image style={styles.Iconstyle} source={user.feedback}/>}
+                                Icons={'arrow'}
+                                onClick={()=>this.onPushPage('FeedBack')}
+                            >
+                                意见反馈
+                            </ListItem>
+                        </List>
+                        <List
+                            border={false}
+                            styles={{marginTop:px2dp(10)}}>
+                            <ListItem
+                                thumb={<Image style={styles.Iconstyle} source={user.sz}/>}
+                                Icons={'arrow'}
+                                onClick={()=>this.onPushPage('Settings')}
+                            >
+                                设置
+                            </ListItem>
+                        </List>
+
+                    </View>
+                </ScrollView>
+            </AndroidBackHandler>
         );
     }
 

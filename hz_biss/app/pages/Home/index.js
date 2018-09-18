@@ -5,7 +5,7 @@ import {
   View,
   ScrollView,
   Image,
-  FlatList,
+  Platform,
   SafeAreaView,
   TouchableOpacity,
   ActivityIndicator
@@ -91,10 +91,10 @@ class Home extends Component {
           width: px2p(355),
           height: px2p(44),
           color:'#eee',
-          border:2,
-          radius:5,
-          opacity:0.1,
-          x:0,
+          border:1,
+          radius:2,
+          opacity:Platform.OS === 'ios' ? 0.3:0.1,
+          x:1,
           y:4,
 
       }
@@ -218,16 +218,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     // alignSelf: 'center',
     flex: 1,
-    elevation: 4,
+    elevation: 3,
   },
   searchBarContainer: {
     // position: 'absolute',
+    borderRadius:px2p(2),
     top: px2p(-25),
     width: px2p(355),
     height: px2p(50),
     alignSelf: 'center',
     zIndex: 20,
-    elevation: 4
+    //elevation: 4
   },
   searchItems: {
     // flex: 1,

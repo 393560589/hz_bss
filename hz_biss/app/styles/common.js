@@ -1,5 +1,6 @@
 
 import {
+    Platform,
     Dimensions
 } from 'react-native'
 import {px2dp} from "../utils";
@@ -40,7 +41,7 @@ export const common={
             flex: 1,
             textAlign: 'center',
             fontSize:px2dp(16),
-            fontWeight:'lighter',
+            fontWeight:Platform.OS === 'ios' ? '200':'lighter',
         },
         headerStyle: {
             backgroundColor: '#fff',

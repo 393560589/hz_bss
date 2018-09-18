@@ -13,41 +13,48 @@ import {set, user} from "../../config/image";
 import {common} from "../../styles";
 import {commonStyle,deviceWidth} from "../../styles/common";
 import { List,ListItem } from '../../components/ListItem'
-
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 @connect()
 export default class AboutUS extends PureComponent{
     onPushPage(page){
         this.props.navigation.navigate(page)
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render(){
         return (
-            <SafeAreaView style={{flex:1}}>
-                <List
-                    border={false}
-                    styles={{marginBottom:px2dp(6),marginTop:px2dp(6)}}>
-                    <ListItem extra={'qukexingqiu888'} onClick={() => {this.onPushPage('SetAddress')}}>
-                       商务合作微信号
-                    </ListItem>
-                </List>
-                <List
-                    border={false}
-                    styles={{marginBottom:px2dp(6)}}>
-                    <ListItem extra={'coinsousuo'} onClick={() => {this.onPushPage('SetAddress')}}>
-                        官方客服微信号
-                    </ListItem>
-                </List>
-                <List
-                    border={false}
-                    styles={{marginBottom:px2dp(6)}}>
-                    <ListItem extra={'bitsszx'} onClick={() => {this.onPushPage('SetAddress')}}>
-                        官方微信公众号
-                    </ListItem>
-                </List>
-                <View style={styles.Icon_wrap}>
-                    <Image source={set.Icons} style={{height:px2dp(160),width:px2dp(160)}}/>
-                    <Text style={[styles.yutext,common.font_h2]}>进社区群扫管理员二维码</Text>
-                </View>
-            </SafeAreaView>
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
+                <SafeAreaView style={{flex:1}}>
+                    <List
+                        border={false}
+                        styles={{marginBottom:px2dp(6),marginTop:px2dp(6)}}>
+                        <ListItem extra={'qukexingqiu888'} onClick={() => {this.onPushPage('SetAddress')}}>
+                            商务合作微信号
+                        </ListItem>
+                    </List>
+                    <List
+                        border={false}
+                        styles={{marginBottom:px2dp(6)}}>
+                        <ListItem extra={'coinsousuo'} onClick={() => {this.onPushPage('SetAddress')}}>
+                            官方客服微信号
+                        </ListItem>
+                    </List>
+                    <List
+                        border={false}
+                        styles={{marginBottom:px2dp(6)}}>
+                        <ListItem extra={'bitsszx'} onClick={() => {this.onPushPage('SetAddress')}}>
+                            官方微信公众号
+                        </ListItem>
+                    </List>
+                    <View style={styles.Icon_wrap}>
+                        <Image source={set.Icons} style={{height:px2dp(160),width:px2dp(160)}}/>
+                        <Text style={[styles.yutext,common.font_h2]}>进社区群扫管理员二维码</Text>
+                    </View>
+                </SafeAreaView>
+            </AndroidBackHandler>
+
         )
     }
 }

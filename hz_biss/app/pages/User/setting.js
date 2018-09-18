@@ -9,14 +9,9 @@ import {
 import { Button,Toast } from 'antd-mobile-rn'
 import {connect} from "../../utils/dva";
 import {px2dp} from "../../utils";
-import {user} from "../../config/image";
-import {common} from "../../styles";
-import {commonStyle} from "../../styles/common";
-import AboutUS from "./aboutus";
-import Invoice from "./invoice";
 import { ListItem,List } from '../../components/ListItem'
 import {StorageUtil} from "../../utils/storage";
-
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 @connect(({User})=>({...User}))
 export default class Setting extends PureComponent{
     onPushPage(page){
@@ -40,8 +35,13 @@ export default class Setting extends PureComponent{
             }
         })
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render(){
         return (
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <View style={{flex:1}}>
                 <View>
 
@@ -82,6 +82,7 @@ export default class Setting extends PureComponent{
                     </Button>
                 </View>
             </View>
+            </AndroidBackHandler>
         )
     }
 }

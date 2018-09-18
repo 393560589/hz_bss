@@ -6,11 +6,8 @@ import {
     Image,
     View
 } from 'react-native';
-import { InputItem,Button,Picker,Switch } from 'antd-mobile-rn'
-import { createForm } from 'rc-form'
-import {common,deviceWidth} from "../../styles";
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 import {px2dp} from "../../utils";
-import {commonStyle} from "../../styles/common";
 
 import { pc } from 'antd-mobile-area-data'
 
@@ -41,9 +38,14 @@ class Cityaddress extends PureComponent {
     onPushPage(page){
      this.props.navigation.navigate(page)
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render() {
 
         return (
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <ScrollView style={styles.container}>
                <Text style={styles.textStyle}>
                    定位得到位置
@@ -75,6 +77,7 @@ class Cityaddress extends PureComponent {
                     }
                 </List>
             </ScrollView>
+            </AndroidBackHandler>
         );
     }
 }

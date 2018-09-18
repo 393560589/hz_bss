@@ -9,9 +9,7 @@ import {
 import { Radio,List,InputItem,Button } from 'antd-mobile-rn'
 
 import {px2dp} from "../../utils";
-//import {commonStyle} from "../../styles/common";
-//import { pc } from 'antd-mobile-area-data'
-//import { ,ListItem } from '../../components/ListItem'
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 import {connect} from "../../utils/dva";
 import {common} from "../../styles";
@@ -57,10 +55,14 @@ export default class Index extends PureComponent {
     onPushPage(page){
         this.props.navigation.navigate(page)
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render() {
 
         return (
-           <View>
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
                <List renderHeader={()=>'好名字可以让你的朋友更容易记住你'}>
                    <InputItem
                      clear={true}
@@ -71,7 +73,7 @@ export default class Index extends PureComponent {
                      })}}
                    />
                </List>
-           </View>
+            </AndroidBackHandler>
         );
     }
 }

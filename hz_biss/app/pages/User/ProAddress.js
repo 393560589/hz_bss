@@ -9,9 +9,7 @@ import {
 import { Radio,List } from 'antd-mobile-rn'
 
 import {px2dp} from "../../utils";
-//import {commonStyle} from "../../styles/common";
-//import { pc } from 'antd-mobile-area-data'
-//import { ,ListItem } from '../../components/ListItem'
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 import {connect} from "../../utils/dva";
 import {common} from "../../styles";
@@ -58,11 +56,16 @@ export default class ProAddress extends PureComponent {
     onPushPage(page){
         this.props.navigation.navigate(page)
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render() {
         //const { getFieldProps } = this.props.form;
        const { value } = this.state;
        const { citylist } = this.props;
         return (
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <ScrollView style={styles.container}>
                 <List renderHeader={()=>'全部'}>
                     {
@@ -82,6 +85,7 @@ export default class ProAddress extends PureComponent {
                     }
                 </List>
             </ScrollView>
+            </AndroidBackHandler>
         );
     }
 }

@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import { InputItem,Button,WhiteSpace,Toast } from 'antd-mobile-rn'
 import {List } from '../../components/ListItem'
-import { createForm } from 'rc-form'
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 import {common,deviceWidth} from "../../styles";
 import {px2dp} from "../../utils";
 import {commonStyle} from "../../styles/common";
@@ -43,8 +43,13 @@ class SetPassword extends PureComponent {
             }
         })
     }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
     render() {
         return (
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <View style={styles.container}>
                 <View style={styles.f_input_wrap}>
                     <View style={styles.f_tip_wrap}>
@@ -104,6 +109,7 @@ class SetPassword extends PureComponent {
                 </View>
 
             </View>
+            </AndroidBackHandler>
         );
     }
 }
