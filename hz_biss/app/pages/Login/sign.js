@@ -64,7 +64,9 @@ class Sign extends PureComponent {
                             labelNumber={3}
                             placeholder="输入手机号"
                             onChange={(text)=>this.setState({phone:text})}
-                        ><Text style={{color:'#666'}}>+86 |</Text> </InputItem>
+                        >
+                            <Text style={{color:'#666'}}>+86 |</Text>
+                        </InputItem>
                         <WhiteSpace/>
                         <InputItem
                             type="number"

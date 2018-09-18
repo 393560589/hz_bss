@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/04fd016415a3934b772509242b5ee65c/res/values-w600dp/values-w600dp.xml",
+                    "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/values-w600dp/values-w600dp.xml",
                     "from": {
                         "startLines": "4,5",
                         "startColumns": "4,4",

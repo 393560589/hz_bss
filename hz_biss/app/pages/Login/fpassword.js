@@ -30,13 +30,17 @@ class Fpassword extends PureComponent {
                             clear
                             labelNumber={3}
                             placeholder="输入手机号"
-                        ><Text style={{color:'#666'}}>+86 |</Text> </InputItem>
+                        >
+                            <Text style={{color:'#666'}}>+86 |</Text>
+                        </InputItem>
                         <WhiteSpace/>
                         <InputItem
                             {...getFieldProps('code')}
                             type="number"
                             placeholder="验证码"
-                            extra={<Text style={{fontSize:px2dp(12),color:'#666'}}>| 获取验证码</Text>}
+                            extra={
+                                <Text style={{fontSize:px2dp(12),color:'#666'}}>| 获取验证码</Text>
+                            }
                             onExtraClick={()=>this.getCode()}
 
                         />

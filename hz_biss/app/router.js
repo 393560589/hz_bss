@@ -1,5 +1,5 @@
 import React from 'react'
-import {TouchableOpacity,Text,Image} from 'react-native'
+import {TouchableOpacity,Text,Image,View} from 'react-native'
 import Login from './pages/Login/index'
 import {common} from "./styles";
 //import {px2dp, px2p} from "./utils";
@@ -26,6 +26,7 @@ export default {
         screen: Login,
         navigationOptions: Object.assign({},common.defaultHeader,
             {
+                headerRight:(<View/>),
                 title: '登录',
         },)
     },
@@ -38,39 +39,39 @@ export default {
     },
     AboutUS: {
         screen: AboutUS,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '联系我们'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '联系我们', headerRight:(<View/>),})
     },
     FeedBack: {
         screen: FeedBack,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '意见反馈'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '意见反馈', headerRight:(<View/>),})
     },
     Sign:{
         screen:Sign,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '注册'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '注册', headerRight:(<View/>),})
     },
     DataPush:{
         screen:DataPush,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '推送设置'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '推送设置', headerRight:(<View/>),})
     },
     Fpassword:{
         screen:Fpassword,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '找回密码'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '找回密码', headerRight:(<View/>),})
     },
     Settings:{
         screen:Settings,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '设置',mode:'card'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '设置',mode:'card', headerRight:(<View/>),})
     },
     SetUser:{
         screen:SetUser,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '个人资料',mode:'card'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '个人资料',mode:'card', headerRight:(<View/>),})
     },
     Setpwd:{
         screen:Setpwd,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '密码设置',mode:'card'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '密码设置',mode:'card', headerRight:(<View/>),})
     },
     Cpassword:{
         screen:Cpassword,
-        navigationOptions: Object.assign({},common.defaultHeader, {title: '修改密码',mode:'card'})
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '修改密码',mode:'card', headerRight:(<View/>),})
     },
     ProAddress:{
         screen:ProAddress,
@@ -78,7 +79,7 @@ export default {
     },
     CityAddress:{
         screen:CityAddress,
-        navigationOptions:Object.assign({},common.defaultHeader, {title: '设置地址',mode:'card'})
+        navigationOptions:Object.assign({},common.defaultHeader, {title: '设置地址',mode:'card', headerRight:(<View/>),})
     },
     Invoice:{
         screen:Invoice,

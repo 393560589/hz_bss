@@ -1,288 +1,320 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
-MERGED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-22:12
-MERGED from [:react-native-vector-icons] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/eaac5a10e921e49d3abb02e0871ddf96/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/04fd016415a3934b772509242b5ee65c/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/9bcc315d1e7c25499c3880e4b7027a7c/AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/de0f1d4f2472b44ff2670cc8b5f6068b/AndroidManifest.xml:16:1-23:12
-MERGED from [com.android.support:support-v4:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/10535a39661930d6c038ba476d357185/AndroidManifest.xml:17:1-27:12
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/436e2a63b78e918b779d739eb49061db/AndroidManifest.xml:10:1-18:12
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/3934ee9aa2061e8b00efbefc8a2b3ea8/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/681771dd8514caae89a95d693436bcb6/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/80a418f6f7630697099fcee1ceaefee6/AndroidManifest.xml:1:1-4:12
-MERGED from [org.webkit:android-jsc:r174650] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b5de2ada66a113bd65fb46e91f6069ca/AndroidManifest.xml:1:1-3:12
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/be599c1172f33e98d02aec00be393fed/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/83eb69cadb40a1316a031d4cc231f0d8/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/be674f14f5b1e39c5af911f20910b056/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/536233187cbc61d4e89e1af23e3d5aa9/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/4d4d0b518947cbf36728bd562324cc55/AndroidManifest.xml:17:1-27:12
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/6864c57947beeb32faf186f7493d6481/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/ec59e52ba5c391c1e3052423358a2c49/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/232fe40c8fd5b78fca1f6f848209d42c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/fa3f76198301a943a30caebdbfa9dcaf/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/1d6bb2511f57fd7a2b636ee044170d35/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/8256651f0b2c566cc6b336e90940d744/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3319e1135f5156770d71a0fe4176de3c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/1ff0fdb95e734702585655cc96d3ad4f/AndroidManifest.xml:1:1-3:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0ebb9b22e55400d43e42480ff4171ed9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/137c4167134800cac8093a450735b5ff/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a70b8565cce5998e83cafdaa423835c5/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/49028dcf886ff0a9b3e2e6d49cf396e6/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
 	package
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:2:5-26
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:2:5-26
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:5-79
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:5-79
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:22-76
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:5-76
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:5-76
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:22-73
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:8:5-76
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:8:5-76
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:8:22-73
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.CHANGE_CONFIGURATION
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:9:5-79
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:9:22-76
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:21:5-66
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:12:5-77
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/eaac5a10e921e49d3abb02e0871ddf96/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/eaac5a10e921e49d3abb02e0871ddf96/AndroidManifest.xml:11:5-78
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:12:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:12:22-75
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:12:22-75
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:13:5-79
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:13:22-76
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:15:5-81
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:15:22-78
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:15:22-78
 uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:5-89
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:5-89
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:22-86
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:22-86
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:5-81
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:5-81
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:22-78
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:5-80
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:5-80
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:22-77
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:22-77
 uses-permission#android.permission.CAMERA
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:5-65
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:5-65
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:22-62
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:22-62
 application
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:31:5-48:19
-MERGED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
-MERGED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/eaac5a10e921e49d3abb02e0871ddf96/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/eaac5a10e921e49d3abb02e0871ddf96/AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/04fd016415a3934b772509242b5ee65c/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/04fd016415a3934b772509242b5ee65c/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/9bcc315d1e7c25499c3880e4b7027a7c/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/9bcc315d1e7c25499c3880e4b7027a7c/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/de0f1d4f2472b44ff2670cc8b5f6068b/AndroidManifest.xml:19:5-21:19
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/de0f1d4f2472b44ff2670cc8b5f6068b/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/10535a39661930d6c038ba476d357185/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/10535a39661930d6c038ba476d357185/AndroidManifest.xml:25:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/80a418f6f7630697099fcee1ceaefee6/AndroidManifest.xml:3:3-17
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/80a418f6f7630697099fcee1ceaefee6/AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b5de2ada66a113bd65fb46e91f6069ca/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b5de2ada66a113bd65fb46e91f6069ca/AndroidManifest.xml:2:3-17
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/be599c1172f33e98d02aec00be393fed/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/be599c1172f33e98d02aec00be393fed/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/83eb69cadb40a1316a031d4cc231f0d8/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/83eb69cadb40a1316a031d4cc231f0d8/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/be674f14f5b1e39c5af911f20910b056/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/be674f14f5b1e39c5af911f20910b056/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/536233187cbc61d4e89e1af23e3d5aa9/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/536233187cbc61d4e89e1af23e3d5aa9/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/4d4d0b518947cbf36728bd562324cc55/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/4d4d0b518947cbf36728bd562324cc55/AndroidManifest.xml:25:5-20
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:26:5-43:19
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
+MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:25:5-29:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/1ff0fdb95e734702585655cc96d3ad4f/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/1ff0fdb95e734702585655cc96d3ad4f/AndroidManifest.xml:2:3-17
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:33:7-39
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:28:7-39
 	android:icon
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:34:7-41
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:29:7-41
 	android:allowBackup
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:35:7-34
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:30:7-34
 	android:theme
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:36:7-38
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:31:7-38
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:32:7-38
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:27:7-38
 activity#com.hz_biss.MainActivity
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:37:7-46:18
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:32:7-41:18
 	android:label
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:39:9-41
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:34:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:41:9-51
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:36:9-51
 	android:configChanges
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:40:9-79
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:35:9-79
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:38:9-37
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:33:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:42:9-45:25
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:37:9-40:25
 action#android.intent.action.MAIN
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:43:13-65
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:38:13-65
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:43:21-62
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:38:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:44:13-73
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:39:13-73
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:44:23-70
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:39:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:47:7-84
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:42:7-84
 	android:name
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:47:17-81
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:42:17-81
 uses-sdk
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/eaac5a10e921e49d3abb02e0871ddf96/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/eaac5a10e921e49d3abb02e0871ddf96/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/04fd016415a3934b772509242b5ee65c/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/04fd016415a3934b772509242b5ee65c/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/9bcc315d1e7c25499c3880e4b7027a7c/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/9bcc315d1e7c25499c3880e4b7027a7c/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/de0f1d4f2472b44ff2670cc8b5f6068b/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/de0f1d4f2472b44ff2670cc8b5f6068b/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/10535a39661930d6c038ba476d357185/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/10535a39661930d6c038ba476d357185/AndroidManifest.xml:21:5-23:54
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/436e2a63b78e918b779d739eb49061db/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/436e2a63b78e918b779d739eb49061db/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/3934ee9aa2061e8b00efbefc8a2b3ea8/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/3934ee9aa2061e8b00efbefc8a2b3ea8/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/681771dd8514caae89a95d693436bcb6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/681771dd8514caae89a95d693436bcb6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/80a418f6f7630697099fcee1ceaefee6/AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/80a418f6f7630697099fcee1ceaefee6/AndroidManifest.xml:2:3-70
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/be599c1172f33e98d02aec00be393fed/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/be599c1172f33e98d02aec00be393fed/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/83eb69cadb40a1316a031d4cc231f0d8/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/83eb69cadb40a1316a031d4cc231f0d8/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/be674f14f5b1e39c5af911f20910b056/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/be674f14f5b1e39c5af911f20910b056/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/536233187cbc61d4e89e1af23e3d5aa9/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/536233187cbc61d4e89e1af23e3d5aa9/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/4d4d0b518947cbf36728bd562324cc55/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/4d4d0b518947cbf36728bd562324cc55/AndroidManifest.xml:21:5-23:58
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/6864c57947beeb32faf186f7493d6481/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/6864c57947beeb32faf186f7493d6481/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/ec59e52ba5c391c1e3052423358a2c49/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/ec59e52ba5c391c1e3052423358a2c49/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/232fe40c8fd5b78fca1f6f848209d42c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/232fe40c8fd5b78fca1f6f848209d42c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/fa3f76198301a943a30caebdbfa9dcaf/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/fa3f76198301a943a30caebdbfa9dcaf/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/6b1d818c438c69b9ad17b9d6b0572dc9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/c06b509f140466a76c78d9645d92d541/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/1d6bb2511f57fd7a2b636ee044170d35/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/1d6bb2511f57fd7a2b636ee044170d35/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/8256651f0b2c566cc6b336e90940d744/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/8256651f0b2c566cc6b336e90940d744/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3319e1135f5156770d71a0fe4176de3c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/3319e1135f5156770d71a0fe4176de3c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/4884ef76ff90f8b8630bac7660e4f0e9/AndroidManifest.xml:2:3-70
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:21:5-23:58
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0ebb9b22e55400d43e42480ff4171ed9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/0ebb9b22e55400d43e42480ff4171ed9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/137c4167134800cac8093a450735b5ff/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/137c4167134800cac8093a450735b5ff/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a70b8565cce5998e83cafdaa423835c5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a70b8565cce5998e83cafdaa423835c5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/49028dcf886ff0a9b3e2e6d49cf396e6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/49028dcf886ff0a9b3e2e6d49cf396e6/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:25.2.0] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/10535a39661930d6c038ba476d357185/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-60
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-60
 	android:exported
-		ADDED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-56
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-56
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
+ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
 	android:resource
-		ADDED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:17-55
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:17-55
 	android:name
-		ADDED from [:react-native-image-picker] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:17-67
 receiver#com.learnium.RNDeviceInfo.RNDeviceReceiver
-ADDED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-19:20
+ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-19:20
 	android:enabled
-		ADDED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-35
+		ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-35
 	android:exported
-		ADDED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-36
+		ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-36
 	android:name
-		ADDED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-70
+		ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-70
 intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-18:29
+ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-18:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:17-79
+ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:17-79
 	android:name
-		ADDED from [:react-native-device-info] /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:25-76
+		ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:25-76
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:20:5-81
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:20:5-81
-MERGED from [com.google.android.gms:play-services-iid:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.4.aar/d96286e8252d3fe0e82062ac1a3f27ea/AndroidManifest.xml:20:5-81
+ADDED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-15.0.1.aar/aa2559ab48d0ab982910092dd771593a/AndroidManifest.xml:23:5-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.4.aar/8cba41fe6d8b8889b8f77220eb52fa50/AndroidManifest.xml:20:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/AndroidManifest.xml:23:22-79
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/dd8f1853de39419aaca08a6d00a39e3c/AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/de0f1d4f2472b44ff2670cc8b5f6068b/AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/de0f1d4f2472b44ff2670cc8b5f6068b/AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/yangweiwei/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/de0f1d4f2472b44ff2670cc8b5f6068b/AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/35d45a501ec6dd9d4d07bd21fbda5909/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e7dbf548edc00e04c7ffd855d6e7d36f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/af77b91a59922e7d844a7fe99a1445fd/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/e8e20ab61a787a321dc14f91f4621e28/AndroidManifest.xml:27:13-51
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-50:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-45:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:26:13-58

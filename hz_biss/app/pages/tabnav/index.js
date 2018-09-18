@@ -3,10 +3,11 @@ import {
     StyleSheet,
     Text,
     View,
-    Image
+    Image,
+    BackHandler
 } from 'react-native';
 
-
+import {Toast} from 'antd-mobile-rn'
 import {
     createStackNavigator, createBottomTabNavigator
 } from 'react-navigation'
@@ -27,6 +28,7 @@ import Home from '../Home' // 首页
 import User from '../User' // 用户
 
 import Page from '../../router'
+import StackViewStyleInterpolator from "react-navigation-stack/dist/views/StackView/StackViewStyleInterpolator";
 
 
 
@@ -174,7 +176,9 @@ export const AppNavigator = createStackNavigator(
         initialRouteName:'Main',
         headerMode:'screen',
         mode:'card',
-
+        transitionConfig: (() => ({
+            screenInterpolator: StackViewStyleInterpolator.forHorizontal,
+        })),
         navigationOptions:{
             cardStack:{
                 gestruesEnabled: true  // ios 上为true， 安卓 false 手势关此屏幕
@@ -199,6 +203,8 @@ const App = reduxifyNavigator(AppNavigator, 'root')
 
 
 class Main extends PureComponent {
+
+
     render() {
         const { app, dispatch, router } = this.props;
         //if (app.loading) return <Loading />;

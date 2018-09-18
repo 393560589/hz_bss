@@ -1,4 +1,0 @@
-#Sun Sep 16 14:02:59 CST 2018
-base.0=/Users/yangweiwei/MyStudyPlace/hz_bss/hz_biss/android/app/build/intermediates/transforms/dexMerger/release/0
-path.0=classes.dex
-renamed.0=classes.dex

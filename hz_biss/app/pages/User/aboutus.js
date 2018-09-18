@@ -4,7 +4,7 @@ import {
     Text,
     StyleSheet,
     Image,
-    ScrollView
+    SafeAreaView
 } from 'react-native'
 
 import {connect} from "../../utils/dva";
@@ -21,7 +21,7 @@ export default class AboutUS extends PureComponent{
     }
     render(){
         return (
-            <View style={{flex:1}}>
+            <SafeAreaView style={{flex:1}}>
                 <List
                     border={false}
                     styles={{marginBottom:px2dp(6),marginTop:px2dp(6)}}>
@@ -47,7 +47,7 @@ export default class AboutUS extends PureComponent{
                     <Image source={set.Icons} style={{height:px2dp(160),width:px2dp(160)}}/>
                     <Text style={[styles.yutext,common.font_h2]}>进社区群扫管理员二维码</Text>
                 </View>
-            </View>
+            </SafeAreaView>
         )
     }
 }

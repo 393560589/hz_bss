@@ -155,7 +155,7 @@ export default class Users extends PureComponent {
             >
                 <View style={styles.container}>
                     <ImageBackground
-                        style={[{width:deviceWidth,height:px2dp(270),paddingTop:px2dp(50)}]}
+                        style={[{width:deviceWidth,height:px2dp(270),paddingTop:px2dp(50),paddingBottom:px2dp(10)}]}
                         source={user.topbanner}
                     >
                         <View style={styles.User_top}>

@@ -1,3 +1,4 @@
+
 import {
     Dimensions
 } from 'react-native'
@@ -33,16 +34,21 @@ export const common={
         fontWeight:'100',
     },
     defaultHeader: {
+
         headerTintColor: '#313131',
-        headerStyle: {
-            textAlign:'center',
-            fontSize:px2dp(14),
+        headerTitleStyle:{
+            flex: 1,
+            textAlign: 'center',
+            fontSize:px2dp(16),
             fontWeight:'lighter',
+        },
+        headerStyle: {
             backgroundColor: '#fff',
             elevation: 0,
             shadowOpacity: 0,
             borderBottomWidth: 0
-        }
+        },
+
     }
 };
 
