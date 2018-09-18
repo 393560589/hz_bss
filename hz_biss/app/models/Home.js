@@ -66,6 +66,7 @@ export default {
                     loading: false
                 }
             })
+            //console.log(res.res);
             if (res.status === 200) {
                 yield put({
                     type: 'updateNewsList',

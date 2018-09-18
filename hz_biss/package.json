@@ -27,6 +27,8 @@
     "buffer": "^5.1.0",
     "dva": "^2.3.1",
     "dva-loading": "^2.0.3",
+    "jcore-react-native": "^1.2.10",
+    "jpush-react-native": "^2.2.9",
     "rc-form": "^2.2.0",
     "react": "16.3.1",
     "react-dom": "^16.4.1",

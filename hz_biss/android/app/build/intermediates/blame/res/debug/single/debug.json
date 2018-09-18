@@ -36,6 +36,10 @@
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-xxhdpi/abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_jpush_richpush_btn_selector.xml.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/jpush_richpush_btn_selector.xml"
+    },
+    {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
@@ -154,6 +158,10 @@
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-xxxhdpi/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_jpush_ic_richpush_actionbar_back.png.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/jpush_ic_richpush_actionbar_back.png"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
@@ -300,6 +308,10 @@
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-ldrtl-xxhdpi/abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/layout_jpush_popwin_layout.xml.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/layout/jpush_popwin_layout.xml"
+    },
+    {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/layout/notification_media_cancel_action.xml"
     },
@@ -364,6 +376,10 @@
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-xxxhdpi/abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_richpush_actionbar_divider.png.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_richpush_actionbar_divider.png"
+    },
+    {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_out.xml.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/res/anim/catalyst_push_up_out.xml"
     },
@@ -378,6 +394,10 @@
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-xxhdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_richpush_actionbar_back.png.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_richpush_actionbar_back.png"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light.xml.flat",
@@ -430,6 +450,10 @@
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_rating_star_off_mtrl_alpha.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-xhdpi/abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_jpush_ic_richpush_actionbar_divider.png.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/jpush_ic_richpush_actionbar_divider.png"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/layout_abc_select_dialog_material.xml.flat",
@@ -490,6 +514,10 @@
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-xhdpi/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_launcher.png.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-xhdpi-v4/ic_launcher.png"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_up.xml.flat",
@@ -590,6 +618,10 @@
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-xxxhdpi/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/layout_jpush_webview_layout.xml.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/layout/jpush_webview_layout.xml"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -752,6 +784,10 @@
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/color-v23/abc_color_highlight_material.xml"
     },
     {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_launcher.png.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/ic_launcher.png"
+    },
+    {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_disabled.xml.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
@@ -850,6 +886,10 @@
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-ldrtl-xxhdpi/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_launcher.png.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-xxhdpi-v4/ic_launcher.png"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -1008,6 +1048,10 @@
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-xxhdpi/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_jpush_richpush_progressbar.xml.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/jpush_richpush_progressbar.xml"
+    },
+    {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-ldrtl-hdpi/abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -1074,6 +1118,10 @@
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_checkbox.xml.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_richpush_btn_selector.xml.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/drawable-mdpi-v4/richpush_btn_selector.xml"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_list_focused_holo.9.png.flat",
@@ -1312,6 +1360,10 @@
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_launcher.png.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/packaged_res/debug/drawable-hdpi-v4/ic_launcher.png"
+    },
+    {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_ic_clear_mtrl_alpha.png.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/drawable-mdpi/abc_ic_clear_mtrl_alpha.png"
     },
@@ -1386,6 +1438,10 @@
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view_list_item.xml.flat",
         "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/raw_keep.xml.flat",
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/packaged_res/debug/raw/keep.xml"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat",

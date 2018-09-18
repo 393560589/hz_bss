@@ -3,6 +3,7 @@ import {
     StyleSheet,
     Text,
     View,
+    Platform,
     Image,
     BackHandler
 } from 'react-native';
@@ -203,7 +204,95 @@ const App = reduxifyNavigator(AppNavigator, 'root')
 
 
 class Main extends PureComponent {
+    constructor (props) {
+        super(props)
 
+        this.state = {
+            bg: '#ffffff',
+            appkey: '40790a474d7c7e530b1bd57e',
+            imei: 'IMEI',
+            package: 'PackageName',
+            deviceId: 'DeviceId',
+            version: '1.0.0',
+            pushMsg: 'PushMessage',
+            registrationId: 'registrationId',
+            tag: '',
+            alias: ''
+        }
+
+
+    }
+    jumpSecondActivity () {
+        console.log('jump to SecondActivity')
+        // JPushModule.jumpToPushActivityWithParams('SecondActivity', {
+        //   hello: 'world'
+        // })
+        this.props.navigation.navigate('Push')
+    }
+
+
+
+
+
+    componentWillMount () {}
+
+    componentDidMount () {
+
+        return;
+     /*   if (Platform.OS === 'android') {
+            JPushModule.initPush()
+            JPushModule.getInfo(map => {
+                this.setState({
+                    appkey: map.myAppKey,
+                    imei: map.myImei,
+                    package: map.myPackageName,
+                    deviceId: map.myDeviceId,
+                    version: map.myVersion
+                })
+            })
+            JPushModule.notifyJSDidLoad(resultCode => {
+                if (resultCode === 0) {
+                }
+            })
+        } else {
+            JPushModule.setupPush()
+        }
+
+        this.receiveCustomMsgListener = map => {
+            this.setState({
+                pushMsg: map.content
+            })
+            console.log('extras: ' + map.extras)
+        }
+
+        JPushModule.addReceiveCustomMsgListener(this.receiveCustomMsgListener)
+        this.receiveNotificationListener = map => {
+            console.log('alertContent: ' + map.alertContent)
+            console.log('extras: ' + map.extras)
+        }
+        JPushModule.addReceiveNotificationListener(this.receiveNotificationListener)
+
+        this.openNotificationListener = map => {
+            console.log('Opening notification!')
+            console.log('map.extra: ' + map.extras)
+            this.jumpSecondActivity()
+        }
+        JPushModule.addReceiveOpenNotificationListener(this.openNotificationListener)
+
+        this.getRegistrationIdListener = registrationId => {
+            console.log('Device register succeed, registrationId ' + registrationId)
+        }
+        JPushModule.addGetRegistrationIdListener(this.getRegistrationIdListener)*/
+    }
+
+    componentWillUnmount () {
+/*        JPushModule.removeReceiveCustomMsgListener(this.receiveCustomMsgListener)
+        JPushModule.removeReceiveNotificationListener(this.receiveNotificationListener)
+        JPushModule.removeReceiveOpenNotificationListener(this.openNotificationListener)
+        JPushModule.removeGetRegistrationIdListener(this.getRegistrationIdListener)
+        console.log('Will clear all notifications')
+        JPushModule.clearAllNotifications()*/
+    }
 
     render() {
         const { app, dispatch, router } = this.props;
