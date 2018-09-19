@@ -16,7 +16,7 @@ export const common={
     gary_2:'#222',
     gray_1: '#111',
     gray_back:'#313131',
-    theme:'#4E8CEE',
+    theme:'#F29600',
     theme_2: '#4E8CEE',
     font_lg:px2dp(18),
     font_md:px2dp(14),

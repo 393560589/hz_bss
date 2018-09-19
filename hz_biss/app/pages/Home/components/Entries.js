@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet,TouchableOpacity } from 'react-native'
 import { px2p } from '../../../utils'
 import { common } from '../../../styles';
 
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     width: px2p(30),
     height: px2p(30),
     marginBottom: px2p(13),
+      backgroundColor:'#f1f1f1'
   },
   text: {
     textAlign: 'center',
@@ -38,12 +39,14 @@ export default function Entries(props) {
     <View style={[styles.container, props.style]}>
       {
         props.data && props.data.map(entry => (
-          <View style={styles.entry} key={entry.title}>
+          <TouchableOpacity
+              activeOpacity={0.8}
+              style={styles.entry} key={entry.title}>
             <View>
-              <Image style={styles.image} source={{uri: entry.logo}} resizeMode='contain'/>
+              <Image style={styles.image} source={{uri:`http://bitss.vip${entry.logo}`}} resizeMode='contain'/>
             </View>
             <Text style={styles.text}>{entry.title}</Text>
-          </View>
+          </TouchableOpacity>
         ))
       }
     </View>

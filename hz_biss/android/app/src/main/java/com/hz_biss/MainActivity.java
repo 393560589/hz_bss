@@ -9,6 +9,7 @@ import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import java.lang.Override;
 
 import cn.jpush.android.api.JPushInterface;
+import com.mehcode.reactnative.splashscreen.SplashScreen;
 
 public class MainActivity extends ReactActivity implements DefaultHardwareBackBtnHandler {
 
@@ -16,7 +17,9 @@ public class MainActivity extends ReactActivity implements DefaultHardwareBackBt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         JPushInterface.init(this);
+        SplashScreen.show(this, getReactInstanceManager());
         Log.i("MainActivity", "onCreate executed!");
+
     }
 
     @Override

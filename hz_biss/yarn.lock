@@ -5445,6 +5445,10 @@ rmc-trigger@1.x:
     rc-util "^4.5.1"
     rmc-align "^1.0.0"
 
+rn-splash-screen@^5.2.0:
+  version "5.2.0"
+  resolved "http://registry.npm.taobao.org/rn-splash-screen/download/rn-splash-screen-5.2.0.tgz#1ce509e27d14d3dd0949427667fbc3d2a8dd853c"
+
 rn-topview@^0.1.6:
   version "0.1.6"
   resolved "http://registry.npm.taobao.org/rn-topview/download/rn-topview-0.1.6.tgz#b1b1216caf730f8547cd23c9b918ad0288454b11"

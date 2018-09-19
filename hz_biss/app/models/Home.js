@@ -36,7 +36,8 @@ export default {
         },
 
         *getNavigation({}, {call, put}) {
-            const res = yield call(server.navigatioin)
+            const res = yield call(server.navigatioin);
+           //console.log(res.res);
             if (res.status === 200) {
                 yield put({
                     type: 'update',
