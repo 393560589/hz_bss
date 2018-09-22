@@ -37,8 +37,9 @@ const patchPostMessageJsCode = '(' + String(patchPostMessageFunction) + ')();';
 export default class Search extends PureComponent {
   static navigationOptions = ({navigation}) => {
     const { params } = navigation.state
-    if (params && params.historyList) {
+    if (params && params.historyList && params.shouldHistoryUpdate) {
       params.updateHistory(params.historyList)
+      params.shouldHistoryUpdate = false
     }
     if (params && params.keyword && params.search && !params.isHistoryVisiable) {
       params.search(params.keyword)
@@ -107,7 +108,7 @@ export default class Search extends PureComponent {
       this.setState({isWebViewVisiable: true, keyword})
       const index = historyList.findIndex(h => h === keyword)
       const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
-      this.props.navigation.setParams({historyList: [..._history], isHistoryVisiable: false, keyword: ''})
+      this.props.navigation.setParams({historyList: [..._history], isHistoryVisiable: false, keyword: '', shouldHistoryUpdate: true})
       StorageUtil.save('searchHistoty', [..._history])
     }
   }

@@ -110,7 +110,7 @@ class PhoneHeader extends PureComponent {
       } else {
         _history = [value, ...history].slice(0, 6)
       }
-      this.props.navigation.setParams({historyList: [..._history], keyword: value, isHistoryVisiable: false})
+      this.props.navigation.setParams({historyList: [..._history], keyword: value, isHistoryVisiable: false, shouldHistoryUpdate: true})
       StorageUtil.save('searchHistoty', [..._history])
     }
   }
