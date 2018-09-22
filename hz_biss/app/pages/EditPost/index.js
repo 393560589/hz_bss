@@ -97,15 +97,22 @@ export default class EditPost extends PureComponent {
 
   selectImage = () => {
     const { images } = this.state
-    ImagePicker.showImagePicker({title: '选择图片'}, response => {
+    ImagePicker.showImagePicker({title: '选择图片', quality: 0.05}, response => {
       console.log(response, 'response')
       if (response.didCancel || response.error) return
       // const _images = [response.uri, ...images].slice(0, 3)
-      const type = /.*ext=(.*)/g.exec(response.origURL)[1].toLocaleLowerCase()
+      let type = ''
+      Platform.OS === 'ios'
+        ? 'image' + /.*ext=(.*)/g.exec(response.origURL)[1].toLocaleLowerCase()
+        : response.type
+      // const type = Platform.select({
+      //   ios: 'image' + /.*ext=(.*)/g.exec(response.origURL)[1].toLocaleLowerCase(),
+      //   android: response.type
+      // })
       // this.setState({images: _images})
       //console.log(response, 'response picker')
       const formData = new FormData()
-      formData.append('file[]', {uri: response.uri, name: response.fileName, type: `image/${type}`})
+      formData.append('file[]', {uri: response.uri, name: response.fileName, type})
       uploadImage(formData)
         .then(res => {
           console.log(res)
@@ -129,8 +136,6 @@ export default class EditPost extends PureComponent {
     })
     postArticle({post_content, post_title, post_image, post_phone, id})
       .then(res => console.log(res, '发帖res'))
-    
-    
     // image.append
     // uploadImage
   }
@@ -138,7 +143,7 @@ export default class EditPost extends PureComponent {
   render() {
     return (
       <SafeAreaView flex={1}>
-      <KeyboardAvoidingView behavior="padding" style={[styles.container]} keyboardVerticalOffset={Platform.select({ios: 90, android: 50})}>
+      <KeyboardAvoidingView style={[styles.container]} keyboardVerticalOffset={Platform.select({ios: 90, android: 0})}>
         <ScrollView contentContainerStyle={{flex: 1}}>
           <View>
             <TextInput
