@@ -22,7 +22,7 @@ export default class Search extends PureComponent {
     if (params && params.historyList) {
       params.initHistory(params.historyList)
     }
-    if (params && params.keyword && params.search) {
+    if (params && params.keyword && params.search && !params.isHistoryVisiable) {
       params.search(params.keyword)
     }
     if (params && params.isHistoryVisiable && params.showHistory) {
@@ -72,7 +72,7 @@ export default class Search extends PureComponent {
     if (keyword !== '' || keyword !== undefined) {
       input = this.props.navigation.state.params.inputRef
       input.blur()
-      // this.setState({isWebViewVisiable: true, keyword})
+      this.setState({isWebViewVisiable: true, keyword})
     }
   }
 
@@ -132,7 +132,7 @@ export default class Search extends PureComponent {
   render() {
     return (
       <View flex={1} backgroundColor={'white'}>
-        {/* {this.state.isWebViewVisiable && this.renderWebView()} */}
+         {this.state.isWebViewVisiable && this.renderWebView()}
         {this.renderHistory()}
       </View>
     )

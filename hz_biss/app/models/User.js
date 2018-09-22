@@ -129,7 +129,14 @@ export default {
             callback(response)
         },
         *headerimg({callback=()=>{},payload},{call,put,select}){
-            const response = yield call(server.headerimg,payload)
+            const response = yield call(server.headerimg,payload.image,payload.phone);
+            if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
+            yield put({
+                type:'userInfo',
+                payload:{
+                    phone:payload.phone
+                }
+            });
             callback(response)
         },
         *setCity({callback=()=>{},payload},{call,put,select}){

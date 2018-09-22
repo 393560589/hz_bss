@@ -69,6 +69,7 @@ class SearchBar extends PureComponent {
           clearButtonMode={'always'}
           returnKeyType={'search'}
           onBlur={this.props.onBlur}
+          underlineColorAndroid='transparent'
         />
       </View>
     )

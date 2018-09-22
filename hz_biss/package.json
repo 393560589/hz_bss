@@ -41,6 +41,7 @@
     "react-native-svg": "^7.0.2",
     "react-native-swiper": "^1.5.13",
     "react-native-vector-icons": "^4.6.0",
+    "react-native-webview-plugin": "^1.0.1",
     "react-navigation": "^2.5.5",
     "react-navigation-backhandler": "^1.1.1",
     "react-navigation-fluid-transitions": "^0.2.6",
