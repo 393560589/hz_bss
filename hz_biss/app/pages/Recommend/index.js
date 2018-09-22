@@ -1,8 +1,7 @@
 import React from 'react';
 import {
   View,
-    TouchableOpacity,
-    WebView,Text
+    TouchableOpacity, Text
 } from 'react-native';
 import {px2dp, px2p} from '../../utils';
 import Loading from '../../components/loading'
@@ -10,7 +9,7 @@ import { common,deviceWidth } from '../../styles';
 import { AndroidBackHandler } from 'react-navigation-backhandler'
 import {connect} from "../../utils/dva";
 
-
+import WebView from 'react-native-webview-plugin'
 const patchPostMessageFunction = function() {
     var originalPostMessage = window.postMessage;
 
@@ -63,7 +62,7 @@ export default class Recommend extends React.Component {
         this.webView.goBack();
     };
     getSource() {
-       return 'http://192.168.2.185:8000'
+       return 'http://bitss.vip/dist/'
     }
     onNavigationStateChange = navState => {
         //console.log(navState)

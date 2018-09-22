@@ -1,9 +1,10 @@
 import React,{PureComponent} from 'react'
 import {
     View,Text,
-    Animated,
+    TouchableOpacity,
     StyleSheet,
-    Image,ScrollView
+    Image,ScrollView,
+    Platform
 } from 'react-native'
 import { Modal,Picker,ActionSheet } from 'antd-mobile-rn'
 import { List,ListItem } from '../../components/ListItem'
@@ -14,6 +15,7 @@ import {user} from "../../config/image"
 
 import ImagePicker from 'react-native-image-picker'
 import {AndroidBackHandler} from 'react-navigation-backhandler'
+import {headerimg} from "../../servers";
 const prompt = Modal.prompt;
 const operation = Modal.operation;
 
@@ -79,25 +81,15 @@ class SetUser extends PureComponent{
             if(buttonIndex === 0){
                 ImagePicker.launchCamera(options, (response)  => {
                     // Same code as in above section!
-                    console.log(response)
-
+                    console.log(response);
+                    this.takeImage(response,phone,dispatch)
                 });
             }
             if(buttonIndex === 1){
                 ImagePicker.launchImageLibrary(options, (response)  => {
-                    // Same code as in above section!
-                    response.name='image';
-                    parmas.append('image',response)
-                    dispatch({
-                        type:'User/headerimg',
-                        payload:{
-                            phone:phone,
-                            image:parmas
-                        },
-                        callback:(data)=>{
-                            console.log(data)
-                        }
-                    })
+                    // Same code as in above section
+                    this.takeImage(response,phone,dispatch)
+
                 });
             }
 
@@ -106,6 +98,30 @@ class SetUser extends PureComponent{
 
 
 
+    };
+    takeImage(response,phone,dispatch){
+
+        if (response.didCancel || response.error) return
+        // const _images = [response.uri, ...images].slice(0, 3)
+        let type
+        Platform.OS === 'ios' ?type = /.*ext=(.*)/g.exec(response.origURL)[1].toLocaleLowerCase():
+            type=response.type;
+
+        // this.setState({images: _images})
+       // console.log(response, 'response picker')
+        const formData = new FormData()
+        formData.append('image', {uri: response.uri, name: response.fileName, type})
+        headerimg(formData,phone)
+            .then(res => {
+                console.log(res)
+                dispatch({
+                    type:'User/userInfo',
+                    payload:{
+                        phone
+                    }
+                })
+            })
+            .catch(e => console.warn(e))
     }
     onBackButtonPressAndroid=()=>{
         this.props.navigation.pop()
@@ -114,20 +130,20 @@ class SetUser extends PureComponent{
     render(){
         const {dispatch,userInfo} = this.props;
         //const { getFieldProps } = this.props.form;
+        let headSource= userInfo && userInfo.headimgurl? {
+            uri:`http://bitss.vip${userInfo.headimgurl}`
+        }:user.header;
         return (
             <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
                 <View>
                     <List styles={{marginTop:px2dp(6)}}>
-                        <ListItem
-                            Icons={'arrow'}
-                            styles={{paddingTop:px2dp(4),paddingBottom:px2dp(4)}}
-                              extra={
-                                  <Image style={{width:px2dp(46),height:px2dp(46)}}
-                                         source={{uri:`${userInfo.headimgurl}`}}/>
-                              }
-                              onClick={() => {this.chooseAction()}}>
-                           头像
-                        </ListItem>
+                       <TouchableOpacity
+                           activeOpacity={0.9}
+                           style={styles.bt} onPress={()=>this.chooseAction()}>
+                           <Text>头像</Text>
+                           <Image style={{width:px2dp(60),height:px2dp(60),borderRadius:1000}}
+                                  source={headSource}/>
+                       </TouchableOpacity>
                     </List>
 
                     <List border={false}>
@@ -176,6 +192,16 @@ const styles = StyleSheet.create({
         minWidth:deviceWidth,
         flexWrap:'nowrap',
         flexDirection:'row'
+    },
+    bt:{
+        marginTop:px2dp(10),
+        backgroundColor:'#fff',
+        flexDirection:'row',
+        justifyContent:'space-between',
+        paddingLeft:px2dp(10),
+        paddingRight:px2dp(10),
+        height:px2dp(70),
+        alignItems:'center'
     }
 })
 

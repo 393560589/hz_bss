@@ -15,6 +15,7 @@ import Header from '../../components/SearchHeader'
 import { px2p } from '../../utils';
 import { StorageUtil } from '../../utils/storage';
 import { connect } from 'dva'
+import {deviceWidth} from "../../styles";
 
 
 const patchPostMessageFunction = function() {
@@ -201,12 +202,13 @@ export default class Search extends PureComponent {
       <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
         <WebView
           ref={view => this.webView = view}
-          source={{uri: `http://192.168.2.201:8000/SearchResult?keyword=${keyword}`}}
+          source={{uri: `http://bitss.vip/dist/SearchResult?keyword=${keyword}`}}
           onMessage={this.onMessage}
+          style={{width:deviceWidth,backgroundColor:'#fff'}}
           injectedJavaScript={patchPostMessageJsCode}
           // onLoadStart={() => console.log('start load')}
-        >
-        </WebView>
+        />
+
       </View>
     )
   }
