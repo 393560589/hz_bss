@@ -21,7 +21,7 @@ import SplashScreen from "rn-splash-screen";
 import {BoxShadow} from 'react-native-shadow'
 const alert = Modal.alert;
 
-@connect(({home}) => ({...home}))
+@connect(({home, search}) => ({...home, ...search}))
 class Home extends Component {
   constructor(props) {
     super(props)
@@ -131,6 +131,26 @@ class Home extends Component {
     )
   }
 
+  onHotkeyClick = async (keyword) => {
+    // let _history = []
+    // const history = await StorageUtil.get('searchHistory')
+    await this.props.dispatch({
+      type: 'search/updateHistory'
+    })
+    await this.props.dispatch({
+      type: 'search/saveHistory',
+      payload: keyword
+    })
+    // const index = history.findIndex(h => h === keyword)
+    // if (index !== -1) {
+    //   _history = [keyword].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
+    // } else {
+    //   _history = [keyword, ...history].slice(0, 6)
+    // }
+    this.props.navigation.navigate('Search', {keyword, isHistoryVisiable: false})
+    // StorageUtil.save('searchHistory', [..._history])
+  }
+
   renderSearchItems = () => {
     return (
       <View style={styles.searchItems}>
@@ -138,7 +158,7 @@ class Home extends Component {
           this.props.hotKey.map((searchItem,index) => (
                 <TouchableOpacity
                     key={searchItem.hot_keyword}
-                    onPress={() => this.props.navigation.navigate('EditPost', {title: searchItem.hot_keyword})}>
+                    onPress={() => this.onHotkeyClick(searchItem.hot_keyword)}>
                     {/* // onPress={() => this.props.navigation.navigate('Search', {key: searchItem.hot_keyword})}> */}
                     <View
                     style={{borderRadius: px2p(11), height: px2p(22), backgroundColor: '#F2F2F5', marginRight: px2p(10), marginBottom: px2p(5)}}>
