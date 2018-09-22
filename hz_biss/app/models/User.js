@@ -147,7 +147,7 @@ export default {
         *signin({callback=()=>{},payload},{call,put,select}){
             const { phone } = yield select(state => state.User);
             const response = yield call(server.signin,payload);
-            console.log(response);
+            //console.log(response);
             yield put({
                 type:'userInfo',
                 payload:{

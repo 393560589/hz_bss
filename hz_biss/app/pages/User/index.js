@@ -115,9 +115,11 @@ export default class Users extends PureComponent {
         !islogin && this.props.navigation.navigate('Login');
     }
     signin(){
-        const {dispatch,phone} = this.props;
+        const {dispatch,phone,userInfo,islogin} = this.props;
         this.islogin();
+        userInfo.sign === '已签到' && Toast.info('您已签到');
 
+        ( userInfo.sign === '未签到' && islogin ) &&
         dispatch({
             type:'User/signin',
             payload:{
@@ -224,7 +226,9 @@ export default class Users extends PureComponent {
                                     style={[styles.top_item]}
                                     onPress={()=>this.signin()}
                                 >
-                                   <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>签到</Text>
+                                   <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>{
+                                       userInfo && userInfo.sign
+                                   }</Text>
                                   <Image source={user.qd} style={styles.Iconstyle}/>
                                </TouchableOpacity>
                                 <Line/>
