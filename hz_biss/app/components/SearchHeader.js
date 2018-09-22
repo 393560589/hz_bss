@@ -102,8 +102,14 @@ class PhoneHeader extends PureComponent {
   onSubmit = async ({nativeEvent}) => {
     const value = nativeEvent.text
     if (value) {
+      let _history = []
       const history = await StorageUtil.get('searchHistoty')
-      const _history = [value, ...history].slice(0, 6)
+      const index = history.findIndex(h => h === value)
+      if (index !== -1) {
+        _history = [value].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
+      } else {
+        _history = [value, ...history].slice(0, 6)
+      }
       this.props.navigation.setParams({historyList: [..._history], keyword: value, isHistoryVisiable: false})
       StorageUtil.save('searchHistoty', [..._history])
     }

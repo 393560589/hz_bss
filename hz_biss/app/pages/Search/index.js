@@ -17,13 +17,29 @@ import { StorageUtil } from '../../utils/storage';
 import { connect } from 'dva'
 
 
+const patchPostMessageFunction = function() {
+  var originalPostMessage = window.postMessage;
+
+  var patchedPostMessage = function(message, targetOrigin, transfer) { 
+    originalPostMessage(message, targetOrigin, transfer);
+  };
+
+  patchedPostMessage.toString = function() { 
+    return String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');
+  };
+
+  window.postMessage = patchedPostMessage;
+};
+
+const patchPostMessageJsCode = '(' + String(patchPostMessageFunction) + ')();';
+
 @connect(({User}) => ({...User}))
 export default class Search extends PureComponent {
   static navigationOptions = ({navigation}) => {
     const { params } = navigation.state
-    // if (params && params.historyList) {
-    //   params.initHistory(params.historyList)
-    // }
+    if (params && params.historyList) {
+      params.updateHistory(params.historyList)
+    }
     if (params && params.keyword && params.search && !params.isHistoryVisiable) {
       params.search(params.keyword)
     }
@@ -47,18 +63,25 @@ export default class Search extends PureComponent {
   }
 
   componentDidMount() {
-    this.props.navigation.setParams({search: this.search, showHistory: this.showHistory, headerType: 0})
-    this.initHistory()
+    this.props.navigation.setParams({updateHistory: this.updateHistory, search: this.search, showHistory: this.showHistory, headerType: 0, backAction: this.webViewBack})
+    // this.initHistory()
   }
 
+  webViewBack = () => {
+    this.webView.goBack()
+  }
+
+  updateHistory = (history) => {
+    this.setState({historyList: history})
+  }
   // loadHistory = async () => {
   //   const history = await StorageUtil.get('searchHistoty')
   // }
 
- initHistory = async () => {
-  const history = await StorageUtil.get('searchHistoty')
-    this.setState({historyList: history})
-  }
+//  initHistory = async () => {
+//   const history = await StorageUtil.get('searchHistoty')
+//     this.setState({historyList: history})
+//   }
 
   toggleInputState = () => {
     this.setState((prev) => ({isInputFocus: !prev.isInputFocus}))
@@ -77,10 +100,15 @@ export default class Search extends PureComponent {
   }
 
   search = (keyword) => {
+    const { historyList } = this.state
     if (keyword !== '' || keyword !== undefined) {
       input = this.props.navigation.state.params.inputRef
       input.blur()
       this.setState({isWebViewVisiable: true, keyword})
+      const index = historyList.findIndex(h => h === keyword)
+      const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
+      this.props.navigation.setParams({historyList: [..._history], isHistoryVisiable: false, keyword: ''})
+      StorageUtil.save('searchHistoty', [..._history])
     }
   }
 
@@ -92,12 +120,28 @@ export default class Search extends PureComponent {
     console.log(nativeEvent)
     console.log(JSON.parse(nativeEvent.data))
     const res = JSON.parse(nativeEvent.data)
-    if (res.type === 'post') {
-      if (!this.props.isLogin) { //gai
-        this.props.navigation.navigate('EditPost', {id: res.id})
-      } else {
-        this.props.navigation.navigate('Login')
-      }
+    // if (res.type === 'post') {
+    //   if (!this.props.isLogin) { //gai
+    //     this.props.navigation.navigate('EditPost', {id: res.id})
+    //   } else {
+    //     this.props.navigation.navigate('Login')
+    //   }
+    // }
+    console.log(res.type, 'type')
+    switch (res.type) {
+      case 'post':
+        if (!this.props.isLogin) { //gai
+          this.props.navigation.navigate('EditPost', {id: res.id})
+        } else {
+          this.props.navigation.navigate('Login')
+        }
+        break
+      case 'leave':
+        this.props.navigation.setParams({headerType: 1, keyword: ''})
+        break
+      case 'enter':
+      this.props.navigation.setParams({headerType: 0, keyword: ''})
+        break
     }
   }
 
@@ -138,8 +182,11 @@ export default class Search extends PureComponent {
     return (
       <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
         <WebView
+          ref={view => this.webView = view}
           source={{uri: `http://192.168.2.201:8000/SearchResult?keyword=${keyword}`}}
           onMessage={this.onMessage}
+          injectedJavaScript={patchPostMessageJsCode}
+          // onLoadStart={() => console.log('start load')}
         >
         </WebView>
       </View>

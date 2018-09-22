@@ -43,6 +43,21 @@ const instance = axios.create({
 
 //添加请求拦截器
 
+
+instance.interceptors.request.use(
+    async config => {
+        console.log(config, '请求拦截')
+        //let data = await StorageUtil.get(StringName.USER_INFO);
+        //if(!data) return config;
+        //let base = new Buffer(data.tokenId+':'+data.token).toString('base64');
+        //config.headers.Authorization ='Basic ' + base;
+        return config;
+    },
+    err => {
+        return Promise.reject(err);
+    });
+
+
 instance.interceptors.response.use(response=>{
 
     try{
