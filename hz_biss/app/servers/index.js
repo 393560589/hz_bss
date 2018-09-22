@@ -43,7 +43,8 @@ export const findpass=(params)=>{
     return instance.post(API.findpass,params)
 }
 export const headerimg=(params,phone)=>{
-    return instance.post(`http://bitss.vip/mobile/${API.headerimg}?phone=${phone}`,params)
+    return instance.post(`${API.headerimg}?phone=${phone}`,params)
+   // return instance.post(`http://bitss.vip/mobile/${API.headerimg}?phone=${phone}`,params)
 }
 export const setCity = (params)=>{
     return instance.post(API.setCity,params)

@@ -165,6 +165,9 @@ export default class Users extends PureComponent {
     }
     render() {
         const {islogin,userInfo} = this.props;
+        let headSource = userInfo && userInfo.headimgurl ? {
+            uri:`http://bitss.vip${userInfo.headimgurl}`
+        }:user.header;
         return (
             <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
                 <ScrollView style = {{flex:1,backgroundColor:'#f1f1f1'}}
@@ -189,8 +192,8 @@ export default class Users extends PureComponent {
                                     activeOpacity={0.9}
                                 >
                                     <Image
-                                        style={{width:px2dp(90),height:px2dp(90)}}
-                                        source={islogin ? user.header : user.tx}
+                                        style={{width:px2dp(90),height:px2dp(90),borderRadius:1000}}
+                                        source={islogin ? headSource: user.tx}
                                     />
                                 </TouchableOpacity>
 

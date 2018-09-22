@@ -22,12 +22,14 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   title: {
+      textAlignVertical: 'top',
     fontSize: px2p(18),
     paddingVertical: px2p(8),
     margin: px2p(10),
     marginVertical: px2p(20)
   },
   content: {
+      textAlignVertical: 'top',
     fontSize: px2p(15),
     height: px2p(200),
     padding: px2p(25)
@@ -101,7 +103,7 @@ export default class EditPost extends PureComponent {
       // const _images = [response.uri, ...images].slice(0, 3)
       const type = /.*ext=(.*)/g.exec(response.origURL)[1].toLocaleLowerCase()
       // this.setState({images: _images})
-      console.log(response, 'response picker')
+      //console.log(response, 'response picker')
       const formData = new FormData()
       formData.append('file[]', {uri: response.uri, name: response.fileName, type: `image/${type}`})
       uploadImage(formData)
@@ -140,12 +142,14 @@ export default class EditPost extends PureComponent {
         <ScrollView contentContainerStyle={{flex: 1}}>
           <View>
             <TextInput
+                underlineColorAndroid='transparent'
               ref={view => this.title = view}
               style={styles.title}
               autoFocus={true}
               placeholder="加个标题哟～"
             />
             <TextInput
+                underlineColorAndroid='transparent'
               ref={view => this.content = view}
               style={styles.content}
               placeholder="来吧，尽情发挥吧..."

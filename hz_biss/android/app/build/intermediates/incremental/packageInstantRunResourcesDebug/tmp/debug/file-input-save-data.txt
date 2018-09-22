@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Sep 19 16:28:47 CST 2018
+#Sat Sep 22 19:50:00 CST 2018
 4.path=fonts/Ionicons.ttf
 8.set=ASSET
 6.path=fonts/Foundation.ttf

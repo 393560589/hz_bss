@@ -73,7 +73,7 @@ class Login extends PureComponent {
                 phone:this.state.phone,
             },
             callback:(data)=>{
-                Toast.success('登录成功')
+                Toast.success('登录成功',2,null,false)
                 navigation.pop();
             }
         })
