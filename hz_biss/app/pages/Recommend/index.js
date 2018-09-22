@@ -5,19 +5,40 @@ import {
     WebView,Text
 } from 'react-native';
 import {px2dp, px2p} from '../../utils';
+import Loading from '../../components/loading'
 import { common,deviceWidth } from '../../styles';
 import { AndroidBackHandler } from 'react-navigation-backhandler'
+import {connect} from "../../utils/dva";
+
+
+const patchPostMessageFunction = function() {
+    var originalPostMessage = window.postMessage;
+
+    var patchedPostMessage = function(message, targetOrigin, transfer) {
+        originalPostMessage(message, targetOrigin, transfer);
+    };
+
+    patchedPostMessage.toString = function() {
+        return String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');
+    };
+    window.postMessage = patchedPostMessage;
+};
+
+const patchPostMessageJsCode = '(' + String(patchPostMessageFunction) + ')();';
+
+@connect(({User})=>({...User}))
 export default class Recommend extends React.Component {
   constructor() {
       super()
   }
     state={
-      loading:false
+      loading:true
     }
     static navigationOptions = ({ navigation }) => {
+        const HeaderType= navigation.state.params && navigation.state.params.headerType;
         return {
             headerTitle: '币讯',   //导航标题
-            headerLeft: (
+            headerLeft: HeaderType === 1 &&(
                 <TouchableOpacity
                     activeOpacity={1}
                     onPress={() => {
@@ -30,7 +51,7 @@ export default class Recommend extends React.Component {
                 </TouchableOpacity>
             ),
             //导航左与导航右是为了让导航标题居中(Why?)
-            headerRight: <View style={{ paddingRight: 20 }} />
+            headerRight: HeaderType === 1 && (<View style={{ paddingRight: 20 }} />)
         };
     };
     componentDidMount(){
@@ -57,21 +78,38 @@ export default class Recommend extends React.Component {
             this.webView.goBack();
             return true;
         } else {
-            return false;
+            this.props.navigation.navigate('Home')
+            return true;
         }
+    }
+    startloading=()=>{
+        console.log('开始处理')
+    };
+    onMessage = ({nativeEvent}) => {
+        const res = JSON.parse(nativeEvent.data);
+        switch (res.type) {
+            case 'leave':
+                this.props.navigation.setParams({headerType: 1, keyword: ''})
+                break
+            case 'enter':
+                this.props.navigation.setParams({headerType: 0, keyword: ''})
+                break
+        }
+
     }
   render() {
     return (
         <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <View style={{flex:1}}>
+               {/* <Loading/>*/}
                 <WebView
-                    onLoadStart={()=>{this.setState({loading:true})}}
-                    onLoadEnd={()=>this.setState({loading:false})}
-                    startInLoadingState={this.state.loading}
+                    //startInLoadingState={this.state.loading}
+                    onMessage={this.onMessage}
                     source={{ uri: this.getSource() }}
                     style={{width:deviceWidth,backgroundColor:'#fff'}}
                     ref={(webView)=> this.webView = webView}
                     onNavigationStateChange={this.onNavigationStateChange}
+                    injectedJavaScript={patchPostMessageJsCode}
                     //onShouldStartLoadWithRequest={(ev)=>console.log(ev)}
                 />
             </View>

@@ -1,4 +1,5 @@
 import {instance} from '../utils/axios'
+import axios from 'axios'
 import { API } from '../config/keyword'
 //http://bitss.vip/mobile/MobileInterface/broadcast_img
 export const code=(params)=>{
@@ -42,8 +43,7 @@ export const findpass=(params)=>{
     return instance.post(API.findpass,params)
 }
 export const headerimg=(params,phone)=>{
-    console.log(params);
-    return instance.post(`${API.headerimg}?phone=${phone}`,params)
+    return instance.post(`http://bitss.vip/mobile/${API.headerimg}?phone=${phone}`,params)
 }
 export const setCity = (params)=>{
     return instance.post(API.setCity,params)

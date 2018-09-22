@@ -13,7 +13,7 @@ export default {
         islogin:false,
         phone:'',
         server:[],
-        erm:'',
+        erm:false,
         loading: false
     },
     reducers: {

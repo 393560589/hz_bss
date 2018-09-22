@@ -35,7 +35,7 @@ export default {
             callback(response)
         },
 
-        *getNavigation({}, {call, put}) {
+        *getNavigation({callback=()=>{}}, {call, put}) {
             const res = yield call(server.navigatioin);
            //console.log(res.res);
             if (res.status === 200) {
@@ -46,6 +46,7 @@ export default {
                         nav: res.res.nav
                     }
                 })
+                callback(res);
                 // yield put({
                 //     type: 'update',
                 //     payload: res.res.nav

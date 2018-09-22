@@ -16,6 +16,9 @@
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-svg/android/react-native-svg.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-svg/android/react-native-svg.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-webview-plugin/android/react-native-webview-plugin.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-webview-plugin/android/react-native-webview-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-webview-plugin/android/react-native-webview-plugin.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-webview-plugin/android/react-native-webview-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/rn-splash-screen/android/rn-splash-screen.iml" filepath="$PROJECT_DIR$/../node_modules/rn-splash-screen/android/rn-splash-screen.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/rn-splash-screen/android/rn-splash-screen.iml" filepath="$PROJECT_DIR$/../node_modules/rn-splash-screen/android/rn-splash-screen.iml" />
     </modules>
   </component>

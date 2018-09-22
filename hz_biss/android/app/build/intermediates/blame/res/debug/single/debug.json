@@ -701,7 +701,7 @@
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
-        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/packaged_res/debug/xml/provider_paths.xml"
+        "source": "/Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/packaged_res/debug/xml/provider_paths.xml"
     },
     {
         "merged": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_list_focused_holo.9.png.flat",

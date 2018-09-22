@@ -18,7 +18,7 @@
     "preset": "react-native"
   },
   "dependencies": {
-    "antd-mobile": "^2.2.0",
+    "antd-mobile": "^2.2.5",
     "antd-mobile-area-data": "^1.1.0",
     "antd-mobile-rn": "^2.2.1",
     "axios": "^0.18.0",
@@ -40,6 +40,7 @@
     "react-native-storage": "^0.2.2",
     "react-native-svg": "^7.0.2",
     "react-native-swiper": "^1.5.13",
+    "react-native-switch-pro": "^1.0.1-beta",
     "react-native-vector-icons": "^4.6.0",
     "react-native-webview-plugin": "^1.0.1",
     "react-navigation": "^2.5.5",

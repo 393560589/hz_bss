@@ -123,7 +123,7 @@ class SetUser extends PureComponent{
                             styles={{paddingTop:px2dp(4),paddingBottom:px2dp(4)}}
                               extra={
                                   <Image style={{width:px2dp(46),height:px2dp(46)}}
-                                         source={userInfo && user.tx}/>
+                                         source={{uri:`${userInfo.headimgurl}`}}/>
                               }
                               onClick={() => {this.chooseAction()}}>
                            头像

@@ -35,6 +35,7 @@ export default class AboutUS extends PureComponent{
     }
     render(){
         const {server,erm} = this.props;
+        console.log(erm);
         return (
             <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
                 <SafeAreaView style={{flex:1}}>
@@ -45,7 +46,9 @@ export default class AboutUS extends PureComponent{
                                     key={index}
                                     border={false}
                                     styles={{marginBottom:px2dp(6),marginTop:index === 0 ? px2dp(6):0}}>
-                                    <ListItem extra={item.content}>
+                                    <ListItem extra={
+                                        <Text>{item.content}</Text>
+                                    }>
                                         {item.title}
                                     </ListItem>
                                 </List>
@@ -53,8 +56,9 @@ export default class AboutUS extends PureComponent{
                         })
                     }
                     <View style={styles.Icon_wrap}>
-
-                        {erm && <Image source={{uri:`${erm}`}} style={{height:px2dp(160),width:px2dp(160)}}/>}
+                        {
+                            erm && <Image source={{uri:`${erm}`}} style={{height:px2dp(160),width:px2dp(160)}}/>
+                        }
                         <Text style={[styles.yutext,common.font_h2]}>官方微信二维码</Text>
                     </View>
                 </SafeAreaView>

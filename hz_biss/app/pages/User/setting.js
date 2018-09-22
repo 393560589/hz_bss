@@ -27,11 +27,11 @@ export default class Setting extends PureComponent{
                 islogin:false
             },
             callback:()=>{
-                Toast.success('登出账号了...');
+                Toast.success('已登出',2,null,false);
                 StorageUtil.delete('phone');
                 setTimeout(()=>{
                     navigation.pop()
-                },500)
+                },1000)
             }
         })
     }

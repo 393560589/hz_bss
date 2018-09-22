@@ -117,7 +117,7 @@ export default class Users extends PureComponent {
     signin(){
         const {dispatch,phone,userInfo,islogin} = this.props;
         this.islogin();
-        userInfo.sign === '已签到' && Toast.info('您已签到');
+        userInfo.sign === '已签到' && Toast.info('您已签到',2,null,false);
 
         ( userInfo.sign === '未签到' && islogin ) &&
         dispatch({
@@ -227,7 +227,7 @@ export default class Users extends PureComponent {
                                     onPress={()=>this.signin()}
                                 >
                                    <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>{
-                                       userInfo && userInfo.sign
+                                       userInfo ? userInfo.sign :'未签到'
                                    }</Text>
                                   <Image source={user.qd} style={styles.Iconstyle}/>
                                </TouchableOpacity>

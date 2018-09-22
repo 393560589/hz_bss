@@ -6,7 +6,7 @@ import React,{Component} from 'react'
 import {
     Platform
 } from 'react-native';
-//var DeviceInfo = require('react-native-device-info');
+var DeviceInfo = require('react-native-device-info');
 
 import axios from 'axios';
 import { StorageUtil } from "./storage";
@@ -21,8 +21,8 @@ import { StringName } from '../config/keyword'
  */
 const MOCK_AUTH_ADMIN = 'http://bitss.vip/mobile/';
 //http://bitss.vip/mobile/
-/*
 
+/*
 const Tool = {
     projectName: '1',   //2
     projectVersion: '1.0.0',
@@ -35,27 +35,13 @@ const Tool = {
 Tool.ua = Tool.projectName + ';'+ Tool.projectVersion +';'+ Tool.bundleVersion +';'+ Tool.APIVersion +';'+ Tool.platform +';' + Tool.deviceId;
 */
 
-const instance = axios.create({
-    // withCredentials:true,
-    timeout:100000,
-    baseURL:MOCK_AUTH_ADMIN,
+StorageUtil.save('version',DeviceInfo.getVersion());
 
+const instance = axios.create({
+    baseURL:MOCK_AUTH_ADMIN,
 })
 
 //添加请求拦截器
-
-instance.interceptors.request.use(
-    async config => {
-        //let data = await StorageUtil.get(StringName.USER_INFO);
-        //if(!data) return config;
-        //let base = new Buffer(data.tokenId+':'+data.token).toString('base64');
-        //config.headers.Authorization ='Basic ' + base;
-        return config;
-    },
-    err => {
-        return Promise.reject(err);
-    });
-
 
 instance.interceptors.response.use(response=>{
 

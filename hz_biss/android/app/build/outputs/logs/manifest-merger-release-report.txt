@@ -18,6 +18,7 @@ ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifes
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-27:12
 MERGED from [:rn-splash-screen] /Users/JerryC/Desktop/bss/hz_biss/node_modules/rn-splash-screen/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
 MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-60:12
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-104:12
@@ -126,22 +127,30 @@ MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:18:22-86
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:5-81
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-81
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-81
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:21:5-81
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:21:5-81
 	android:name
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:5-80
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:12:5-80
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:12:5-80
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:22:5-80
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:22:5-80
 	android:name
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:22:22-77
 uses-permission#android.permission.CAMERA
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:5-65
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:5-65
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:5-65
 	android:name
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:22-62
 application
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:26:5-51:19
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:15:5-25:19
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:15:5-25:19
 MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-58:19
 MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-58:19
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:38:5-102:19
@@ -224,6 +233,8 @@ uses-sdk
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
 MERGED from [:rn-splash-screen] /Users/JerryC/Desktop/bss/hz_biss/node_modules/rn-splash-screen/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
 MERGED from [:rn-splash-screen] /Users/JerryC/Desktop/bss/hz_biss/node_modules/rn-splash-screen/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
 MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
@@ -296,6 +307,22 @@ INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidMani
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+provider#android.support.v4.content.FileProvider
+ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:16:9-24:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:20:13-47
+	android:authorities
+		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:18:13-60
+	android:exported
+		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:17:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:21:13-23:58
+	android:resource
+		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:23:17-55
+	android:name
+		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/release/AndroidManifest.xml:22:17-67
 service#cn.jpush.android.service.PushService
 ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/release/AndroidManifest.xml:16:9-26:19
 	android:enabled
@@ -548,12 +575,6 @@ ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_m
 		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:15:13-37
 	android:name
 		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:13-56
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:17:13-19:58
-	android:resource
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:19:17-55
-	android:name
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:18:17-67
 receiver#com.learnium.RNDeviceInfo.RNDeviceReceiver
 ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/release/AndroidManifest.xml:12:9-19:20
 	android:enabled

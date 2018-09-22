@@ -16,6 +16,7 @@ import { px2p } from '../../utils';
 import { StorageUtil } from '../../utils/storage';
 import { connect } from 'dva'
 
+
 @connect(({User}) => ({...User}))
 export default class Search extends PureComponent {
   static navigationOptions = ({navigation}) => {

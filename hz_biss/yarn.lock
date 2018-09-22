@@ -612,7 +612,7 @@ antd-mobile-rn@^2.2.1:
     rmc-tabs "~1.2.0"
     rn-topview "^0.1.6"
 
-antd-mobile@^2.2.0:
+antd-mobile@^2.2.5:
   version "2.2.5"
   resolved "http://registry.npm.taobao.org/antd-mobile/download/antd-mobile-2.2.5.tgz#f9a57e30df3799df9f2b58769633552633570874"
   dependencies:
@@ -4854,6 +4854,12 @@ react-native-swipeout@^2.2.2:
 react-native-swiper@^1.5.13:
   version "1.5.13"
   resolved "http://registry.npm.taobao.org/react-native-swiper/download/react-native-swiper-1.5.13.tgz#fa695cd4ab77b9a9df2d2bfee38ea7274dd07a2e"
+  dependencies:
+    prop-types "^15.5.10"
+
+react-native-switch-pro@^1.0.1-beta:
+  version "1.0.1-beta"
+  resolved "http://registry.npm.taobao.org/react-native-switch-pro/download/react-native-switch-pro-1.0.1-beta.tgz#7d4d5852c201c1dfa0b16e9265d06ba54141339b"
   dependencies:
     prop-types "^15.5.10"
 

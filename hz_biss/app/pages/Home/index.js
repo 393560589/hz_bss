@@ -11,6 +11,7 @@ import {
   ActivityIndicator
 } from 'react-native';
 import Swiper from 'react-native-swiper'
+import {Modal} from 'antd-mobile-rn'
 import Entires from './components/Entries'
 import { connect } from '../../utils/dva';
 import { px2p } from '../../utils';
@@ -18,6 +19,7 @@ import { common } from '../../styles';
 import {StorageUtil} from "../../utils/storage";
 import SplashScreen from "rn-splash-screen";
 import {BoxShadow} from 'react-native-shadow'
+const alert = Modal.alert;
 
 @connect(({home}) => ({...home}))
 class Home extends Component {
@@ -62,7 +64,18 @@ class Home extends Component {
           })
       })
     dispatch({
-        type: 'home/getNavigation'
+        type: 'home/getNavigation',
+        callback:(data)=>{
+            StorageUtil.get('version').then(res=>{
+                console.log(res);
+                if(res !== data.version) {
+                    alert('有版本更新', '下载最新版', [
+                        { text: '取消', onPress: () => console.log('已取消') },
+                        { text: '下载', onPress: () => console.log('下载啦')},
+                    ])
+                }
+            })
+        }
     })
 
     this.fetchNews()
