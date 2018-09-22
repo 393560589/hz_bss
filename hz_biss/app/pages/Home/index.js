@@ -141,7 +141,14 @@ class Home extends Component {
                     onPress={() => this.props.navigation.navigate('EditPost', {title: searchItem.hot_keyword})}>
                     {/* // onPress={() => this.props.navigation.navigate('Search', {key: searchItem.hot_keyword})}> */}
                     <View
-                    style={{borderRadius: px2p(11), height: px2p(22), backgroundColor: '#F2F2F5', marginRight: px2p(10), marginBottom: px2p(5)}}>
+                        style={{
+                            borderRadius: px2p(11),
+                            height: px2p(22),
+                            backgroundColor: '#F2F2F5',
+                            marginRight: px2p(10),
+                            alignItems:'center',
+                            flexDirection:'row',
+                            marginBottom: px2p(5)}}>
                     <Text style={[styles.searchItem, index < 3 && {color: '#F29600'}]}>{searchItem.hot_keyword}</Text>
                     </View>
                 </TouchableOpacity>
@@ -150,10 +157,25 @@ class Home extends Component {
       </View>
     )
   }
+    openWebView(url){
+        this.props.dispatch({
+            type:'home/ToWebview',
+            payload:{
+                webviewUrl:url
+            },
+            callback:()=>{
+                this.props.navigation.navigate('WebViews')
+            }
+        });
 
-  renderNewsCell = ({title, resource, time_num, thubmnail}) => {
+    }
+  renderNewsCell = ({title, resource, time_num, thubmnail,url}) => {
+      console.log(this);
     return (
-      <View style={styles.newsCellContainer}>
+      <TouchableOpacity
+          activeOpacity={0.8}
+          onPress={()=>this.openWebView(url)}
+          style={styles.newsCellContainer}>
         <View flex={1} style={{justifyContent: 'space-between'}}>
           <Text numberOfLines={2} style={{fontSize: px2p(15), color: '#070002'}}>{title}</Text>
           <View style={{flexDirection: 'row', opacity: 0.6}}>
@@ -162,7 +184,7 @@ class Home extends Component {
           </View>
         </View>
         {thubmnail && <Image source={thubmnail} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
-      </View>
+      </TouchableOpacity>
     )
   }
 
@@ -198,7 +220,8 @@ class Home extends Component {
             {this.renderSearchBar()}
             {this.renderSearchItems()}
           </View>
-          <Entires data={this.props.nav} style={{top: px2p(-50)}}/>
+
+          <Entires data={this.props.nav} style={{top: px2p(-50)}} { ...this.props}/>
           {this.renderNews()}
           <View style={styles.loadMoreView}>
             {this.state.isLoading
@@ -260,7 +283,6 @@ const styles = StyleSheet.create({
   },
   searchItem: {
     fontSize: px2p(12),
-    padding: px2p(5),
     paddingLeft: px2p(10),
     paddingRight: px2p(10),
     textAlign: 'center',

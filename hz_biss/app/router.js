@@ -20,7 +20,8 @@ import Search from './pages/Search'
 import SetName from './pages/User/setname'
 import EditPost from './pages/EditPost'
 import {px2dp} from "./utils";
-
+import WebViews from './pages/WebView'
+import Entries from './pages/Home/components/Entries'
 export default {
     Login: {
         screen: Login,
@@ -77,6 +78,10 @@ export default {
         screen:ProAddress,
         navigationOptions: Object.assign({},common.defaultHeader, {title: '城市选择',mode:'card'})
     },
+    WebViews:{
+        screen:WebViews,
+        navigationOptions: Object.assign({},common.defaultHeader, {title: '热讯',mode:'card', headerRight:(<View/>)})
+    },
     CityAddress:{
         screen:CityAddress,
         navigationOptions:Object.assign({},common.defaultHeader, {title: '设置地址',mode:'card', headerRight:(<View/>),})
@@ -86,10 +91,15 @@ export default {
         navigationOptions:Object.assign({},common.defaultHeader, {title: '发票助手',mode:'card'})
     },
     Search: {
-        screen: Search
+        screen: Search,
+        navigationOptions:Object.assign({},common.defaultHeader, {title: '搜索',mode:'card', headerRight:(<View/>),})
     },
     EditPost: {
-        screen: EditPost
+        screen: EditPost,
+        navigationOptions:Object.assign({},common.defaultHeader, {title: '发帖',mode:'card', headerRight:(<View/>),})
+    },
+    Entries: {
+        screen: Entries,
     }
 }
 /*

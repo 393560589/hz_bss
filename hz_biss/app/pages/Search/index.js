@@ -16,7 +16,7 @@ import { px2p } from '../../utils';
 import { StorageUtil } from '../../utils/storage';
 import { connect } from 'dva'
 import {deviceWidth} from "../../styles";
-
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 const patchPostMessageFunction = function() {
   var originalPostMessage = window.postMessage;
@@ -195,13 +195,18 @@ export default class Search extends PureComponent {
       </View>
     )
   }
-
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
   render() {
     return (
-      <View flex={1} backgroundColor={'white'}>
-        {this.state.isWebViewVisiable && this.renderWebView()}
-        {this.renderHistory()}
-      </View>
+        <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
+          <View flex={1} backgroundColor={'white'}>
+            {this.state.isWebViewVisiable && this.renderWebView()}
+            {this.renderHistory()}
+          </View>
+        </AndroidBackHandler>
     )
   }
 }

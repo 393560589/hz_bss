@@ -15,6 +15,7 @@ import { px2p } from '../../utils';
 import ImagePicker from 'react-native-image-picker'
 import { postArticle, uploadImage} from '../../servers'
 import { connect } from 'dva'
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 const styles = StyleSheet.create({
   headerRight: {
@@ -139,9 +140,13 @@ export default class EditPost extends PureComponent {
     // image.append
     // uploadImage
   }
-
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    }
   render() {
     return (
+        <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
       <SafeAreaView flex={1}>
       <KeyboardAvoidingView style={[styles.container]} keyboardVerticalOffset={Platform.select({ios: 90, android: 0})}>
         <ScrollView contentContainerStyle={{flex: 1}}>
@@ -182,6 +187,7 @@ export default class EditPost extends PureComponent {
         </View>
       </KeyboardAvoidingView>
       </SafeAreaView>
+        </AndroidBackHandler>
     )
   }
 }

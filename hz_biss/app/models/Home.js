@@ -7,7 +7,8 @@ export default {
         hotKey: [],
         nav: [],
         newsList: [],
-        x: false
+        x: false,
+        webviewUrl:''
     },
     reducers: {
         /**
@@ -34,10 +35,16 @@ export default {
             const response = yield call(server.swiper,payload);
             callback(response)
         },
-
+        *ToWebview({callback=()=>{},payload}, { put}) {
+            yield put({
+                type:'update',
+                payload:payload
+            })
+            callback()
+        },
         *getNavigation({callback=()=>{}}, {call, put}) {
             const res = yield call(server.navigatioin);
-           //console.log(res.res);
+            console.log(res);
             if (res.status === 200) {
                 yield put({
                     type: 'update',
@@ -68,7 +75,7 @@ export default {
                     loading: true
                 }
             })
-            //console.log(res.res);
+            console.log(res);
             if (res.status === 200) {
                 yield put({
                     type: 'updateNewsList',

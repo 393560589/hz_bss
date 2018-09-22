@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet,TouchableOpacity } from 'react-native'
 import { px2p } from '../../../utils'
 import { common } from '../../../styles';
+import {connect} from "../../../utils/dva";
 
 const styles = StyleSheet.create({
   container: {
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
     width: px2p(30),
     height: px2p(30),
     marginBottom: px2p(13),
-      backgroundColor:'#f1f1f1'
+      borderRadius:1000,
   },
   text: {
     textAlign: 'center',
@@ -32,23 +33,42 @@ const styles = StyleSheet.create({
     fontSize: px2p(12)
   }
 })
+@connect(({home})=>({...home}))
+export default class Entries extends Component {
 
-export default function Entries(props) {
-  //console.log(props)
-  return (
-    <View style={[styles.container, props.style]}>
-      {
-        props.data && props.data.map(entry => (
-          <TouchableOpacity
-              activeOpacity={0.8}
-              style={styles.entry} key={entry.title}>
-            <View>
-              <Image style={styles.image} source={{uri:`http://bitss.vip${entry.logo}`}} resizeMode='contain'/>
-            </View>
-            <Text style={styles.text}>{entry.title}</Text>
-          </TouchableOpacity>
-        ))
-      }
-    </View>
-  )
+    openWebView(url){
+      console.log(url)
+        this.props.dispatch({
+            type:'home/ToWebview',
+            payload:{
+                webviewUrl:url
+            },
+            callback:()=>{
+                this.props.navigation.navigate('WebViews')
+            }
+        });
+
+    }
+   render(){
+     const {data,style} = this.props;
+       return (
+           <View style={[styles.container,style]}>
+               {
+                   data && data.map(entry => (
+                       <TouchableOpacity
+                           activeOpacity={0.8}
+                           onPress={()=>this.openWebView(entry.url)}
+                           style={styles.entry}
+                           key={entry.title}>
+                           <View>
+                               <Image style={styles.image} source={{uri:`http://bitss.vip/static${entry.logo}`}} resizeMode='contain'/>
+                           </View>
+                           <Text style={styles.text}>{entry.title}</Text>
+                       </TouchableOpacity>
+                   ))
+               }
+           </View>
+       )
+   }
+
 }
