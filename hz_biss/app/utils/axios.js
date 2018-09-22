@@ -46,6 +46,7 @@ const instance = axios.create({
 
 instance.interceptors.request.use(
     async config => {
+        console.log(config, '请求拦截')
         //let data = await StorageUtil.get(StringName.USER_INFO);
         //if(!data) return config;
         //let base = new Buffer(data.tokenId+':'+data.token).toString('base64');

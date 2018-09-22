@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 import { px2p } from '../../utils';
 import ImagePicker from 'react-native-image-picker'
-import { postArticle, articleImage} from '../../servers'
+import { postArticle, uploadImage} from '../../servers'
 import { connect } from 'dva'
 
 const styles = StyleSheet.create({
@@ -38,7 +38,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   imageUploadContainer: {
-    paddingLeft: px2p(17)
+    paddingLeft: px2p(17),
+    flexDirection: 'row',
+    alignItems: 'center'
   },
   imageUpload: {
     width: px2p(80),
@@ -48,7 +50,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     justifyContent: 'center',
     alignItems: 'center',
-
+  },
+  imagesContainer: {
+    flexDirection: 'row',
+    alignItems: 'center'
   }
 })
 
@@ -77,16 +82,55 @@ export default class EditPost extends PureComponent {
     }
   }
 
+  constructor() {
+    super()
+    this.state = {
+      images: []
+    }
+  }
+
   componentDidMount() {
     this.props.navigation.setParams({post: this.postArticle})
   }
 
+  selectImage = () => {
+    const { images } = this.state
+    ImagePicker.showImagePicker({title: '选择图片'}, response => {
+      console.log(response, 'response')
+      if (response.didCancel || response.error) return
+      // const _images = [response.uri, ...images].slice(0, 3)
+      const type = /.*ext=(.*)/g.exec(response.origURL)[1].toLocaleLowerCase()
+      // this.setState({images: _images})
+      console.log(response, 'response picker')
+      const formData = new FormData()
+      formData.append('file[]', {uri: response.uri, name: response.fileName, type: `image/${type}`})
+      uploadImage(formData)
+        .then(res => {
+          console.log(res)
+          const i = res.split('**')
+          this.setState({images: [...images].concat({thumbnail: i[1], uri: i[0]}).slice(0, 4)})
+        })
+        .catch(e => console.warn(e))
+    })
+  }
+
   postArticle = () => {
+    const { images } = this.state
     // console.log(this.title._lastNativeText, 12312321)
     const post_title = this.title._lastNativeText
     const post_content = this.content._lastNativeText
     const {id} = this.props.navigation.state.params
-    const post_phone = this.props.phone
+    const post_phone = this.props.phone || 13888888888
+    let post_image = ''
+    images.length > 0 && images.forEach(image => {
+      post_image += image.uri + '**'
+    })
+    postArticle({post_content, post_title, post_image, post_phone, id})
+      .then(res => console.log(res, '发帖res'))
+    
+    
+    // image.append
+    // uploadImage
   }
 
   render() {
@@ -109,14 +153,24 @@ export default class EditPost extends PureComponent {
             />
           </View>
         </ScrollView>
-        <View style={styles.imageUploadContainer}>
-        <View style={styles.imageUpload}>
-          <Image
-            source={require('../../image/editPost/add.png')}
-          />
+        <View>
+          <View style={styles.imageUploadContainer}>
+            <View style={styles.imagesContainer}>
+              {this.state.images.map(image => <Image key={image.thumbnail} source={{uri: `http://bitss.vip/static/${image.thumbnail}`}} style={{width: 80, height: 80, marginRight: 10}}/>)}
+            </View>
+            <View>
+                <TouchableOpacity
+                  style={styles.imageUpload}
+                  onPress={this.selectImage}
+                >
+                  <Image
+                    source={require('../../image/editPost/add.png')}
+                  />
+                </TouchableOpacity>
+            </View>
+          </View>
+          <Text style={{color: '#999', fontSize: px2p(12)}}>(您最多可以上传3张图片哟)</Text>
         </View>
-        <Text style={{color: '#999', fontSize: px2p(12)}}>(您最多可以上传3张图片哟)</Text>
-      </View>
       </KeyboardAvoidingView>
       </SafeAreaView>
     )

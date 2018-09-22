@@ -57,6 +57,11 @@ export const weixinInfo=(params)=>{
 export const postArticle = (params) => {
     return instance.post(API.postArticle,params)
 }
-export const articleImage = (params) => {
-    return instance.post(API.articleImage,params)
+export const uploadImage = (params) => {
+    // return instance.post(API.uploadImage,params)
+    return instance({
+        method: 'post',
+        url: API.uploadImage,
+        data: params
+    })
 }

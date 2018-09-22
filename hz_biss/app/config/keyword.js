@@ -16,8 +16,8 @@ export const API = {
     setCity:'mobile_interface/set_area',
     signin:'mobile_interface/signin',
     weixinInfo:'mobile_interface/weixinInfo',
-    postArticle: 'mobile/mobile_interface/article_create',
-    articleImage: 'mobile/mobile_interface/ba_upload'
+    postArticle: 'mobile_interface/article_create',
+    uploadImage: 'mobile_interface/ba_upload'
 };
 export const StringName={
     USER_INFO:'USERINFO'  //储存登录字段，加密用

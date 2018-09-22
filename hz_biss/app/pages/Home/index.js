@@ -188,7 +188,7 @@ class Home extends Component {
           <Entires data={this.props.nav} style={{top: px2p(-50)}}/>
           {this.renderNews()}
           <View style={styles.loadMoreView}>
-            {this.props.loading
+            {this.state.isLoading
               ? <ActivityIndicator animating={this.props.loading}/>
               : <Text style={styles.loadMoreText} onPress={this.fetchMore}>点击查看更多</Text>}
           </View>
