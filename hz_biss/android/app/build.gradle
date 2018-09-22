@@ -154,6 +154,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-webview-plugin')
     compile project(':rn-splash-screen')
     compile project(':jcore-react-native')
     compile project(':jpush-react-native')

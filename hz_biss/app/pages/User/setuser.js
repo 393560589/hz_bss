@@ -63,6 +63,7 @@ class SetUser extends PureComponent{
             chooseFromLibraryButtonTitle: '打开相机',
         };
         const BUTTONS = ['拍照', '相册', '取消'];
+        let parmas = new FormData()
         ActionSheet.showActionSheetWithOptions({
                 options: BUTTONS,
                 cancelButtonIndex: BUTTONS.length - 1,
@@ -85,12 +86,13 @@ class SetUser extends PureComponent{
             if(buttonIndex === 1){
                 ImagePicker.launchImageLibrary(options, (response)  => {
                     // Same code as in above section!
-                    //console.log(response)
+                    response.name='image';
+                    parmas.append('image',response)
                     dispatch({
                         type:'User/headerimg',
                         payload:{
                             phone:phone,
-                            image:response
+                            image:parmas
                         },
                         callback:(data)=>{
                             console.log(data)
@@ -119,7 +121,10 @@ class SetUser extends PureComponent{
                         <ListItem
                             Icons={'arrow'}
                             styles={{paddingTop:px2dp(4),paddingBottom:px2dp(4)}}
-                              extra={ <Image style={{width:px2dp(46),height:px2dp(46)}} source={user.tx}/>}
+                              extra={
+                                  <Image style={{width:px2dp(46),height:px2dp(46)}}
+                                         source={userInfo && user.tx}/>
+                              }
                               onClick={() => {this.chooseAction()}}>
                            头像
                         </ListItem>

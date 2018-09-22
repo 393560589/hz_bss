@@ -62,7 +62,7 @@ export default class Setting extends PureComponent{
                            {/* <Item arrow="horizontal" onClick={() => {this.onPushPage('SetAddress')}}>
                                 <Text style={common.font_h2}>地址管理</Text>
                             </Item>*/}
-                            <ListItem extra={'v1.0.1'} onClick={() => {this.onPushPage('Setpwd')}}>
+                            <ListItem extra={'v1.0.1'} onClick={() => {Toast.info('当前已是最新版')}}>
                                 版本更新
                             </ListItem>
                         </List>

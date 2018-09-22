@@ -1,4 +1,6 @@
 rootProject.name = 'hz_biss'
+include ':react-native-webview-plugin'
+project(':react-native-webview-plugin').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview-plugin/android')
 include ':rn-splash-screen'
 project(':rn-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules/rn-splash-screen/android')
 include ':jcore-react-native'

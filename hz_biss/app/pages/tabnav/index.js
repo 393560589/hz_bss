@@ -36,10 +36,20 @@ import StackViewStyleInterpolator from "react-navigation-stack/dist/views/StackV
 const YuTab = createBottomTabNavigator(
     {
         Recommend:{
-            screen:Recommend,
+            screen:createStackNavigator(
+                {
+                    Recommend:{
+                        screen:Recommend,
+                        navigationOptions: Object.assign({},common.defaultHeader,
+                            {
+                                //headerRight:(<View/>),
+                                title: '币讯',
+                            },)
+                    }
+                }
+            ),
             navigationOptions:({navigation})=>({
                 headerTitle: "推荐",
-                header:'币讯',
                 tabBarLabel: "币讯",
                 //headerBackTitle: null,
                 tabBarIcon: ({ tintColor }) => (

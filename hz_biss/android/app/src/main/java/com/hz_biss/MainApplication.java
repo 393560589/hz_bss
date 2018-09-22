@@ -3,6 +3,7 @@ package com.hz_biss;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.webview.code4android.WebViewPackage;
 import com.mehcode.reactnative.splashscreen.SplashScreenPackage;
 import com.horcrux.svg.SvgPackage;
 import com.imagepicker.ImagePickerPackage;
@@ -34,6 +35,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new WebViewPackage(),
             new SplashScreenPackage(),
             new SvgPackage(),
             new ImagePickerPackage(),
