@@ -97,25 +97,25 @@ export default class Search extends PureComponent {
     this.setState((prev) => ({isInputFocus: !prev.isInputFocus}))
   }
 
-  clearOneHistory = async (_index) => {
+  clearOneHistory = (_index) => {
     const { historyList } = this.state
     const _history = historyList.filter((_, index) => index !== _index)
-    await StorageUtil.save('searchHistory', _history)
+   StorageUtil.save('searchHistory', _history)
     this.props.dispatch({
       type: 'search/updateHistory'
     })
     // this.setState({historyList: _history})
   }
 
-  clearHistory = async () => {
-    await StorageUtil.save('searchHistory', [])
+  clearHistory = () => {
+    StorageUtil.save('searchHistory', [])
     this.props.dispatch({
       type: 'search/updateHistory'
     })
     // this.setState({historyList: []})
   }
 
-  search = async (keyword) => {
+  search =(keyword) => {
     const { history } = this.props
     if (keyword !== '' || keyword !== undefined) {
       input = this.props.navigation.state.params.inputRef
@@ -124,7 +124,7 @@ export default class Search extends PureComponent {
       const index = history.findIndex(h => h === keyword)
       const _history = [keyword].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
       this.props.navigation.setParams({isHistoryVisiable: false, keyword: ''})
-      await StorageUtil.save('searchHistory', [..._history])
+      StorageUtil.save('searchHistory', [..._history])
       this.props.dispatch({
         type: 'search/updateHistory'
       })
@@ -136,8 +136,7 @@ export default class Search extends PureComponent {
   }
 
   onMessage = ({nativeEvent}) => {
-    console.log(nativeEvent)
-    console.log(JSON.parse(nativeEvent.data))
+
     const res = JSON.parse(nativeEvent.data)
     // if (res.type === 'post') {
     //   if (!this.props.isLogin) { //gai
@@ -146,7 +145,7 @@ export default class Search extends PureComponent {
     //     this.props.navigation.navigate('Login')
     //   }
     // }
-    console.log(res.type, 'type')
+
     switch (res.type) {
       case 'post':
         if (!this.props.isLogin) { //gai

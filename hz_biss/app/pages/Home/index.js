@@ -131,15 +131,18 @@ class Home extends Component {
     )
   }
 
-  onHotkeyClick = async (keyword) => {
+  onHotkeyClick =(keyword) => {
     // let _history = []
     // const history = await StorageUtil.get('searchHistory')
-    await this.props.dispatch({
-      type: 'search/updateHistory'
-    })
-    await this.props.dispatch({
+ /*   this.props.dispatch({
+      type: 'search/updateHistory',
+    })*/
+    this.props.dispatch({
       type: 'search/saveHistory',
-      payload: keyword
+      payload: keyword,
+        callback:()=>{
+            this.props.navigation.navigate('Search', {keyword, isHistoryVisiable: false})
+        }
     })
     // const index = history.findIndex(h => h === keyword)
     // if (index !== -1) {
@@ -147,7 +150,7 @@ class Home extends Component {
     // } else {
     //   _history = [keyword, ...history].slice(0, 6)
     // }
-    this.props.navigation.navigate('Search', {keyword, isHistoryVisiable: false})
+
     // StorageUtil.save('searchHistory', [..._history])
   }
 

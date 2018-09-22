@@ -1,4 +1,4 @@
-import Home from './Home'    //首页
+import Home from './Home/_index'    //首页
 // import Cart from './Cart'   // 购物车
 // import Integral from './Integral' //积分应用
 // import Recommend from './Recommend'   // 推荐购买

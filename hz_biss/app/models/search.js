@@ -37,17 +37,12 @@ export default {
             })
         },
 
-        *saveHistory({payload}, {put, select, call}) {
-          yield put({
-            type: 'updateHistory'
-          })
+        *saveHistory({payload,callback=()=>{}}, {put, select, call}) {
           const { history } = yield select(state => state.search);
           const index = history.findIndex(h => h === payload)
           const _history = [payload].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
           yield StorageUtil.save('searchHistory', [..._history].slice(0, 6))
-          yield put({
-            type: 'updateHistory'
-          })
+            callback()
         }
     }
 }

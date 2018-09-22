@@ -25,7 +25,7 @@ import Loading from '../../components/loading'
 import {common} from '../../styles'
 import {px2dp} from '../../utils'
 import Recommend from '../Recommend'   // 推荐
-import Home from '../Home' // 首页
+import Home from '../Home/_index' // 首页
 import User from '../User' // 用户
 
 import  Page from '../../router'

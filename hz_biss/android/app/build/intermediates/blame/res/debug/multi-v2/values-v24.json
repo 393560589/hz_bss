@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/claude/Desktop/m/hz_bss/hz_biss/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/claude/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/90ad6e69cb9424ea3edf7584b2bab02f/res/values-v24/values-v24.xml",
+                    "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/355cfd0cda42b0d5eedfdeebb934a936/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
