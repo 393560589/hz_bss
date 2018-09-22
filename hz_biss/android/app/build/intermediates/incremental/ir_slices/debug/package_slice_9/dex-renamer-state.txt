@@ -1,4 +1,4 @@
-#Tue Sep 18 23:11:08 CST 2018
-base.0=/Users/claude/Desktop/hz_bss/hz_biss/android/app/build/intermediates/transforms/dexMerger/debug/10
+#Sat Sep 22 10:43:01 CST 2018
+base.0=/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/transforms/dexMerger/debug/28
 path.0=classes.dex
 renamed.0=classes.dex

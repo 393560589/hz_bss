@@ -47,3 +47,9 @@ export const headerimg=(params)=>{
 export const setCity = (params)=>{
     return instance.post(API.setCity,params)
 }
+export const signin = (params) =>{
+    return instance.post(API.signin,params)
+}
+export const weixinInfo=(params)=>{
+    return instance.post(API.weixinInfo,params)
+}

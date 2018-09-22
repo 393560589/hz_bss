@@ -10,11 +10,12 @@ import {
 import {connect} from "../../utils/dva";
 import {px2dp} from "../../utils";
 import { AndroidBackHandler } from 'react-navigation-backhandler'
-import {WhiteSpace,Button} from 'antd-mobile-rn'
+import {WhiteSpace,Button,Modal} from 'antd-mobile-rn'
 import {commonStyle,deviceWidth} from "../../styles/common";
+import {Toast} from "antd-mobile-rn/lib/index.native";
 //import User from "../../models/User";
 
-
+const alert =Modal.alert;
 @connect(({User})=>({...User}))
 export default class FeedBack extends PureComponent{
     state={
@@ -23,17 +24,27 @@ export default class FeedBack extends PureComponent{
     onPushPage(page){
         this.props.navigation.navigate(page)
     }
+    componentDidMount(){
+        this.props.dispatch({
+            type:'User/update',
+            payload:{
+                loading:true
+            }
+        })
+    }
     order(){
         const { dispatch,phone,navigation } = this.props;
-        console.log(phone);
-        phone && dispatch({
+        dispatch({
             type:'User/content',
             payload:{
                 phone:phone,
                 content:this.state.text,
             },
             callback:(data)=>{
-                navigation.pop()
+                alert('感谢您的意见', '继续提交反馈?', [
+                    { text: '返回', onPress: () => navigation.pop() },
+                    { text: '确定', onPress: () => this.setState({text:''}) },
+                ])
             }
         })
     }
@@ -42,8 +53,10 @@ export default class FeedBack extends PureComponent{
         return true
     }
     render(){
+
         return (
             <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
+
             <View style={styles.container}>
                 <Text style={{fontSize:px2dp(14),lineHeight:px2dp(16)}}>请在下面填写您遇到的问题或意见建议，我们将为您提供更好的产品和服务。</Text>
                 <WhiteSpace/>

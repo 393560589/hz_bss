@@ -107,12 +107,30 @@ export default class Users extends PureComponent {
     }
     onPushPage(page){
         const { islogin } = this.props;
-        islogin ? this.props.navigation.navigate(page):this.props.navigation.navigate('Login')
+        this.islogin();
+        islogin && this.props.navigation.navigate(page)
     }
+    islogin(){
+        const { islogin } = this.props;
+        !islogin && this.props.navigation.navigate('Login');
+    }
+    signin(){
+        const {dispatch,phone} = this.props;
+        this.islogin();
 
+        dispatch({
+            type:'User/signin',
+            payload:{
+                phone:phone
+            },
+            callback:(data)=>{
+                Toast.info('已签到',2,null,false)
+                //console.log(data)
+            }
+        })
+    }
     showShareActionSheet = () => {
         this.invites();
-
     }
     invites(){
         const { dispatch,phone } = this.props;
@@ -160,7 +178,7 @@ export default class Users extends PureComponent {
                 >
                     <View style={styles.container}>
                         <ImageBackground
-                            style={[{width:deviceWidth,height:px2dp(270),paddingTop:px2dp(50),paddingBottom:px2dp(10)}]}
+                            style={[{width:deviceWidth,minHeight:px2dp(270),paddingTop:px2dp(50),paddingBottom:px2dp(10)}]}
                             source={user.topbanner}
                         >
                             <View style={styles.User_top}>
@@ -170,7 +188,7 @@ export default class Users extends PureComponent {
                                 >
                                     <Image
                                         style={{width:px2dp(90),height:px2dp(90)}}
-                                        source={user.tx}
+                                        source={islogin ? user.header : user.tx}
                                     />
                                 </TouchableOpacity>
 
@@ -203,7 +221,9 @@ export default class Users extends PureComponent {
                             <View style={styles.top_list}>
                                 <TouchableOpacity
                                     activeOpacity={0.9}
-                                    style={[styles.top_item]}>
+                                    style={[styles.top_item]}
+                                    onPress={()=>this.signin()}
+                                >
                                    <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>签到</Text>
                                   <Image source={user.qd} style={styles.Iconstyle}/>
                                </TouchableOpacity>

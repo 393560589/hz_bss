@@ -16,7 +16,7 @@ import { connect } from '../../utils/dva';
 import { px2p } from '../../utils';
 import { common } from '../../styles';
 import {StorageUtil} from "../../utils/storage";
-// import SearchBar from './components/SearchBar'
+import SplashScreen from "rn-splash-screen";
 import {BoxShadow} from 'react-native-shadow'
 import JPush from "jpush-react-native";
 
@@ -33,8 +33,10 @@ class Home extends Component {
   }
 
   componentDidMount(){
+
+    console.log(this.props);
     JPush.addReceiveNotificationListener((map) => {
-      console.log(JSON.stringify(map));
+      //console.log(JSON.stringify(map));
     })
 
     const {dispatch} = this.props;
@@ -42,7 +44,8 @@ class Home extends Component {
     dispatch({
         type:'home/getBanner',
         callback:(data)=>{
-          console.log(data)
+            SplashScreen.hide();
+
           if (data.status === 200) {
             this.setState({swipers: data.res})
           }

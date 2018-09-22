@@ -1,6 +1,7 @@
 
 
 export const user={
+    header:require('../image/user/headers.png'),
     tx:require('../image/user/img_tx.png'),
     topbanner:require('../image/user/img_bj.png'),
     sz:require('../image/user/set_2.png'),

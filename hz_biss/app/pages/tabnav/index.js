@@ -28,7 +28,7 @@ import Recommend from '../Recommend'   // 推荐
 import Home from '../Home' // 首页
 import User from '../User' // 用户
 
-import Page from '../../router'
+import  Page from '../../router'
 import StackViewStyleInterpolator from "react-navigation-stack/dist/views/StackView/StackViewStyleInterpolator";
 
 
@@ -40,15 +40,15 @@ const YuTab = createBottomTabNavigator(
             navigationOptions:({navigation})=>({
                 headerTitle: "推荐",
                 header:'币讯',
-                //tabBarLabel: "币讯",
+                tabBarLabel: "币讯",
                 //headerBackTitle: null,
                 tabBarIcon: ({ tintColor }) => (
                     <Image
                         style={{width:px2dp(14),height:px2dp(17)}}
                         source={
                             tintColor !== common.theme ?
-                                require('../../image/tab/Icon_tj.png'):
-                                require('../../image/tab/Icon_tj_mr.png')
+                                require('../../image/user/bixun_defalut.png'):
+                                require('../../image/user/bixun_select.png')
                         }
                     />
                 )
@@ -67,8 +67,8 @@ const YuTab = createBottomTabNavigator(
                         style={{width:px2dp(17),height:px2dp(17)}}
                         source={
                             tintColor !== common.theme ?
-                                require("../../image/tab/Icon_sy.png")
-                                : require("../../image/tab/Icon_sy_mr.png")
+                                require("../../image/user/home_defalut.png")
+                                : require("../../image/user/home_select.png")
                         }
                     />
                 )
@@ -129,8 +129,8 @@ const YuTab = createBottomTabNavigator(
                     <Image
                         style={{width:px2dp(17),height:px2dp(17)}}
                         source={
-                            tintColor !== common.theme ? require("../../image/tab/Icon_wd.png")
-                                : require("../../image/tab/Icon_wd_mr.png")
+                            tintColor !== common.theme ? require("../../image/user/my_defalut.png")
+                                : require("../../image/user/my_select.png")
                         }
                     />
                 )

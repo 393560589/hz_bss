@@ -21,10 +21,11 @@ export default class Recommend extends React.Component {
     return (
         <View style={{flex:1,marginTop:Platform.OS === 'ios' ? px2dp(24):px2dp(0)}}>
             <WebView
-                source={{uri: 'https://github.com'}}
+                source={{uri: 'http://192.168.2.185:8000'}}
                 style={{width:deviceWidth}}
             />
         </View>
+        //192.168.2.185
 
     )
   }

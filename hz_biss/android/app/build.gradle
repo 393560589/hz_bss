@@ -154,6 +154,7 @@ android {
 }
 
 dependencies {
+    compile project(':rn-splash-screen')
     compile project(':jcore-react-native')
     compile project(':jpush-react-native')
     compile project(':react-native-svg')

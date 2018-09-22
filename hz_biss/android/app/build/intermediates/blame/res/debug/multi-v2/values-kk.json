@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/claude/Desktop/hz_bss/hz_biss/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml",
+            "outputFile": "/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml",
             "map": [
                 {
-                    "source": "/Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/41fa6372f79ab1681abaafff4f3c02fb/res/values-kk/values.xml",
+                    "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/e5906454dcfffb3fb6c1b716a2d95ee6/res/values-kk/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/5c352f0a4a4406b7f740c5151a260d05/res/values-kk/values.xml",
+                    "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-15.0.1.aar/6332bb86abe3e03341c9afd5d7718880/res/values-kk/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/claude/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/7d4dd18874edea0c2314df347ff02aa5/res/values-kk/values-kk.xml",
+                    "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d79ad7315ad5a2c84862e6c86b7c58a2/res/values-kk/values-kk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/claude/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e2c4c8ade6864b361a2391caf10b2c73/res/values-kk/values.xml",
+                    "source": "/Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a81a11c7a29666766b1eee7145316ace/res/values-kk/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
