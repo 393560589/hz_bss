@@ -34,18 +34,21 @@ const patchPostMessageFunction = function() {
 
 const patchPostMessageJsCode = '(' + String(patchPostMessageFunction) + ')();';
 
-@connect(({User}) => ({...User}))
+
+@connect(({User, search}) => ({...User, ...search}))
 export default class Search extends PureComponent {
   static navigationOptions = ({navigation}) => {
     const { params } = navigation.state
-    if (params && params.historyList && params.shouldHistoryUpdate) {
-      params.updateHistory(params.historyList)
-      params.shouldHistoryUpdate = false
-    }
+    // if (params && params.history && params.shouldHistoryUpdate && params.updateHistory) {
+    //   params.updateHistory(params.historyList)
+    //   params.shouldHistoryUpdate = false
+    // }
     if (params && params.keyword && params.search && !params.isHistoryVisiable) {
+      // console.log('search', params.keyword)
       params.search(params.keyword)
     }
     if (params && params.isHistoryVisiable && params.showHistory) {
+      // console.log('showHistory')
       params.showHistory()
     }
     console.log(params, 'parmas')
@@ -65,7 +68,11 @@ export default class Search extends PureComponent {
   }
 
   componentDidMount() {
-    this.props.navigation.setParams({updateHistory: this.updateHistory, search: this.search, showHistory: this.showHistory, headerType: 0, backAction: this.webViewBack})
+    this.props.dispatch({
+      type: 'search/updateHistory'
+    })
+    // this.props.navigation.setParams({updateHistory: this.updateHistory, search: this.search, showHistory: this.showHistory, headerType: 0, backAction: this.webViewBack})
+    this.props.navigation.setParams({search: this.search, showHistory: this.showHistory, headerType: 0, backAction: this.webViewBack})
     // this.initHistory()
   }
 
@@ -73,15 +80,16 @@ export default class Search extends PureComponent {
     this.webView.goBack()
   }
 
-  updateHistory = (history) => {
-    this.setState({historyList: history})
-  }
+  // updateHistory = (history) => {
+  //   console.log(history, 'update state')
+  //   this.setState({historyList: history})
+  // }
   // loadHistory = async () => {
-  //   const history = await StorageUtil.get('searchHistoty')
+  //   const history = await StorageUtil.get('searchHistory')
   // }
 
 //  initHistory = async () => {
-//   const history = await StorageUtil.get('searchHistoty')
+//   const history = await StorageUtil.get('searchHistory')
 //     this.setState({historyList: history})
 //   }
 
@@ -89,28 +97,37 @@ export default class Search extends PureComponent {
     this.setState((prev) => ({isInputFocus: !prev.isInputFocus}))
   }
 
-  clearOneHistory = (_index) => {
+  clearOneHistory = async (_index) => {
     const { historyList } = this.state
     const _history = historyList.filter((_, index) => index !== _index)
-    StorageUtil.save('searchHistoty', _history)
-    this.setState({historyList: _history})
+    await StorageUtil.save('searchHistory', _history)
+    this.props.dispatch({
+      type: 'search/updateHistory'
+    })
+    // this.setState({historyList: _history})
   }
 
-  clearHistory = () => {
-    StorageUtil.save('searchHistoty', [])
-    this.setState({historyList: []})
+  clearHistory = async () => {
+    await StorageUtil.save('searchHistory', [])
+    this.props.dispatch({
+      type: 'search/updateHistory'
+    })
+    // this.setState({historyList: []})
   }
 
-  search = (keyword) => {
-    const { historyList } = this.state
+  search = async (keyword) => {
+    const { history } = this.props
     if (keyword !== '' || keyword !== undefined) {
       input = this.props.navigation.state.params.inputRef
-      input.blur()
+      input && input.blur()
       this.setState({isWebViewVisiable: true, keyword})
-      const index = historyList.findIndex(h => h === keyword)
-      const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
-      this.props.navigation.setParams({historyList: [..._history], isHistoryVisiable: false, keyword: '', shouldHistoryUpdate: true})
-      StorageUtil.save('searchHistoty', [..._history])
+      const index = history.findIndex(h => h === keyword)
+      const _history = [keyword].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
+      this.props.navigation.setParams({isHistoryVisiable: false, keyword: ''})
+      await StorageUtil.save('searchHistory', [..._history])
+      this.props.dispatch({
+        type: 'search/updateHistory'
+      })
     }
   }
 
@@ -166,7 +183,7 @@ export default class Search extends PureComponent {
       <KeyboardAvoidingView keyboardVerticalOffset={Platform.select({ios: 90, android: 50})}>
         <View style={styles.container}>
           <Text style={{fontSize: px2p(12), color: '#999'}}>搜索历史</Text>
-          {this.state.historyList.map((item, index) => (
+          {this.props.history && this.props.history.map((item, index) => (
             <TouchableOpacity
                 activeOpacity={1}
                 key={item + index}>

@@ -59,7 +59,7 @@ class SearchBar extends PureComponent {
       <View style={searchBarStyles.container}>
         <Image style={searchBarStyles.icon} source={require('../image/search/icon.png')}/>
         <TextInput
-          autoFocus
+          // autoFocus
           ref={this.props.inputRef}
           flex={1}
           style={{padding: px2p(5)}}
@@ -94,24 +94,26 @@ class PhoneHeader extends PureComponent {
   }
 
   loadHistory = async () => {
-    const history = await StorageUtil.get('searchHistoty')
+    StorageUtil.get('searchHistory')
+    // const history = await StorageUtil.get('searchHistory')
     // this.history = history
-    this.props.navigation.setParams({historyList: history})
+    // this.props.navigation.setParams({historyList: history})
   }
 
   onSubmit = async ({nativeEvent}) => {
     const value = nativeEvent.text
     if (value) {
       let _history = []
-      const history = await StorageUtil.get('searchHistoty')
+      const history = await StorageUtil.get('searchHistory')
       const index = history.findIndex(h => h === value)
       if (index !== -1) {
         _history = [value].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
       } else {
         _history = [value, ...history].slice(0, 6)
       }
-      this.props.navigation.setParams({historyList: [..._history], keyword: value, isHistoryVisiable: false, shouldHistoryUpdate: true})
-      StorageUtil.save('searchHistoty', [..._history])
+      // this.props.navigation.setParams({historyList: [..._history], keyword: value, isHistoryVisiable: false, shouldHistoryUpdate: true})
+      this.props.navigation.setParams({keyword: value, isHistoryVisiable: false})
+      StorageUtil.save('searchHistory', [..._history])
     }
   }
   

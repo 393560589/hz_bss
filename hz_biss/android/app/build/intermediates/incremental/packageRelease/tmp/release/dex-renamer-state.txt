@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+#Sat Sep 22 19:58:15 CST 2018
+base.0=/Users/claude/Desktop/m/hz_bss/hz_biss/android/app/build/intermediates/transforms/dexMerger/release/0
+=======
 #Sat Sep 22 19:46:10 CST 2018
 base.0=/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/transforms/dexMerger/release/0
+>>>>>>> c7cd48f5d0868140acf7524d7dc45d590f922c64
 path.0=classes.dex
 renamed.0=classes.dex
