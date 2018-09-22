@@ -37,7 +37,7 @@ Tool.ua = Tool.projectName + ';'+ Tool.projectVersion +';'+ Tool.bundleVersion +
 
 const instance = axios.create({
     // withCredentials:true,
-    timeout:2000,
+    timeout:100000,
     baseURL:MOCK_AUTH_ADMIN,
 
 })

@@ -33,12 +33,10 @@ class Home extends Component {
   }
 
   componentDidMount(){
-    setTimeout(()=>{
-        SplashScreen.hide();
-    },1);
 
+    console.log(this.props);
     JPush.addReceiveNotificationListener((map) => {
-      console.log(JSON.stringify(map));
+      //console.log(JSON.stringify(map));
     })
 
     const {dispatch} = this.props;
@@ -46,7 +44,8 @@ class Home extends Component {
     dispatch({
         type:'home/getBanner',
         callback:(data)=>{
-          //console.log(data)
+            SplashScreen.hide();
+
           if (data.status === 200) {
             this.setState({swipers: data.res})
           }

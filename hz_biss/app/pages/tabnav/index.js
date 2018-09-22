@@ -28,7 +28,7 @@ import Recommend from '../Recommend'   // 推荐
 import Home from '../Home' // 首页
 import User from '../User' // 用户
 
-import Page from '../../router'
+import  Page from '../../router'
 import StackViewStyleInterpolator from "react-navigation-stack/dist/views/StackView/StackViewStyleInterpolator";
 
 

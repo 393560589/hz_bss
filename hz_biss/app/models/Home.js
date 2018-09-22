@@ -7,7 +7,7 @@ export default {
         hotKey: [],
         nav: [],
         newsList: [],
-        loading: false
+        x: false
     },
     reducers: {
         /**
@@ -64,7 +64,7 @@ export default {
             yield put({
                 type: 'update',
                 payload: {
-                    loading: false
+                    loading: true
                 }
             })
             //console.log(res.res);

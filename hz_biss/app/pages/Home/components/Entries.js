@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 })
 
 export default function Entries(props) {
-  console.log(props)
+  //console.log(props)
   return (
     <View style={[styles.container, props.style]}>
       {

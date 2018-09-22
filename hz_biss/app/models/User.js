@@ -12,6 +12,9 @@ export default {
         citylist:[],
         islogin:false,
         phone:'',
+        server:[],
+        erm:'',
+        loading: false
     },
     reducers: {
         /**
@@ -23,6 +26,22 @@ export default {
 
     },
     effects: {
+        *loading({callback=()=>{},payload},{put}){
+            yield put({
+                type:'update',
+                payload:{
+                    loading:true
+                }
+            })
+        },
+        *loadinghd({callback=()=>{},payload},{put}){
+            yield put({
+                type:'update',
+                payload:{
+                    loading:false
+                }
+            })
+        },
         *logout({callback=()=>{},payload},{put}){
             yield put({
                 type:'update',
@@ -88,10 +107,12 @@ export default {
             Toast.success('修改成功',2,null,false)
             callback(response);
         },
-        *content({callback=()=>{},payload},{call}){
+        *content({callback=()=>{},payload},{call,put}){
+            yield put({type:'loading'});
             const response = yield call(server.content,payload);
+            //yield put({type:'loadinghd'})
             if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
-            Toast.info('已提提交您的反馈',2,null,false);
+
             callback(response);
         },
         *invites({callback=()=>{},payload},{call}){
@@ -122,7 +143,44 @@ export default {
                 }
             });
             callback(response)
-        }
+        },
+        *signin({callback=()=>{},payload},{call,put,select}){
+            const { phone } = yield select(state => state.User);
+            const response = yield call(server.signin,payload);
+            console.log(response);
+            yield put({
+                type:'userInfo',
+                payload:{
+                    phone:phone
+                }
+            });
+            callback(response)
+        },
+        *weixinInfo({callback=()=>{},payload},{call,put,select}){
+            //const { phone } = yield select(state => state.User);
+            yield put({type:'loading'});
+            const response = yield call(server.weixinInfo,payload);
+            yield put({type:'loadinghd'});
+            //console.log(response);
+            if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
+            let arr=[];
+            let erm
+            for(let i in response.res){
+                if(response.res[i].title !== '官方微信二维码'){
+                    arr.push(response.res[i])
+                }else{
+                    erm = response.res[i].content
+                }
+            }
+            yield put({
+                type:'update',
+                payload:{
+                    server:arr,
+                    erm:erm
+                }
+            });
+            callback(response)
+        },
     }
 
 }

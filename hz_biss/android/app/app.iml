@@ -156,6 +156,7 @@
     <orderEntry type="module" module-name="react-native-device-info" />
     <orderEntry type="module" module-name="jpush-react-native" />
     <orderEntry type="module" module-name="react-native-vector-icons" />
+    <orderEntry type="module" module-name="rn-splash-screen" />
     <orderEntry type="module" module-name="react-native-image-picker" />
   </component>
 </module>
