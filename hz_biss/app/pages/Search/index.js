@@ -14,15 +14,16 @@ import {
 import Header from '../../components/SearchHeader'
 import { px2p } from '../../utils';
 import { StorageUtil } from '../../utils/storage';
+import { connect } from 'dva'
 
-
+@connect(({User}) => ({...User}))
 export default class Search extends PureComponent {
   static navigationOptions = ({navigation}) => {
     const { params } = navigation.state
-    if (params && params.historyList) {
-      params.initHistory(params.historyList)
-    }
-    if (params && params.keyword && params.search) {
+    // if (params && params.historyList) {
+    //   params.initHistory(params.historyList)
+    // }
+    if (params && params.keyword && params.search && !params.isHistoryVisiable) {
       params.search(params.keyword)
     }
     if (params && params.isHistoryVisiable && params.showHistory) {
@@ -45,11 +46,17 @@ export default class Search extends PureComponent {
   }
 
   componentDidMount() {
-    this.props.navigation.setParams({initHistory: this.initHistory, search: this.search, showHistory: this.showHistory, headerType: 0})
+    this.props.navigation.setParams({search: this.search, showHistory: this.showHistory, headerType: 0})
+    this.initHistory()
   }
 
- initHistory = (historyList) => {
-    this.setState({historyList})
+  // loadHistory = async () => {
+  //   const history = await StorageUtil.get('searchHistoty')
+  // }
+
+ initHistory = async () => {
+  const history = await StorageUtil.get('searchHistoty')
+    this.setState({historyList: history})
   }
 
   toggleInputState = () => {
@@ -72,7 +79,7 @@ export default class Search extends PureComponent {
     if (keyword !== '' || keyword !== undefined) {
       input = this.props.navigation.state.params.inputRef
       input.blur()
-      // this.setState({isWebViewVisiable: true, keyword})
+      this.setState({isWebViewVisiable: true, keyword})
     }
   }
 
@@ -82,6 +89,15 @@ export default class Search extends PureComponent {
 
   onMessage = ({nativeEvent}) => {
     console.log(nativeEvent)
+    console.log(JSON.parse(nativeEvent.data))
+    const res = JSON.parse(nativeEvent.data)
+    if (res.type === 'post') {
+      if (!this.props.isLogin) { //gai
+        this.props.navigation.navigate('EditPost', {id: res.id})
+      } else {
+        this.props.navigation.navigate('Login')
+      }
+    }
   }
 
   renderHistoryCell = (item, index) => (
@@ -116,12 +132,12 @@ export default class Search extends PureComponent {
     )
   }
 
-  renderWebView = ()=> {
+  renderWebView = () => {
     const { keyword } = this.state;
     return (
       <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
         <WebView
-          source={{uri: `http://192.168.2.185:8000/SearchResult?keyword=${keyword}`}}
+          source={{uri: `http://192.168.2.201:8000/SearchResult?keyword=${keyword}`}}
           onMessage={this.onMessage}
         >
         </WebView>
@@ -132,7 +148,7 @@ export default class Search extends PureComponent {
   render() {
     return (
       <View flex={1} backgroundColor={'white'}>
-        {/* {this.state.isWebViewVisiable && this.renderWebView()} */}
+        {this.state.isWebViewVisiable && this.renderWebView()}
         {this.renderHistory()}
       </View>
     )

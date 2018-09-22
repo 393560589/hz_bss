@@ -13,6 +13,8 @@ import {
 } from 'react-native';
 import { px2p } from '../../utils';
 import ImagePicker from 'react-native-image-picker'
+import { postArticle, articleImage} from '../../servers'
+import { connect } from 'dva'
 
 const styles = StyleSheet.create({
   headerRight: {
@@ -61,6 +63,7 @@ const HeaderRight = ({onPress, disabled}) => {
   )
 }
 
+@connect(({User}) => ({...User}))
 export default class EditPost extends PureComponent {
   static navigationOptions = ({navigation}) => {
     const params = navigation.state.params
@@ -74,6 +77,18 @@ export default class EditPost extends PureComponent {
     }
   }
 
+  componentDidMount() {
+    this.props.navigation.setParams({post: this.postArticle})
+  }
+
+  postArticle = () => {
+    // console.log(this.title._lastNativeText, 12312321)
+    const post_title = this.title._lastNativeText
+    const post_content = this.content._lastNativeText
+    const {id} = this.props.navigation.state.params
+    const post_phone = this.props.phone
+  }
+
   render() {
     return (
       <SafeAreaView flex={1}>
@@ -81,11 +96,13 @@ export default class EditPost extends PureComponent {
         <ScrollView contentContainerStyle={{flex: 1}}>
           <View>
             <TextInput
+              ref={view => this.title = view}
               style={styles.title}
               autoFocus={true}
               placeholder="加个标题哟～"
             />
             <TextInput
+              ref={view => this.content = view}
               style={styles.content}
               placeholder="来吧，尽情发挥吧..."
               multiline={true}

@@ -53,3 +53,9 @@ export const signin = (params) =>{
 export const weixinInfo=(params)=>{
     return instance.post(API.weixinInfo,params)
 }
+export const postArticle = (params) => {
+    return instance.post(API.postArticle,params)
+}
+export const articleImage = (params) => {
+    return instance.post(API.articleImage,params)
+}
