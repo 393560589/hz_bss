@@ -9,14 +9,6 @@ import Router, { routerMiddleware, routerReducer } from './'
 import { StorageUtil } from '../../utils/storage';
 // import cart from '../../models/cart';
 
-(async () => {
-    const history = await StorageUtil.get('searchHistory')
-    console.log(history, 'history')
-    if (!history) {
-        StorageUtil.save('searchHistory', [])
-    }
-})()
-
 
 const app = dva({
     models:[Home,Login,SetUser,User],

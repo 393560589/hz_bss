@@ -66,10 +66,10 @@ class SearchBar extends PureComponent {
           style={{padding: px2p(5)}}
           placeholder="eos"
           onSubmitEditing={this.props.onSubmit}
-          onFocus={this.props.onFocus}
+          // onFocus={this.props.onFocus}
           clearButtonMode={'always'}
           returnKeyType={'search'}
-          onBlur={this.props.onBlur}
+          // onBlur={this.props.onBlur}
           underlineColorAndroid='transparent'
         />
       </View>
@@ -78,11 +78,10 @@ class SearchBar extends PureComponent {
 }
 
 class PhoneHeader extends PureComponent {
-  // constructor() {
-  //   super()
-  //   this.setState = {
-  //     history: []
-  //   }
+
+  // componentDidMount() {
+  //   // this.props.navigation.setParams({inputRef: this.input})
+  //   // this.props.onFocus()
   // }
 
   goBack = () => {
@@ -90,42 +89,32 @@ class PhoneHeader extends PureComponent {
     this.props.navigation.goBack()
   }
 
-  componentDidMount() {
-    // this.loadHistory()
-  }
-
-  loadHistory = () => {
-    StorageUtil.get('searchHistory').then(history=>{
-        this.props.navigation.setParams({historyList: history})
-    })
-
-  }
-
   onSubmit = ({nativeEvent}) => {
     const value = nativeEvent.text
     if (value) {
-      let _history = []
-       StorageUtil.get('searchHistory').then(history=>{
-         console.log(history, 'history')
-           const index = history.findIndex(h => h === value)
-           if (index !== -1) {
-               _history = [value].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
-           } else {
-               _history = [value, ...history].slice(0, 6)
-           }
-           this.props.navigation.setParams({historyList: [..._history], keyword: value, isHistoryVisiable: false, shouldHistoryUpdate: true})
-           StorageUtil.save('searchHistory', [..._history])
-       })
+      // let _history = []
+      //  StorageUtil.get('searchHistory').then(history=>{
+      //    console.log(history, 'history')
+      //      const index = history.findIndex(h => h === value)
+      //      if (index !== -1) {
+      //          _history = [value].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
+      //      } else {
+      //          _history = [value, ...history].slice(0, 6)
+      //      }
+           this.props.navigation.setParams({keyword: value})
+           this.input.blur()
+          //  StorageUtil.save('searchHistory', [..._history])
+      //  }
     }
   }
   
-  onFocus = () => {
-    this.props.navigation.setParams({inputRef: this.input, isHistoryVisiable: true})
-  }
+  // onFocus = () => {
+  //   this.props.navigation.setParams({inputRef: this.input, isHistoryVisiable: true})
+  // }
 
-  onBlur = () => {
-    this.props.navigation.setParams({isHistoryVisiable: false})
-  }
+  // onBlur = () => {
+  //   this.props.navigation.setParams({isHistoryVisiable: false})
+  // }
 
   render() {
     const headerType = this.props.navigation.getParam('headerType', 1)
@@ -139,8 +128,8 @@ class PhoneHeader extends PureComponent {
             navigation={this.props.navigation}
             inputRef={view => this.input = view}
             onSubmit={this.onSubmit}
-            onFocus={this.onFocus}
-            onBlur={this.onBlur}
+            // onFocus={this.onFocus}
+            // onBlur={this.onBlur}
           />
           {headerType === 0 && <TouchableOpacity onPress={this.goBack}>
             <Text style={{fontSize: px2p(15), color: '#070002'}}>取消</Text>

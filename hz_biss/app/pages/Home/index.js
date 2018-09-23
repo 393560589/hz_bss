@@ -38,7 +38,12 @@ class Home extends Component {
 
   componentDidMount(){
     const {dispatch} = this.props;
-
+    const history = StorageUtil.get('searchHistory')
+        .then(() => {})
+        .catch(e => {
+            StorageUtil.save('searchHistory', [])
+        })
+    console.log(history, 'history')
     dispatch({
         type:'home/getBanner',
         callback:(data)=>{

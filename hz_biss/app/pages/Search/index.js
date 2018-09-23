@@ -10,7 +10,8 @@ import {
     WebView,
     KeyboardAvoidingView,
     Platform,
-    Keyboard
+    Keyboard,
+    SafeAreaView
 } from 'react-native'
 import Header from '../../components/SearchHeader'
 import { px2p } from '../../utils';
@@ -52,9 +53,10 @@ export default class Search extends PureComponent {
         //   console.log('showHistory')
         //   params.showHistory()
         // }
-        console.log(params, 'parmas')
         return (
-            { header: <Header navigation={navigation}/>}
+            { header: <Header
+                navigation={navigation}
+                onSearch={navigation.getParam('onSearch', null)}/>}
         )
     }
 
@@ -62,7 +64,7 @@ export default class Search extends PureComponent {
         super()
         this.state = {
             historyList: [],
-            isInputFocus: true,
+            // isInputFocus: true,
             isWebViewVisiable: false,
             keyword: '',
             // isHistoryVisiable: true
@@ -78,16 +80,20 @@ export default class Search extends PureComponent {
 
     componentWillUnmount() {
         this.syncHistoryToLocalStorage()
+        this.keyboardDidShowListener.remove()
+        this.keyboardDidHideListener.remove()
     }
 
     _keyboardDidShow = () => {
-        const { params } = this.props.navigation.state
+        // const { params } = this.props.navigation.state
         // if (params && params.keyword !== undefined || params.keyword !== '') return
         this.setState({isWebViewVisiable: false})
     }
 
     _keyboardDidHide = () => {
-        this.setState({isWebViewVisiable: true})
+        if (this.state.keyword) {
+            this.setState({isWebViewVisiable: true})
+        }
     }
 
     webViewBack = () => {
@@ -117,9 +123,9 @@ export default class Search extends PureComponent {
         StorageUtil.save('searchHistory', this.state.historyList)
     }
 
-    toggleInputState = () => {
-        this.setState((prev) => ({isInputFocus: !prev.isInputFocus}))
-    }
+    // toggleInputState = () => {
+    //     this.setState((prev) => ({isInputFocus: !prev.isInputFocus}))
+    // }
 
     clearOneHistory = (_index) => {
         const { historyList } = this.state
@@ -135,8 +141,9 @@ export default class Search extends PureComponent {
         const { historyList } = this.state
         console.log(keyword, 'keyword')
         if (keyword !== '' || keyword !== undefined) {
-            input = this.props.navigation.state.params.inputRef
-            input && input.blur()
+            Keyboard.dismiss()
+            // input = this.props.navigation.state.params.inputRef
+            // input && input.blur()
             const index = historyList.findIndex(h => h === keyword)
             const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
             this.setState({isWebViewVisiable: true, keyword}, () => this.updateHistory(_history, keyword))
@@ -222,10 +229,13 @@ export default class Search extends PureComponent {
     render() {
         return (
             <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
+            {/* <SafeAreaView> */}
+                {/* <PhoneHeader navigation={this.props.navigation}/> */}
                 <View flex={1} backgroundColor={'white'}>
                     {this.state.isWebViewVisiable && this.renderWebView()}
                     {this.renderHistory()}
                 </View>
+            {/* </SafeAreaView> */}
             </AndroidBackHandler>
         )
     }
