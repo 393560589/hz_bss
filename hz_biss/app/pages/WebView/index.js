@@ -18,6 +18,7 @@ export default class IndexPage extends PureComponent {
     return (
         <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <WebView
+                renderLoading={(re)=>console.log(re)}
                 source={{ uri: this.getSource() }}
                 style={{width:deviceWidth,backgroundColor:'#fff'}}
                 ref={(webView)=> this.webView = webView}

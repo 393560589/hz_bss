@@ -59,6 +59,7 @@ class SearchBar extends PureComponent {
       <View style={searchBarStyles.container}>
         <Image style={searchBarStyles.icon} source={require('../image/search/icon.png')}/>
         <TextInput
+          // autoFocus
           ref={this.props.inputRef}
           flex={1}
           style={{padding: px2p(5)}}
@@ -89,31 +90,31 @@ class PhoneHeader extends PureComponent {
   }
 
   componentDidMount() {
-    //this.loadHistory()
+    // this.loadHistory()
   }
 
   loadHistory = () => {
-    //StorageUtil.get('searchHistory')
-     //StorageUtil.get('searchHistory').then()
-     //this.history = history
-    //this.props.navigation.setParams({historyList: history})
+    StorageUtil.get('searchHistory').then(history=>{
+        this.props.navigation.setParams({historyList: history})
+    })
+
   }
 
   onSubmit = ({nativeEvent}) => {
     const value = nativeEvent.text
     if (value) {
       let _history = []
-     StorageUtil.get('searchHistory').then(history=>{
-         const index = history.findIndex(h => h === value)
-         if (index !== -1) {
-             _history = [value].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
-         } else {
-             _history = [value, ...history].slice(0, 6)
-         }
-         // this.props.navigation.setParams({historyList: [..._history], keyword: value, isHistoryVisiable: false, shouldHistoryUpdate: true})
-         this.props.navigation.setParams({keyword: value, isHistoryVisiable: false})
-         StorageUtil.save('searchHistory', [..._history])
-     })
+       StorageUtil.get('searchHistory').then(history=>{
+         console.log(history, 'history')
+           const index = history.findIndex(h => h === value)
+           if (index !== -1) {
+               _history = [value].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
+           } else {
+               _history = [value, ...history].slice(0, 6)
+           }
+           this.props.navigation.setParams({historyList: [..._history], keyword: value, isHistoryVisiable: false, shouldHistoryUpdate: true})
+           StorageUtil.save('searchHistory', [..._history])
+       })
     }
   }
   

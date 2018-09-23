@@ -117,6 +117,7 @@ export default class Users extends PureComponent {
     signin(){
         const {dispatch,phone,userInfo,islogin} = this.props;
         this.islogin();
+        if(!islogin) return
         userInfo.sign === '已签到' && Toast.info('您已签到',2,null,false);
 
         ( userInfo.sign === '未签到' && islogin ) &&
@@ -229,9 +230,11 @@ export default class Users extends PureComponent {
                                     style={[styles.top_item]}
                                     onPress={()=>this.signin()}
                                 >
-                                   <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>{
-                                       userInfo ? userInfo.sign :'未签到'
-                                   }</Text>
+                                   <Text style={[styles.top_text,{fontSize:px2dp(14), marginBottom:px2dp(4),}]}>
+                                       {
+                                        userInfo ? userInfo.sign :'未签到'
+                                        }
+                                   </Text>
                                   <Image source={user.qd} style={styles.Iconstyle}/>
                                </TouchableOpacity>
                                 <Line/>
@@ -255,7 +258,7 @@ export default class Users extends PureComponent {
                             <ListItem
                                 thumb={<Image style={styles.Iconstyle} source={user.contact}/>}
                                 hasborder
-                                onClick={()=>this.onPushPage('AboutUS')}
+                                onClick={()=>this.props.navigation.navigate('AboutUS')}
                                 Icons={'arrow'}>
                                 联系我们
                             </ListItem>
@@ -330,7 +333,6 @@ const styles = StyleSheet.create({
         fontSize:px2dp(15)
     },
     User_top:{
-        marginLeft:px2dp(25),
         flexDirection:'column',
         alignItems:'center'
     },

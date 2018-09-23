@@ -60,6 +60,12 @@ class Login extends PureComponent {
             },
             callback:(item)=>{
                 console.log(item);
+                dispatch({
+                    type:'User/update',
+                    payload:{
+                        phone:this.state.phone
+                    }
+                })
                 StorageUtil.save('phone',this.state.phone);
                 this.getUser()
             }

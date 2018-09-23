@@ -21,7 +21,7 @@ import SplashScreen from "rn-splash-screen";
 import {BoxShadow} from 'react-native-shadow'
 const alert = Modal.alert;
 
-@connect(({home, search}) => ({...home, ...search}))
+@connect(({home}) => ({...home}))
 class Home extends Component {
   constructor(props) {
     super(props)
@@ -123,35 +123,12 @@ class Home extends Component {
                 <View style={styles.searchBar}>
                   <Image source={require('../../image/home/search.png')} style={{width: px2p(22), height: px2p(22), margin: px2p(10)}}/>
                   <View style={{width: px2p(1), height: px2p(15), backgroundColor: '#D2D2D2', marginRight: px2p(9)}}></View>
-                  <Text style={{fontSize: px2p(12), color: '#CCC'}}>搜一下区块链资讯、交易所、项目、百科</Text>
+                  <Text style={{fontSize: px2p(12), color: '#CCC'}}>搜一下区______index</Text>
                 </View>
               </BoxShadow>
           </TouchableOpacity>
 
     )
-  }
-
-  onHotkeyClick =(keyword) => {
-    // let _history = []
-    // const history = await StorageUtil.get('searchHistory')
- /*   this.props.dispatch({
-      type: 'search/updateHistory',
-    })*/
-    this.props.dispatch({
-      type: 'search/saveHistory',
-      payload: keyword,
-        callback:()=>{
-            this.props.navigation.navigate('Search', {keyword, isHistoryVisiable: false})
-        }
-    })
-    // const index = history.findIndex(h => h === keyword)
-    // if (index !== -1) {
-    //   _history = [keyword].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
-    // } else {
-    //   _history = [keyword, ...history].slice(0, 6)
-    // }
-
-    // StorageUtil.save('searchHistory', [..._history])
   }
 
   renderSearchItems = () => {
@@ -161,7 +138,7 @@ class Home extends Component {
           this.props.hotKey.map((searchItem,index) => (
                 <TouchableOpacity
                     key={searchItem.hot_keyword}
-                    onPress={() => this.onHotkeyClick(searchItem.hot_keyword)}>
+                    onPress={() => this.props.navigation.navigate('EditPost', {title: searchItem.hot_keyword})}>
                     {/* // onPress={() => this.props.navigation.navigate('Search', {key: searchItem.hot_keyword})}> */}
                     <View
                         style={{
@@ -193,7 +170,6 @@ class Home extends Component {
 
     }
   renderNewsCell = ({title, resource, time_num, thubmnail,url}) => {
-      console.log(this);
     return (
       <TouchableOpacity
           activeOpacity={0.8}
@@ -219,9 +195,9 @@ class Home extends Component {
         </View>
       ))
     )
-    
+
   }
-  
+
   render() {
     return (
       <SafeAreaView backgroundColor='#fff'>

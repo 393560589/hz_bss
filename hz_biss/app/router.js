@@ -16,7 +16,7 @@ import AboutUS from "./pages/User/aboutus";
 import Invoice from "./pages/User/invoice";
 import FeedBack from "./pages/User/feedback";
 import DataPush from "./pages/User/datapush";
-import Search from './pages/Search/_index'
+import Search from './pages/Search/index'
 import SetName from './pages/User/setname'
 import EditPost from './pages/EditPost'
 import {px2dp} from "./utils";
