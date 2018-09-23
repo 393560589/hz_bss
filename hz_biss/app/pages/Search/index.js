@@ -94,7 +94,7 @@ export default class Search extends PureComponent {
         this.webView.goBack()
     }
 
-    initHistoryList = async () => {
+    initHistoryList = () => {
         StorageUtil.get('searchHistory')
             .then(historyList => {
                 const { keyword } = this.state
