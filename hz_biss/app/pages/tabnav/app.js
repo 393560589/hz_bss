@@ -5,7 +5,7 @@ import Home from '../../models/Home'
 import Login from '../../models/login'
 import SetUser from '../../models/setuser'
 import User from '../../models/User'
-import search from '../../models/search'
+// import search from '../../models/search'
 import Router, { routerMiddleware, routerReducer } from './'
 import { StorageUtil } from '../../utils/storage';
 // import cart from '../../models/cart';
@@ -20,7 +20,7 @@ import { StorageUtil } from '../../utils/storage';
 
 
 const app = dva({
-    models:[Home,Login,SetUser,User, search],
+    models:[Home,Login,SetUser,User],
     extraReducers: { router: routerReducer },
     onAction: [routerMiddleware],
     onError(e){

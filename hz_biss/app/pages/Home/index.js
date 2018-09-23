@@ -138,8 +138,7 @@ class Home extends Component {
           this.props.hotKey.map((searchItem,index) => (
                 <TouchableOpacity
                     key={searchItem.hot_keyword}
-                    onPress={() => this.props.navigation.navigate('EditPost', {title: searchItem.hot_keyword})}>
-                    {/* // onPress={() => this.props.navigation.navigate('Search', {key: searchItem.hot_keyword})}> */}
+                    onPress={() => this.props.navigation.navigate('Search', {keyword: searchItem.hot_keyword, autoFocus: false})}>
                     <View
                         style={{
                             borderRadius: px2p(11),

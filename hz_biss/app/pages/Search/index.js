@@ -9,7 +9,8 @@ import {
     TouchableOpacity,
     WebView,
     KeyboardAvoidingView,
-    Platform
+    Platform,
+    Keyboard
 } from 'react-native'
 import Header from '../../components/SearchHeader'
 import { px2p } from '../../utils';
@@ -43,15 +44,15 @@ export default class Search extends PureComponent {
         //   params.updateHistory(params.historyList)
         //   params.shouldHistoryUpdate = false
         // }
-        if (params && params.keyword && params.search && !params.isHistoryVisiable) {
+        if (params && params.keyword && params.search) {
           // console.log('search', params.keyword)
           params.search(params.keyword)
         }
         // if (params && params.isHistoryVisiable && params.showHistory) {
-        //   // console.log('showHistory')
+        //   console.log('showHistory')
         //   params.showHistory()
         // }
-        // console.log(params, 'parmas')
+        console.log(params, 'parmas')
         return (
             { header: <Header navigation={navigation}/>}
         )
@@ -63,35 +64,58 @@ export default class Search extends PureComponent {
             historyList: [],
             isInputFocus: true,
             isWebViewVisiable: false,
-            keyword: ''
+            keyword: '',
+            // isHistoryVisiable: true
         }
     }
 
     componentDidMount() {
-        // this.props.dispatch({
-        //     type: 'search/updateHistory'
-        // })
-        // this.props.navigation.setParams({updateHistory: this.updateHistory, search: this.search, showHistory: this.showHistory, headerType: 0, backAction: this.webViewBack})
         this.props.navigation.setParams({search: this.search, showHistory: this.showHistory, headerType: 0, backAction: this.webViewBack})
-        // this.initHistory()
+        this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow);
+        this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide);
+        this.initHistoryList()
+    }
+
+    componentWillUnmount() {
+        this.syncHistoryToLocalStorage()
+    }
+
+    _keyboardDidShow = () => {
+        const { params } = this.props.navigation.state
+        // if (params && params.keyword !== undefined || params.keyword !== '') return
+        this.setState({isWebViewVisiable: false})
+    }
+
+    _keyboardDidHide = () => {
+        this.setState({isWebViewVisiable: true})
     }
 
     webViewBack = () => {
         this.webView.goBack()
     }
 
-    // updateHistory = (history) => {
-    //   console.log(history, 'update state')
-    //   this.setState({historyList: history})
-    // }
-    // loadHistory = async () => {
-    //   const history = await StorageUtil.get('searchHistory')
-    // }
+    initHistoryList = async () => {
+        StorageUtil.get('searchHistory')
+            .then(historyList => {
+                const { keyword } = this.state
+                    if (keyword) {
+                        this.updateHistory(historyList, keyword)
+                    } else {
+                        this.setState({historyList})
+                    }
+            })
+       
+    }
 
-//  initHistory = async () => {
-//   const history = await StorageUtil.get('searchHistory')
-//     this.setState({historyList: history})
-//   }
+    updateHistory = (historyList, keyword) => {
+        const index = historyList.findIndex(h => h === keyword)
+        const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
+        this.setState({historyList: _history})
+    }
+
+    syncHistoryToLocalStorage = () => {
+        StorageUtil.save('searchHistory', this.state.historyList)
+    }
 
     toggleInputState = () => {
         this.setState((prev) => ({isInputFocus: !prev.isInputFocus}))
@@ -100,34 +124,23 @@ export default class Search extends PureComponent {
     clearOneHistory = (_index) => {
         const { historyList } = this.state
         const _history = historyList.filter((_, index) => index !== _index)
-        StorageUtil.save('searchHistory', _history)
-        this.props.dispatch({
-            type: 'search/updateHistory'
-        })
-        // this.setState({historyList: _history})
+        this.setState({historyList: _history})
     }
 
     clearHistory = () => {
-        StorageUtil.save('searchHistory', [])
-        this.props.dispatch({
-            type: 'search/updateHistory'
-        })
-        // this.setState({historyList: []})
+        this.setState({historyList: []})
     }
 
-    search =(keyword) => {
-        // const { history } = this.props
+    search = (keyword) => {
+        const { historyList } = this.state
+        console.log(keyword, 'keyword')
         if (keyword !== '' || keyword !== undefined) {
             input = this.props.navigation.state.params.inputRef
             input && input.blur()
-            this.setState({isWebViewVisiable: true, keyword})
-            // const index = history.findIndex(h => h === keyword)
-            // const _history = [keyword].concat(history.slice(0, index), history.slice(index + 1)).slice(0, 6)
-            // this.props.navigation.setParams({isHistoryVisiable: false, keyword: ''})
-            // StorageUtil.save('searchHistory', [..._history])
-            // this.props.dispatch({
-            //     type: 'search/updateHistory'
-            // })
+            const index = historyList.findIndex(h => h === keyword)
+            const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
+            this.setState({isWebViewVisiable: true, keyword}, () => this.updateHistory(_history, keyword))
+            this.props.navigation.setParams({keyword: ''})
         }
     }
 
@@ -136,16 +149,7 @@ export default class Search extends PureComponent {
     }
 
     onMessage = ({nativeEvent}) => {
-
         const res = JSON.parse(nativeEvent.data)
-        // if (res.type === 'post') {
-        //   if (!this.props.isLogin) { //gai
-        //     this.props.navigation.navigate('EditPost', {id: res.id})
-        //   } else {
-        //     this.props.navigation.navigate('Login')
-        //   }
-        // }
-
         switch (res.type) {
             case 'post':
                 if (!this.props.isLogin) { //gai
@@ -182,7 +186,7 @@ export default class Search extends PureComponent {
             <KeyboardAvoidingView keyboardVerticalOffset={Platform.select({ios: 90, android: 50})}>
                 <View style={styles.container}>
                     <Text style={{fontSize: px2p(12), color: '#999'}}>搜索历史</Text>
-                    {this.props.history && this.props.history.map((item, index) => (
+                    {this.state.historyList.map((item, index) => (
                         <TouchableOpacity
                             activeOpacity={1}
                             key={item + index}>

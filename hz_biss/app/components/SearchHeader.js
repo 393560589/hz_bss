@@ -55,11 +55,12 @@ class SearchBar extends PureComponent {
   }
 
   render() {
+    const autoFocus = this.props.navigation.getParam('autoFocus', true)
     return (
       <View style={searchBarStyles.container}>
         <Image style={searchBarStyles.icon} source={require('../image/search/icon.png')}/>
         <TextInput
-          // autoFocus
+          autoFocus={autoFocus}
           ref={this.props.inputRef}
           flex={1}
           style={{padding: px2p(5)}}
@@ -119,7 +120,7 @@ class PhoneHeader extends PureComponent {
   }
   
   onFocus = () => {
-    this.props.navigation.setParams({isHistoryVisiable: true, inputRef: this.input})
+    this.props.navigation.setParams({inputRef: this.input, isHistoryVisiable: true})
   }
 
   onBlur = () => {
