@@ -8,7 +8,9 @@ import {
   Platform,
   SafeAreaView,
   TouchableOpacity,
-  ActivityIndicator
+  ActivityIndicator,
+  FlatList,
+  RefreshControl
 } from 'react-native';
 import Swiper from 'react-native-swiper'
 import {Modal} from 'antd-mobile-rn'
@@ -21,15 +23,16 @@ import SplashScreen from "rn-splash-screen";
 import {BoxShadow} from 'react-native-shadow'
 const alert = Modal.alert;
 
-@connect(({home}) => ({...home}))
+@connect(({home, loading}) => ({...home, isLoading: loading}))
 class Home extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isLoading: false,
+      // isLoading: false,
       swipers: [],
       entries: [],
-      pageIndex: 1
+      pageIndex: 1,
+      refreshing: true
     }
   }
 
@@ -77,8 +80,8 @@ class Home extends Component {
             })
         }
     })
-
     this.fetchNews()
+    console.log(this.props.isLoading)
   }
 
   fetchNews = () => {
@@ -89,17 +92,15 @@ class Home extends Component {
   }
 
   fetchMore = () => {
+    console.log(this.props.isLoading)
     this.setState((prev) => ({pageIndex: prev.pageIndex + 1}), this.fetchNews)
   }
 
-  // renderStaticSearchBar = () => {
-  //   return (
-  //     <View style={styles.staticSearchBar}>
-  //       {this.renderSearchBar()}
-  //       {this.renderSearchItems()}
-  //     </View>
-  //   )
-  // }
+  _onMomentumScrollEnd = ({nativeEvent}) => {
+    if (nativeEvent.contentOffset.y + nativeEvent.layoutMeasurement.height > nativeEvent.contentSize.height - 50) {
+      this.fetchMore()
+    }
+  }
 
   renderSearchBar = () => {
       const shadowOpt = {
@@ -114,19 +115,18 @@ class Home extends Component {
 
       }
     return (
-
-          <TouchableOpacity
-              style={styles.searchBarContainer}
-              activeOpacity={1}
-              onPress={() => this.props.navigation.navigate('Search')}>
-              <BoxShadow setting={shadowOpt}>
-                <View style={styles.searchBar}>
-                  <Image source={require('../../image/home/search.png')} style={{width: px2p(22), height: px2p(22), margin: px2p(10)}}/>
-                  <View style={{width: px2p(1), height: px2p(15), backgroundColor: '#D2D2D2', marginRight: px2p(9)}}></View>
-                  <Text style={{fontSize: px2p(12), color: '#CCC'}}>搜一下区______index</Text>
-                </View>
-              </BoxShadow>
-          </TouchableOpacity>
+        <TouchableOpacity
+            style={styles.searchBarContainer}
+            activeOpacity={1}
+            onPress={() => this.props.navigation.navigate('Search')}>
+            <BoxShadow setting={shadowOpt}>
+              <View style={styles.searchBar}>
+                <Image source={require('../../image/home/search.png')} style={{width: px2p(22), height: px2p(22), margin: px2p(10)}}/>
+                <View style={{width: px2p(1), height: px2p(15), backgroundColor: '#D2D2D2', marginRight: px2p(9)}}></View>
+                <Text style={{fontSize: px2p(12), color: '#CCC'}}>搜一下区块链资讯、交易所、项目、百科</Text>
+              </View>
+            </BoxShadow>
+        </TouchableOpacity>
 
     )
   }
@@ -168,7 +168,7 @@ class Home extends Component {
         });
 
     }
-  renderNewsCell = ({title, resource, time_num, thubmnail,url}) => {
+  renderNewsCell = ({item : {title, resource, time_num, thubmnail,url}}) => {
     return (
       <TouchableOpacity
           activeOpacity={0.8}
@@ -188,11 +188,17 @@ class Home extends Component {
 
   renderNews = () => {
     return (
-      this.props.newsList.map((news,index) => (
-        <View key={index}>
-          {this.renderNewsCell({...news})}
-        </View>
-      ))
+      <FlatList
+        style={{top: px2p(-50)}}
+        renderItem={this.renderNewsCell}
+        data={this.props.newsList}
+        // refreshControl={
+        //   <RefreshControl
+        //     refreshing={this.props.isLoading.effects['home/getNews']}
+        //     onRefresh={this.fetchNews}
+        //   />
+        // }
+      />
     )
 
   }
@@ -200,7 +206,10 @@ class Home extends Component {
   render() {
     return (
       <SafeAreaView backgroundColor='#fff'>
-        <ScrollView backgroundColor={common.gray_bg}>
+        <ScrollView
+          backgroundColor={common.gray_bg}
+          onMomentumScrollEnd={this._onMomentumScrollEnd}  
+        >
           <View style={{zIndex: 99}}>
             <Swiper
               autoplay
@@ -222,9 +231,9 @@ class Home extends Component {
           <Entires data={this.props.nav} style={{top: px2p(-50)}} { ...this.props}/>
           {this.renderNews()}
           <View style={styles.loadMoreView}>
-            {this.state.isLoading
-              ? <ActivityIndicator animating={this.props.loading}/>
-              : <Text style={styles.loadMoreText} onPress={this.fetchMore}>点击查看更多</Text>}
+            {this.props.isLoading.effects['home/getNews']
+              ? <ActivityIndicator/>
+              : <Text style={styles.loadMoreText}>上拉加载更多新闻～</Text>}
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -287,7 +296,7 @@ const styles = StyleSheet.create({
     // marginBottom: px2p(10)
   },
   newsCellContainer: {
-    top: px2p(-50),
+    // top: px2p(-50),
     flexDirection: 'row',
     alignItems:'stretch',
     padding: px2p(15),

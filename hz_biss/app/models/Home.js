@@ -62,20 +62,7 @@ export default {
         },
 
         *getNews ({payload}, {call, put}) {
-            yield put({
-                type: 'update',
-                payload: {
-                    loading: true
-                }
-            })
             const res = yield call(server.indexNews, payload);
-            yield put({
-                type: 'update',
-                payload: {
-                    loading: true
-                }
-            })
-            console.log(res);
             if (res.status === 200) {
                 yield put({
                     type: 'updateNewsList',
@@ -84,6 +71,9 @@ export default {
                     }
                 })
             }
+        },
+        *refreshNews ({payload}, {call, put}) {
+            const res = yield call(server.indexNews)
         }
     }
 }
