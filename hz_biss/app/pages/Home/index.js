@@ -102,7 +102,7 @@ class Home extends Component {
   }
 
   _onMomentumScrollEnd = ({nativeEvent}) => {
-    if (nativeEvent.contentOffset.y + nativeEvent.layoutMeasurement.height > nativeEvent.contentSize.height - 50) {
+    if (nativeEvent.contentOffset.y + nativeEvent.layoutMeasurement.height > nativeEvent.contentSize.height - 400) {
       this.fetchMore()
     }
   }
@@ -127,7 +127,7 @@ class Home extends Component {
             <BoxShadow setting={shadowOpt}>
               <View style={styles.searchBar}>
                 <Image source={require('../../image/home/search.png')} style={{width: px2p(22), height: px2p(22), margin: px2p(10)}}/>
-                <View style={{width: px2p(1), height: px2p(15), backgroundColor: '#D2D2D2', marginRight: px2p(9)}}></View>
+                <View style={{width: px2p(1), height: px2p(15), backgroundColor: '#D2D2D2', marginRight: px2p(9)}}/>
                 <Text style={{fontSize: px2p(12), color: '#CCC'}}>搜一下区块链资讯、交易所、项目、百科</Text>
               </View>
             </BoxShadow>
@@ -212,8 +212,13 @@ class Home extends Component {
     return (
       <SafeAreaView backgroundColor='#fff'>
         <ScrollView
-          backgroundColor={common.gray_bg}
-          onMomentumScrollEnd={this._onMomentumScrollEnd}  
+         /*   bouncesZoom={true}
+            bounces={true}
+            maximumZoomScale={1.2}
+            minimumZoomScale={1}*/
+            backgroundColor={common.gray_bg}
+            //alwaysBounceVertical={true}
+             onScroll={this._onMomentumScrollEnd}
         >
           <View style={{zIndex: 99}}>
             <Swiper

@@ -60,13 +60,14 @@ export default class Search extends PureComponent {
         )
     }
 
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             historyList: [],
             // isInputFocus: true,
             isWebViewVisiable: false,
             keyword: '',
+            goback:false
             // isHistoryVisiable: true
         }
     }
@@ -103,6 +104,7 @@ export default class Search extends PureComponent {
     initHistoryList = () => {
         StorageUtil.get('searchHistory')
             .then(historyList => {
+               if(!historyList) return;
                 const { keyword } = this.state
                     if (keyword) {
                         this.updateHistory(historyList, keyword)
@@ -114,6 +116,7 @@ export default class Search extends PureComponent {
     }
 
     updateHistory = (historyList, keyword) => {
+
         const index = historyList.findIndex(h => h === keyword)
         const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
         this.setState({historyList: _history})
@@ -138,14 +141,17 @@ export default class Search extends PureComponent {
     }
 
     search = (keyword) => {
-        const { historyList } = this.state
+        let { historyList } = this.state
+
         console.log(keyword, 'keyword')
         if (keyword !== '' || keyword !== undefined) {
             Keyboard.dismiss()
             // input = this.props.navigation.state.params.inputRef
             // input && input.blur()
+            console.log(historyList+'123');
             const index = historyList.findIndex(h => h === keyword)
             const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
+
             this.setState({isWebViewVisiable: true, keyword}, () => this.updateHistory(_history, keyword))
             this.props.navigation.setParams({keyword: ''})
         }
@@ -193,7 +199,7 @@ export default class Search extends PureComponent {
             <KeyboardAvoidingView keyboardVerticalOffset={Platform.select({ios: 90, android: 50})}>
                 <View style={styles.container}>
                     <Text style={{fontSize: px2p(12), color: '#999'}}>搜索历史</Text>
-                    {this.state.historyList.map((item, index) => (
+                    {this.state.historyList && this.state.historyList.map((item, index) => (
                         <TouchableOpacity
                             activeOpacity={1}
                             key={item + index}>
@@ -205,17 +211,24 @@ export default class Search extends PureComponent {
             </KeyboardAvoidingView>
         )
     }
+    onNavigationStateChange(nav){
 
+        this.setState({
+            goback:nav.canGoBack
+        })
+    }
     renderWebView = () => {
         const { keyword } = this.state;
         return (
             <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
                 <WebView
+                    onNavigationStateChange={(nav)=>this.onNavigationStateChange(nav)}
                     ref={view => this.webView = view}
                     source={{uri: `http://bitss.vip/dist/SearchResult?keyword=${keyword}`}}
                     onMessage={this.onMessage}
                     style={{width:deviceWidth,backgroundColor:'#fff'}}
                     injectedJavaScript={patchPostMessageJsCode}
+
                     // onLoadStart={() => console.log('start load')}
                 />
 
@@ -223,8 +236,8 @@ export default class Search extends PureComponent {
         )
     }
     onBackButtonPressAndroid=()=>{
-        this.props.navigation.pop()
-        return true
+        this.state.goback ? this.webView.goBack(): this.props.navigation.navigate('Home')
+        return true;
     }
     render() {
         return (
