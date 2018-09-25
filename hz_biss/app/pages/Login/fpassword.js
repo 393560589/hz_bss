@@ -5,19 +5,50 @@ import {
     View
 } from 'react-native';
 import { InputItem,Button,WhiteSpace } from 'antd-mobile-rn'
-import {List } from '../../components/ListItem'
-import { createForm } from 'rc-form'
+import { List } from '../../components/ListItem'
 import {common,deviceWidth} from "../../styles";
 import {px2dp} from "../../utils";
 import {commonStyle} from "../../styles/common";
+import TimeClock from '../../components/TimeClock'
+import {connect} from "../../utils/dva";
+import { AndroidBackHandler } from 'react-navigation-backhandler'
+import {Toast} from "antd-mobile-rn/lib/index.native";
 
+@connect(({User})=>({
+    ...User
+}))
 class Fpassword extends PureComponent {
-    componentDidMount(){
-        console.log(deviceWidth)
+    state={
+        phone:'',
+        code:'',
+        pwd:'',
+        pwdf:'',
+    }
+    onBackButtonPressAndroid=()=>{
+        this.props.navigation.pop()
+        return true
+    };
+    dochange(){
+        const { pwd,pwdf } = this.state;
+        const {dispatch} = this.props;
+        if(pwd !== pwdf){
+            return Toast.info('两次输入密码不一致')
+        }
+        dispatch({
+            type:'User/findpass',
+            payload:{
+                phone:this.props.phone,
+                code:this.state.code,
+                pass:this.state.pwd
+            },
+            callback:(data)=>{
+                Toast.info(data.res,2,null,false);
+            }
+        })
     }
     render() {
-        const { getFieldProps } = this.props.form;
         return (
+            <AndroidBackHandler onBackPress={this.onBackButtonPressAndroid}>
             <View style={styles.container}>
                 <View style={styles.f_input_wrap}>
 
@@ -25,43 +56,44 @@ class Fpassword extends PureComponent {
 
                     <List border={false}>
                         <InputItem
-                            {...getFieldProps('phone')}
-                            type="phone"
+                            type="number"
                             clear
                             labelNumber={3}
                             placeholder="输入手机号"
+                            onChange={(text)=>this.props.dispatch({
+                                type:'User/update',
+                                payload:{
+                                    phone:text
+                                }
+                            })}
                         >
                             <Text style={{color:'#666'}}>+86 |</Text>
                         </InputItem>
                         <WhiteSpace/>
                         <InputItem
-                            {...getFieldProps('code')}
                             type="number"
                             placeholder="验证码"
                             extra={
-                                <Text style={{fontSize:px2dp(12),color:'#666'}}>| 获取验证码</Text>
+                                <TimeClock />
                             }
-                            onExtraClick={()=>this.getCode()}
+                            //onExtraClick={()=>this.getCode()}
 
                         />
                         <WhiteSpace/>
                         <InputItem
-                            {...getFieldProps('pwd')}
                             type="password"
-
+                            clear
                             placeholder="请输入新密码"
                         />
                         <WhiteSpace/>
                         <InputItem
-                            {...getFieldProps('pwdt')}
                             type="password"
                             clear
-
                             placeholder="确认密码"
                         />
                     </List>
                     <View style={commonStyle.btn_wrap}>
-                        <Button style={styles.setbtn}>
+                        <Button style={styles.setbtn} onClick={()=>this.dochange()}>
                             <Text style={{color:'#fff',fontSize:px2dp(18)}}>
                                 完成
                             </Text>
@@ -70,6 +102,7 @@ class Fpassword extends PureComponent {
                 </View>
 
             </View>
+            </AndroidBackHandler>
         );
     }
 }
@@ -101,9 +134,9 @@ const styles = StyleSheet.create({
     setbtn:{
         borderWidth:0,
         backgroundColor:'#F29600',
-        color:'#fff',
+        //color:'#fff',
         marginTop:px2dp(40),
         width:deviceWidth-180
     }
 });
-export default createForm()(Fpassword)
+export default Fpassword

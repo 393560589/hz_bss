@@ -7,8 +7,8 @@ import {connect} from "../../../utils/dva";
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    paddingTop: px2p(16),
-    paddingBottom: px2p(20),
+    paddingTop: px2p(12),
+    paddingBottom: px2p(14),
     paddingLeft: px2p(17),
     paddingRight: px2p(17),
     justifyContent: 'space-between',
@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   image: {
+      marginBottom:px2p(4),
     width: px2p(30),
     height: px2p(30),
-    marginBottom: px2p(13),
       borderRadius:1000,
   },
   text: {
@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
 export default class Entries extends Component {
 
     openWebView(url){
-      console.log(url)
         this.props.dispatch({
             type:'home/ToWebview',
             payload:{
@@ -55,16 +54,23 @@ export default class Entries extends Component {
            <View style={[styles.container,style]}>
                {
                    data && data.map(entry => (
-                       <TouchableOpacity
-                           activeOpacity={0.8}
-                           onPress={()=>this.openWebView(entry.url)}
+                       <View
                            style={styles.entry}
                            key={entry.title}>
-                           <View>
-                               <Image style={styles.image} source={{uri:`http://bitss.vip/static${entry.logo}`}} resizeMode='contain'/>
-                           </View>
-                           <Text style={styles.text}>{entry.title}</Text>
-                       </TouchableOpacity>
+                           <TouchableOpacity
+                               activeOpacity={0.7}
+                               onPress={()=>this.openWebView(entry.url)}
+                           >
+                               <Image style={styles.image}
+                                      source={{uri:`http://bitss.vip/static${entry.logo}`}}/>
+                           </TouchableOpacity>
+                           <TouchableOpacity
+                               onPress={()=>this.openWebView(entry.url)}
+                               activeOpacity={0.7}
+                           >
+                                <Text style={styles.text}>{entry.title}</Text>
+                           </TouchableOpacity>
+                       </View>
                    ))
                }
            </View>

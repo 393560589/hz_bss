@@ -18,12 +18,12 @@ ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifes
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-27:12
 MERGED from [:rn-splash-screen] /Users/JerryC/Desktop/bss/hz_biss/node_modules/rn-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-60:12
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-104:12
 MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-22:12
 MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:2:1-15:12
@@ -149,14 +149,14 @@ MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/nod
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:22-62
 application
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:26:5-51:19
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-25:19
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-25:19
 MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-58:19
 MERGED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-58:19
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:5-102:19
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:5-102:19
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-20:19
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:13:5-20
@@ -233,6 +233,8 @@ uses-sdk
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:rn-splash-screen] /Users/JerryC/Desktop/bss/hz_biss/node_modules/rn-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
@@ -243,8 +245,6 @@ MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
@@ -307,6 +307,22 @@ INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidMani
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-19:58
+	android:resource
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:17-55
+	android:name
+		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:17-67
 provider#android.support.v4.content.FileProvider
 ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:9-24:20
 	android:grantUriPermissions
@@ -317,12 +333,6 @@ ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node
 		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:13-37
 	android:name
 		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-67
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:13-23:58
-	android:resource
-		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:17-55
-	android:name
-		ADDED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:17-67
 service#cn.jpush.android.service.PushService
 ADDED from [:jcore-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jcore-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:9-26:19
 	android:enabled
@@ -565,16 +575,6 @@ action#cn.jpush.android.intent.RECEIVE_MESSAGE
 ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:97:17-82
 	android:name
 		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:97:25-79
-provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-20:20
-	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:13-47
-	android:authorities
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-60
-	android:exported
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:13-37
-	android:name
-		ADDED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-56
 receiver#com.learnium.RNDeviceInfo.RNDeviceReceiver
 ADDED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-19:20
 	android:enabled

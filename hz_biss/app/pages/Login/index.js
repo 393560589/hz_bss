@@ -6,67 +6,60 @@ import {
 } from 'react-native';
 import { InputItem,Button,WhiteSpace,Toast } from 'antd-mobile-rn'
 import {List } from '../../components/ListItem'
-import { createForm } from 'rc-form'
+
 import {common,deviceWidth} from "../../styles";
 import {px2dp} from "../../utils";
 import {commonStyle} from "../../styles/common";
 import {connect} from "../../utils/dva";
 import {StorageUtil} from "../../utils/storage";
+import TimeClock from '../../components/TimeClock'
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 @connect(({User})=>({...User}))
 class Login extends PureComponent {
     state={
-        codelogin:true,
-        phone:'',
-        pass:'',
-    }
-    componentDidMount(){
+        codelogin:false,
 
+        pass:'',
+        code:'',
     }
-    getCode(){
-        const {dispatch} = this.props;
-        //const { getFieldProps } = this.props.form;
-        //console.log(this.state.phone)
-        dispatch({
-            type:'User/getcode',
-            payload:{
-                phone:this.state.phone,
-            },
-            callback:(data)=>{
-                console.log(data)
-            }
-        })
-    }
+
     login(){
-        const { dispatch,navigation } = this.props;
+        const { dispatch,phone } = this.props;
         dispatch({
             type:'User/trylogin',
             payload:{
-                phone:this.state.phone,
+                phone:phone,
                 code:this.state.code
             },
             callback:(data)=>{
                 console.log(data);
-
+                dispatch({
+                    type:'User/update',
+                    payload:{
+                        phone:phone
+                    }
+                })
+                StorageUtil.save('phone',phone);
+                this.getUser()
             }
         })
     }
     loginpass(){
-        const { dispatch }=this.props;
+        const { dispatch,phone }=this.props;
         dispatch({
             type:'User/loginpass',
             payload:{
-                phone:this.state.phone,
+                phone:phone,
                 pass:this.state.pass
             },
             callback:(item)=>{
-                console.log(item);
                 dispatch({
                     type:'User/update',
                     payload:{
-                        phone:this.state.phone
+                        phone:phone
                     }
                 })
-                StorageUtil.save('phone',this.state.phone);
+                StorageUtil.save('phone',phone);
                 this.getUser()
             }
         })
@@ -76,9 +69,10 @@ class Login extends PureComponent {
         dispatch({
             type:'User/userInfo',
             payload:{
-                phone:this.state.phone,
+                phone:this.props.phone,
             },
             callback:(data)=>{
+                console.log(data);
                 Toast.success('登录成功',2,null,false)
                 navigation.pop();
             }
@@ -88,8 +82,9 @@ class Login extends PureComponent {
         this.props.navigation.navigate(page)
     }
     render() {
-        const { getFieldProps } = this.props.form;
+
         return (
+            <AndroidBackHandler onBackPress={this.onBackButtonPressAndroid}>
             <View style={styles.container}>
                 {
                     this.state.codelogin ? (<View style={styles.f_input_wrap}>
@@ -103,20 +98,27 @@ class Login extends PureComponent {
 
                         <List border={false}>
                             <InputItem
-                                type="phone"
+                                type="number"
                                 clear
                                 labelNumber={3}
-                                placeholder="18042317468"
+                                placeholder="请输入手机号码"
+                                onChange={text=>this.props.dispatch({
+                                    type:'User/update',
+                                    payload:{
+                                        phone:text
+                                    }
+                                })}
                             >
                                 <Text style={{color:'#666'}}>+86&nbsp;|</Text>
                             </InputItem>
                             <WhiteSpace/>
                             <InputItem
                                 type="number"
-                                placeholder="1111"
-                                extra={<Text style={{fontSize:px2dp(12),color:'#666'}}>| 获取验证码</Text>}
-                                onExtraClick={()=>this.getCode()}
-
+                                placeholder="请输入6位验证码"
+                                extra={
+                                    <TimeClock />
+                                }
+                                onChange={text=>this.setState({code:text})}
                             />
                         </List>
                         <WhiteSpace/>
@@ -144,7 +146,12 @@ class Login extends PureComponent {
                                 clear
                                 labelNumber={3}
                                 placeholder="手机号"
-                                onChange={(text)=>this.setState({phone:text})}
+                                onChange={text=>this.props.dispatch({
+                                    type:'User/update',
+                                    payload:{
+                                        phone:text
+                                    }
+                                })}
                             >
                                 <Text style={{color:'#666'}}>+86&nbsp;|</Text>
                             </InputItem>
@@ -191,6 +198,7 @@ class Login extends PureComponent {
 
 
             </View>
+            </AndroidBackHandler>
         );
     }
 }
@@ -227,4 +235,4 @@ const styles = StyleSheet.create({
         width:deviceWidth-180
     }
 });
-export default createForm()(Login)
+export default Login

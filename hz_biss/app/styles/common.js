@@ -40,7 +40,7 @@ export const common={
             flex: 1,
             textAlign: 'center',
             fontSize:px2dp(16),
-            fontWeight:Platform.OS === 'ios' ? '200':'lighter',
+            fontWeight:'200',
         },
         headerStyle: {
             backgroundColor: '#fff',

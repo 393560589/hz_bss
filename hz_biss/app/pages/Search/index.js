@@ -143,7 +143,7 @@ export default class Search extends PureComponent {
     search = (keyword) => {
         let { historyList } = this.state
 
-        console.log(keyword, 'keyword')
+        //console.log(keyword, 'keyword')
         if (keyword !== '' || keyword !== undefined) {
             Keyboard.dismiss()
             // input = this.props.navigation.state.params.inputRef

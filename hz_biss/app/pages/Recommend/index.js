@@ -81,17 +81,15 @@ export default class Recommend extends React.Component {
             return true;
         }
     }
-    startloading=()=>{
-        console.log('开始处理')
-    };
+
     onMessage = ({nativeEvent}) => {
         const res = JSON.parse(nativeEvent.data);
         switch (res.type) {
             case 'leave':
-                this.props.navigation.setParams({headerType: 1, keyword: ''})
+                this.props.navigation.setParams({headerType: 1, keyword: ''});
                 break
             case 'enter':
-                this.props.navigation.setParams({headerType: 0, keyword: ''})
+                this.props.navigation.setParams({headerType: 0, keyword: ''});
                 break
         }
 

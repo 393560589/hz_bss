@@ -14,7 +14,8 @@ export default {
         phone:'',
         server:[],
         erm:false,
-        loading: false
+        loading: false,
+        codeSuccess: false,		//获取验证码是否成功
     },
     reducers: {
         /**
@@ -23,7 +24,12 @@ export default {
         update(state,{payload}) {
             return { ...state, ...payload }
         },
-
+        setNetDone(state, { payload }) {
+            return {
+                ...state,
+                [payload.name]: payload.status
+            }
+        },
     },
     effects: {
         *loading({callback=()=>{},payload},{put}){
@@ -63,22 +69,35 @@ export default {
         },
         *getcode({callback=()=>{},payload},{call,put}){
             const response = yield call(server.code,payload);
-            //if(response.status !== 200 ) return Toast.fail(response.message);
+
+            if(response.status !== 200 ) return Toast.fail(response.res);
+            yield put({
+                type: 'setNetDone',
+                payload: {
+                    name: 'codeSuccess',
+                    status: true
+                }
+            });
             callback(response)
         },
         *trylogin({callback=()=>{},payload},{call,put}){
             const response = yield call(server.login,payload);
-            if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
+            console.log(payload)
+            console.log(response);
+            if(response.status !== 200 ) return Toast.fail(response.res,2,null,false);
             callback(response)
         },
         *loginpass({callback=()=>{},payload},{call,put}){
             const response = yield call(server.loginpass,payload);
-            //if(response.status !== 200 ) return Toast.fail(response.message);
+            console.log(payload)
+            console.log(response)
+            if(response.status !== 200 ) return Toast.fail(response.res);
             callback(response)
         },
         *sign({callback=()=>{},payload},{call,put}){
             const response = yield call(server.sign,payload);
-            if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
+            console.log(response)
+            if(response.status !== 200 ) return Toast.fail(response.res,2,null,false);
             callback(response)
         },
         *sex({callback=()=>{},payload},{call,put,select}){
@@ -125,6 +144,8 @@ export default {
         },
         *findpass({callback=()=>{},payload},{call,put,select}){
             const response = yield call(server.findpass,payload);
+            if(response.status !== 200 ) return Toast.fail(response.res,2,null,false);
+
             console.log(response)
             callback(response)
         },

@@ -38,22 +38,6 @@ class Home extends Component {
 
   componentDidMount(){
     const {dispatch} = this.props;
-    const history = StorageUtil.get('searchHistory')
-        .then(() => {})
-        .catch(e => {
-            StorageUtil.save('searchHistory', [])
-        })
-    console.log(history, 'history')
-    dispatch({
-        type:'home/getBanner',
-        callback:(data)=>{
-            SplashScreen.hide();
-
-          if (data.status === 200) {
-            this.setState({swipers: data.res})
-          }
-        }
-    })
       StorageUtil.get('phone').then(res=>{
           res &&
           dispatch({
@@ -71,6 +55,23 @@ class Home extends Component {
               }
           })
       })
+    const history = StorageUtil.get('searchHistory')
+        .then(() => {})
+        .catch(e => {
+            StorageUtil.save('searchHistory', [])
+        });
+
+    //console.log(history, 'history')
+      SplashScreen.hide();
+    dispatch({
+        type:'home/getBanner',
+        callback:(data)=>{
+          if (data.status === 200) {
+            this.setState({swipers: data.res})
+          }
+        }
+    });
+
     dispatch({
         type: 'home/getNavigation',
         callback:(data)=>{
@@ -86,7 +87,7 @@ class Home extends Component {
         }
     })
     this.fetchNews()
-    console.log(this.props.isLoading)
+   // console.log(this.props.isLoading)
   }
 
   fetchNews = () => {
@@ -97,7 +98,7 @@ class Home extends Component {
   }
 
   fetchMore = () => {
-    console.log(this.props.isLoading)
+   // console.log(this.props.isLoading)
     this.setState((prev) => ({pageIndex: prev.pageIndex + 1}), this.fetchNews)
   }
 
@@ -179,13 +180,13 @@ class Home extends Component {
           activeOpacity={0.8}
           onPress={()=>this.openWebView(url)}
           style={styles.newsCellContainer}>
-        <View flex={1} style={{justifyContent: 'space-between'}}>
-          <Text numberOfLines={2} style={{fontSize: px2p(15), color: '#070002'}}>{title}</Text>
-          <View style={{flexDirection: 'row', opacity: 0.6}}>
-            <Text>{resource} · </Text>
-            <Text>{time_num}</Text>
-          </View>
-        </View>
+            <View flex={1} style={{justifyContent: 'space-between'}}>
+              <Text numberOfLines={2} style={{fontSize: px2p(15), color: '#070002'}}>{title}</Text>
+              <View style={{flexDirection: 'row', opacity: 0.6}}>
+                <Text>{resource} · </Text>
+                <Text>{time_num}</Text>
+              </View>
+            </View>
         {thubmnail && <Image source={thubmnail} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
       </TouchableOpacity>
     )

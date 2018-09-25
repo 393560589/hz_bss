@@ -6,52 +6,46 @@
     density="560dpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1537716273225"
+    timestamp="1537877239702"
     token="-1350305572021896976"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1713" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="113" />
     <task
         name="verifier"
-        duration="0" />
+        duration="450" />
 
     <artifact
-        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
     <artifact
         location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
         location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
         location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -60,42 +54,42 @@
         location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
     <artifact
+        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
+    <artifact
+        location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1537716273225"
+        timestamp="1537877239702"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
             location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -104,8 +98,14 @@
             location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
+        <artifact
+            location="/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

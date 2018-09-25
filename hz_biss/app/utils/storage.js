@@ -4,7 +4,7 @@ import {AsyncStorage} from 'react-native'
 
 let storage = new Storage({
     size:1000,
-    storageBackend:AsyncStorage,
+    storageBackend: AsyncStorage,
     defaultExpires:null,//永不过期
     enableCache:true, // 读写内存自动获得缓存数据
     // 如果storage中没有相应数据，或数据已过期，

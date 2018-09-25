@@ -10,6 +10,7 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 import {common,deviceWidth} from "../../styles";
 import {px2dp} from "../../utils";
 import {commonStyle} from "../../styles/common";
+import TimeClock from '../../components/TimeClock'
 import {connect} from "../../utils/dva";
 @connect(({User})=>({...User}))
 class SetPassword extends PureComponent {
@@ -24,7 +25,7 @@ class SetPassword extends PureComponent {
         dispatch({
             type:'User/findpass',
             payload:{
-                phone:this.state.phone,
+                phone:this.props.phone,
                 pass:this.state.pass,
                 code:this.state.code
             },
@@ -66,8 +67,12 @@ class SetPassword extends PureComponent {
                         <InputItem
                             type="number"
                             clear
-                            value={this.state.phone}
-                            onChange={(phone)=>{this.setState({phone})}}
+                            onChange={(text)=>this.props.dispatch({
+                                type:'User/update',
+                                payload:{
+                                    phone:text
+                                }
+                            })}
                             labelNumber={3}
                             placeholder="输入手机号"
                         >
@@ -78,7 +83,9 @@ class SetPassword extends PureComponent {
                             type="number"
                             value={this.state.code}
                             placeholder="输入四位数字验证码"
-                            extra={<Text style={{fontSize:px2dp(12),color:'#666'}}>| 获取验证码</Text>}
+                            extra={
+                                <TimeClock />
+                            }
                             onExtraClick={()=>this.getCode()}
                             onChange={code=>this.setState({code})}
                         />

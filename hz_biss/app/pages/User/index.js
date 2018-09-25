@@ -167,7 +167,7 @@ export default class Users extends PureComponent {
     render() {
         const {islogin,userInfo} = this.props;
         let headSource = userInfo && userInfo.headimgurl ? {
-            uri:`http://bitss.vip${userInfo.headimgurl}`
+            uri:`http://bitss.vip${userInfo.headimgurl }`
         }:user.header;
         return (
             <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>

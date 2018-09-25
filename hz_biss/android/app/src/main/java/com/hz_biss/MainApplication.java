@@ -3,10 +3,10 @@ package com.hz_biss;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.imagepicker.ImagePickerPackage;
 import com.webview.code4android.WebViewPackage;
 import com.mehcode.reactnative.splashscreen.SplashScreenPackage;
 import com.horcrux.svg.SvgPackage;
-import com.imagepicker.ImagePickerPackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
@@ -35,10 +35,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ImagePickerPackage(),
             new WebViewPackage(),
             new SplashScreenPackage(),
             new SvgPackage(),
-            new ImagePickerPackage(),
             new RNDeviceInfo(),
             new VectorIconsPackage(),
             new JPushPackage(SHUTDOWN_TOAST, SHUTDOWN_LOG)
