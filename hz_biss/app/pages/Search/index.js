@@ -114,7 +114,6 @@ export default class Search extends PureComponent {
     }
 
     updateHistory = (historyList, keyword) => {
-
         const index = historyList.findIndex(h => h === keyword)
         const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
         this.setState({historyList: _history})
@@ -123,10 +122,6 @@ export default class Search extends PureComponent {
     syncHistoryToLocalStorage = () => {
         StorageUtil.save('searchHistory', this.state.historyList)
     }
-
-    // toggleInputState = () => {
-    //     this.setState((prev) => ({isInputFocus: !prev.isInputFocus}))
-    // }
 
     clearOneHistory = (_index) => {
         const { historyList } = this.state
