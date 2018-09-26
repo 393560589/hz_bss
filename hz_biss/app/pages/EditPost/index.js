@@ -9,7 +9,8 @@ import {
   KeyboardAvoidingView,
   SafeAreaView,
   ScrollView,
-  Platform
+  Platform,
+  Alert
 } from 'react-native';
 import { px2p } from '../../utils';
 import ImagePicker from 'react-native-image-picker'
@@ -79,9 +80,11 @@ export default class EditPost extends PureComponent {
       // headerStyle: { paddingLeft: px2p(12), paddingRight: px2p(17) },
       headerTitleStyle: {fontSize: px2p(18)},
       title: params.title || '发帖',
-      headerBackImage: <Image source={require('../../image/editPost/close.png')} style={{marginLeft: px2p(12)}}/>,
-      headerBackTitle: null,
-      headerRight: <HeaderRight onPress={params && params.post}/>
+      // headerBackImage: 
+      // headerBackTitle: 'test',
+      headerLeft: <TouchableOpacity onPress={() => navigation.pop()}><Image source={require('../../image/editPost/close.png')} style={{marginLeft: px2p(12)}}/></TouchableOpacity>,
+      headerRight: <HeaderRight onPress={params && params.post}/>,
+      mode:'card'
     }
   }
 
@@ -135,6 +138,9 @@ export default class EditPost extends PureComponent {
     images.length > 0 && images.forEach(image => {
       post_image += image.uri + '**'
     })
+    if (!post_title) {
+      return Alert.alert('请输入标题')
+    }
     postArticle({post_content, post_title, post_image, post_phone, id})
       .then(res => console.log(res, '发帖res'))
     // image.append
@@ -148,7 +154,7 @@ export default class EditPost extends PureComponent {
     return (
         <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
       <SafeAreaView flex={1}>
-      <KeyboardAvoidingView style={[styles.container]} keyboardVerticalOffset={Platform.select({ios: 90, android: 0})}>
+      <KeyboardAvoidingView style={[styles.container]} behavior='padding' keyboardVerticalOffset={Platform.select({ios: 90, android: 0})}>
         <ScrollView contentContainerStyle={{flex: 1}}>
           <View>
             <TextInput

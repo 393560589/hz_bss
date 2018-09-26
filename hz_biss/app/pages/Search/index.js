@@ -86,9 +86,7 @@ export default class Search extends PureComponent {
     }
 
     _keyboardDidShow = () => {
-        // const { params } = this.props.navigation.state
-        // if (params && params.keyword !== undefined || params.keyword !== '') return
-        this.setState({isWebViewVisiable: false})
+        this.props.navigation.isFocused() && this.setState({isWebViewVisiable: false})
     }
 
     _keyboardDidHide = () => {
@@ -148,7 +146,6 @@ export default class Search extends PureComponent {
             Keyboard.dismiss()
             // input = this.props.navigation.state.params.inputRef
             // input && input.blur()
-            console.log(historyList+'123');
             const index = historyList.findIndex(h => h === keyword)
             const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
 
@@ -166,7 +163,7 @@ export default class Search extends PureComponent {
         switch (res.type) {
             case 'post':
                 if (!this.props.isLogin) { //gai
-                    this.props.navigation.navigate('EditPost', {id: res.id})
+                    this.props.navigation.push('EditPost', {id: res.id})
                 } else {
                     this.props.navigation.navigate('Login')
                 }
@@ -228,8 +225,6 @@ export default class Search extends PureComponent {
                     onMessage={this.onMessage}
                     style={{width:deviceWidth,backgroundColor:'#fff'}}
                     injectedJavaScript={patchPostMessageJsCode}
-
-                    // onLoadStart={() => console.log('start load')}
                 />
 
             </View>
