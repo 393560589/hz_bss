@@ -18,7 +18,6 @@ export default class IndexPage extends PureComponent {
         return true;
     }
     onNavigationStateChange(nav){
-
         this.setState({
             goback:nav.canGoBack
         })

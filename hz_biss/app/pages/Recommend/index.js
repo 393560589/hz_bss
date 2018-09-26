@@ -1,15 +1,16 @@
 import React from 'react';
 import {
   View,
-    TouchableOpacity, Text
+    TouchableOpacity, Text,Image
 } from 'react-native';
-import {px2dp, px2p} from '../../utils';
-import Loading from '../../components/loading'
+import { ActionSheet } from 'antd-mobile-rn'
 import { common,deviceWidth } from '../../styles';
 import { AndroidBackHandler } from 'react-navigation-backhandler'
 import {connect} from "../../utils/dva";
 
 import WebView from 'react-native-webview-plugin'
+import {Toast} from "antd-mobile-rn/lib/index.native";
+
 const patchPostMessageFunction = function() {
     var originalPostMessage = window.postMessage;
 
@@ -29,10 +30,21 @@ const patchPostMessageJsCode = '(' + String(patchPostMessageFunction) + ')();';
 export default class Recommend extends React.Component {
   constructor() {
       super()
+      this.dataList = [
+          { url: 'OpHiXAcYzmPQHcdlLFrc', title: '发送给朋友' },
+          { url: 'wvEzCMiDZjthhAOcwTOu', title: '新浪微博' },
+          { url: 'cTTayShKtEIdQVEMuiWt', title: '生活圈' },
+          { url: 'umnHwvEgSyQtXlZjNJTt', title: '微信好友' },
+          { url: 'SxpunpETIwdxNjcJamwB', title: 'QQ' },
+      ].map(obj => ({
+          icon: <Image alt={obj.title} style={{ width: 36 }} />,
+          title: obj.title,
+      }));
+      this.state={
+          goback:false,
+          loading:true
+      }
   }
-    state={
-      loading:true
-    }
     static navigationOptions = ({ navigation }) => {
         const HeaderType= navigation.state.params && navigation.state.params.headerType;
         return {
@@ -62,7 +74,8 @@ export default class Recommend extends React.Component {
         this.webView.goBack();
     };
     getSource() {
-       return 'http://bitss.vip/dist/'
+        return 'http://192.168.0.5:8000'
+       //return 'http://bitss.vip/dist/'
     }
     onNavigationStateChange = navState => {
         //console.log(navState)
@@ -73,15 +86,24 @@ export default class Recommend extends React.Component {
 
     // 监听原生返回键事件
     onBackButtonPressAndroid=()=>{
-        if (this.state.backButtonEnabled) {
-            this.webView.goBack();
-            return true;
-        } else {
-            this.props.navigation.navigate('Home')
-            return true;
-        }
+       this.webView.goBack()
+        return true
     }
-
+    onShare(){
+        ActionSheet.showShareActionSheetWithOptions({
+                options: this.dataList,
+                title: '邀请好友',
+                message: `http://bitss.vip`,
+            },
+            (buttonIndex) => {
+                this.setState({ clicked1: buttonIndex > -1 ? this.dataList[buttonIndex].title : 'cancel' });
+                // also support Promise
+                return new Promise((resolve) => {
+                    Toast.info('closed after 1000ms');
+                    setTimeout(resolve, 1000);
+                });
+            });
+    }
     onMessage = ({nativeEvent}) => {
         const res = JSON.parse(nativeEvent.data);
         switch (res.type) {
@@ -91,9 +113,12 @@ export default class Recommend extends React.Component {
             case 'enter':
                 this.props.navigation.setParams({headerType: 0, keyword: ''});
                 break
+            case 'share':
+                this.onShare();
+                break;
         }
+    };
 
-    }
   render() {
     return (
         <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
@@ -111,9 +136,6 @@ export default class Recommend extends React.Component {
                 />
             </View>
         </AndroidBackHandler>
-
-        //192.168.2.185
-
     )
   }
 }
