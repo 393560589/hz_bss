@@ -96,7 +96,7 @@ export default {
     },
     EditPost: {
         screen: EditPost,
-        navigationOptions:Object.assign({},common.defaultHeader, {title: '发帖',mode:'card', headerRight:(<View/>),})
+        // navigationOptions:Object.assign({},common.defaultHeader, {title: '发帖',mode:'card', headerRight:(<View/>),})
     },
     Entries: {
         screen: Entries,
