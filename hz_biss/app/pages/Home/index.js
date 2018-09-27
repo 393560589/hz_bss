@@ -14,10 +14,10 @@ import {
 } from 'react-native';
 import Swiper from 'react-native-swiper'
 import {Modal} from 'antd-mobile-rn'
-import Entires from './components/Entries'
+//import Entires from './components/Entries'
 import { connect } from '../../utils/dva';
-import { px2p } from '../../utils';
-import { common } from '../../styles';
+import {chunk, px2dp, px2p} from '../../utils';
+import { common,deviceWidth } from '../../styles';
 import {StorageUtil} from "../../utils/storage";
 import SplashScreen from "rn-splash-screen";
 import {BoxShadow} from 'react-native-shadow'
@@ -195,7 +195,6 @@ class Home extends Component {
   renderNews = () => {
     return (
       <FlatList
-        style={{top: px2p(-50)}}
         renderItem={this.renderNewsCell}
         data={this.props.newsList}
         // refreshControl={
@@ -210,6 +209,9 @@ class Home extends Component {
   }
 
   render() {
+      const {nav} = this.props;
+      let navarr = chunk(nav,5);
+      console.log(navarr)
     return (
       <SafeAreaView backgroundColor='#fff'>
         <ScrollView
@@ -221,25 +223,80 @@ class Home extends Component {
             //alwaysBounceVertical={true}
              onScroll={this._onMomentumScrollEnd}
         >
+
           <View style={{zIndex: 99}}>
-            <Swiper
-              autoplay
-              // height={px2p(211)}
-              style={styles.swiper}
-              activeDotColor={common.theme}
-              paginationStyle={{bottom: px2p(7)}}>
               {
-                this.state.swipers.map((swiper,index) => (
-                  <Image source={{uri: `http://${swiper.img_url}`}} style={{width: px2p(375), height: px2p(211)}} key={swiper.img_url} resizeMode={'cover'}/>
-                ))
+                  this.state.swipers &&  <Swiper
+                      autoplay
+                      key={this.state.swipers.length}
+                      // height={px2p(211)}
+                      style={styles.swiper}
+                      activeDotColor={common.theme}
+                      paginationStyle={{bottom: px2p(4)}}>
+                      {
+                          this.state.swipers.map((swiper,index) => (
+                              <Image source={{uri: `http://${swiper.img_url}`}} style={{width: px2p(375), height: px2p(211)}} key={swiper.img_url} resizeMode={'cover'}/>
+                          ))
+                      }
+                  </Swiper>
               }
-            </Swiper>
+
+
             {/* {this.renderStaticSearchBar()} */}
             {this.renderSearchBar()}
             {this.renderSearchItems()}
           </View>
+        <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-45),zIndex:100}}>
+            {
+                navarr && <Swiper
+                    key={navarr.length}
+                    style={styles.wrapper}
+                    //showsButtons
+                    showsPagination={true}
+                    activeDotColor={common.theme}
+                    paginationStyle={{bottom: px2p(7)}}
+                    //autoplayTimeout={2}
+                    //autoplay={true}
+                >
+                    {
+                        navarr && navarr.map((nav,index) => {
+                            return (
+                                <View style={styles.entries} key={index}>
+                                    {
 
-          <Entires data={this.props.nav} style={{top: px2p(-50)}} { ...this.props}/>
+                                        nav.map((item)=>{
+
+                                            return (
+                                                <View style={styles.entriesBlock}>
+
+                                                        <TouchableOpacity
+                                                            activeOpacity={0.8}
+                                                            onPress={()=>this.openWebView(item.url)}
+                                                        >
+                                                            <Image style={[styles.image]}
+                                                                   source={{uri:`http://bitss.vip/static${item.logo}`}}/>
+                                                        </TouchableOpacity>
+
+
+                                                    <TouchableOpacity
+                                                        activeOpacity={0.8}
+                                                        onPress={()=>this.openWebView(item.url)}
+                                                    >
+                                                        <Text>{item.title}</Text>
+                                                    </TouchableOpacity>
+                                                </View>
+                                            )
+                                        })
+                                    }
+                                </View>
+                            )
+                        } )
+                    }
+                </Swiper>
+            }
+
+        </View>
+
           {this.renderNews()}
           <View style={styles.loadMoreView}>
             {this.props.isLoading.effects['home/getNews']
@@ -253,6 +310,12 @@ class Home extends Component {
 }
 
 const styles = StyleSheet.create({
+    wrapper:{
+        flexDirection:'row',
+        alignItems:'flex-start',
+        height:px2dp(100),
+         backgroundColor:'#fff',
+    },
   swiper: {
     height: px2p(211)
   },
@@ -330,8 +393,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     // paddingBottom: px2p(-50)
-    marginTop: px2p(-50)
-  }
+
+  },
+    entries:{
+        paddingLeft:px2dp(15),
+        paddingRight:px2dp(15),
+        height:px2dp(88),
+        flexDirection:'row',
+        backgroundColor:'#fff',
+        alignItems:'center',
+    },
+    image: {
+        marginBottom:px2p(4),
+        width: px2dp(44),
+        height: px2dp(44),
+        borderRadius:1000,
+    },
+    entriesBlock:{
+        width:((deviceWidth-30)/5),
+        justifyContent:'center',
+        height:px2dp(88),
+        alignItems:'center'
+    }
 })
 
 export default Home
