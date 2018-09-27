@@ -10,13 +10,18 @@ import {
   SafeAreaView,
   ScrollView,
   Platform,
-  Alert
+  Alert,
+  ActivityIndicator,
+  Dimensions
 } from 'react-native';
 import { px2p } from '../../utils';
 import ImagePicker from 'react-native-image-picker'
 import { postArticle, uploadImage} from '../../servers'
 import { connect } from 'dva'
 import { AndroidBackHandler } from 'react-navigation-backhandler'
+
+const SCREEN_WIDTH = Dimensions.get('window').width
+const SCREEN_HEIGHT = Dimensions.get('window').height
 
 const styles = StyleSheet.create({
   headerRight: {
@@ -91,7 +96,8 @@ export default class EditPost extends PureComponent {
   constructor() {
     super()
     this.state = {
-      images: []
+      images: [],
+      isPosting: false
     }
   }
 
@@ -119,7 +125,6 @@ export default class EditPost extends PureComponent {
       formData.append('file[]', {uri: response.uri, name: response.fileName, type})
       uploadImage(formData)
         .then(res => {
-          console.log(res)
           const i = res.split('**')
           this.setState({images: [...images].concat({thumbnail: i[1], uri: i[0]}).slice(0, 4)})
         })
@@ -133,7 +138,7 @@ export default class EditPost extends PureComponent {
     const post_title = this.title._lastNativeText
     const post_content = this.content._lastNativeText
     const {id} = this.props.navigation.state.params
-    const post_phone = this.props.phone || 13888888888
+    const post_phone = this.props.phone || 13888888888 // to be
     let post_image = ''
     images.length > 0 && images.forEach(image => {
       post_image += image.uri + '**'
@@ -141,10 +146,20 @@ export default class EditPost extends PureComponent {
     if (!post_title) {
       return Alert.alert('请输入标题')
     }
+    this.setState({isPosting: true})
     postArticle({post_content, post_title, post_image, post_phone, id})
-      .then(res => console.log(res, '发帖res'))
-    // image.append
-    // uploadImage
+      .then(({status, id}) => {
+        if (status === 200) {
+          this.props.navigation.state.params.successCb(id)
+          this.props.navigation.pop()
+        } else {
+          this.setState({isPosting: false})
+        }
+      })
+      .catch(e => {
+        this.setState({isPosting: true})
+        Alert.alert('发帖失败')
+      })
   }
     onBackButtonPressAndroid=()=>{
         this.props.navigation.pop()
@@ -173,6 +188,10 @@ export default class EditPost extends PureComponent {
             />
           </View>
         </ScrollView>
+        <ActivityIndicator
+          style={{position: 'absolute', left: SCREEN_WIDTH / 2, top: SCREEN_HEIGHT / 4, marginLeft: -15, marginTop: -15, width: 30, height: 30}}
+          animating={this.state.isPosting}
+        />
         <View>
           <View style={styles.imageUploadContainer}>
             <View style={styles.imagesContainer}>

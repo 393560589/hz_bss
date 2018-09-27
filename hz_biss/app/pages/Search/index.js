@@ -20,6 +20,9 @@ import { connect } from 'dva'
 import {deviceWidth} from "../../styles";
 import { AndroidBackHandler } from 'react-navigation-backhandler'
 
+const baseUrl = 'http://bitss.vip/dist/SearchResult?keyword='
+const postDetailUrl = 'http://bitss.vip/dist/BiBaDetail?id='
+
 const patchPostMessageFunction = function() {
     var originalPostMessage = window.postMessage;
 
@@ -67,13 +70,20 @@ export default class Search extends PureComponent {
             // isInputFocus: true,
             isWebViewVisiable: false,
             keyword: '',
-            goback:false
+            goback:false,
+            uri: ''
             // isHistoryVisiable: true
         }
     }
 
     componentDidMount() {
-        this.props.navigation.setParams({search: this.search, showHistory: this.showHistory, headerType: 0, backAction: this.webViewBack})
+        this.props.navigation.setParams({
+            search: this.search,
+            showHistory: this.showHistory,
+            headerType: 0,
+            backAction: this.webViewBack,
+            reload: this.webViewreload
+        })
         this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow);
         this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide);
         this.initHistoryList()
@@ -90,13 +100,17 @@ export default class Search extends PureComponent {
     }
 
     _keyboardDidHide = () => {
-        if (this.state.keyword) {
+        if (this.state.keyword && this.props.navigation.isFocused()) {
             this.setState({isWebViewVisiable: true})
         }
     }
 
     webViewBack = () => {
         this.webView.goBack()
+    }
+
+    goPostDetail = (id) => {
+        this.setState({uri: `${postDetailUrl}${id}`})
     }
 
     initHistoryList = () => {
@@ -144,7 +158,7 @@ export default class Search extends PureComponent {
             const index = historyList.findIndex(h => h === keyword)
             const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
 
-            this.setState({isWebViewVisiable: true, keyword}, () => this.updateHistory(_history, keyword))
+            this.setState({isWebViewVisiable: true, keyword, uri: `${baseUrl}${keyword}`}, () => this.updateHistory(_history, keyword))
             this.props.navigation.setParams({keyword: ''})
         }
     }
@@ -157,8 +171,8 @@ export default class Search extends PureComponent {
         const res = JSON.parse(nativeEvent.data)
         switch (res.type) {
             case 'post':
-                if (!this.props.isLogin) { //gai
-                    this.props.navigation.push('EditPost', {id: res.id})
+                if (!this.props.isLogin) { // 修改
+                    this.props.navigation.push('EditPost', {id: res.id, successCb: this.goPostDetail})
                 } else {
                     this.props.navigation.navigate('Login')
                 }
@@ -204,19 +218,24 @@ export default class Search extends PureComponent {
         )
     }
     onNavigationStateChange(nav){
-
+        console.log(nav)
+        if (nav.canGoBack) {
+            this.props.navigation.setParams({headerType: 1, keyword: ''})
+        } else {
+            this.props.navigation.setParams({headerType: 0, keyword: ''})
+        }
         this.setState({
             goback:nav.canGoBack
         })
     }
     renderWebView = () => {
-        const { keyword } = this.state;
+        const { uri } = this.state;
         return (
             <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
                 <WebView
                     onNavigationStateChange={(nav)=>this.onNavigationStateChange(nav)}
                     ref={view => this.webView = view}
-                    source={{uri: `http://bitss.vip/dist/SearchResult?keyword=${keyword}`}}
+                    source={{uri}}
                     onMessage={this.onMessage}
                     style={{width:deviceWidth,backgroundColor:'#fff'}}
                     injectedJavaScript={patchPostMessageJsCode}
