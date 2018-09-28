@@ -20,8 +20,8 @@ import { connect } from 'dva'
 import {deviceWidth} from "../../styles";
 import { AndroidBackHandler } from 'react-navigation-backhandler'
 
-const baseUrl = 'http://bitss.vip/dist/SearchResult?keyword='
-const postDetailUrl = 'http://bitss.vip/dist/BiBaDetail?id='
+const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword='
+const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id='
 
 const patchPostMessageFunction = function() {
     var originalPostMessage = window.postMessage;

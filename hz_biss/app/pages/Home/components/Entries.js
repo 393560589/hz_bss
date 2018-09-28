@@ -62,7 +62,7 @@ export default class Entries extends Component {
                                onPress={()=>this.openWebView(entry.url)}
                            >
                                <Image style={styles.image}
-                                      source={{uri:`http://bitss.vip/static${entry.logo}`}}/>
+                                      source={{uri:entry.logo}}/>
                            </TouchableOpacity>
                            <TouchableOpacity
                                onPress={()=>this.openWebView(entry.url)}
