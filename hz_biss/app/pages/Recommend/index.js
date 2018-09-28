@@ -45,7 +45,7 @@ export default class Recommend extends React.Component {
           loading:true
       }
   }
-    static navigationOptions = ({ navigation }) => {
+  /*  static navigationOptions = ({ navigation }) => {
         const HeaderType= navigation.state.params && navigation.state.params.headerType;
         return {
             headerTitle: '币讯',   //导航标题
@@ -64,7 +64,7 @@ export default class Recommend extends React.Component {
             //导航左与导航右是为了让导航标题居中(Why?)
             headerRight: HeaderType === 1 && (<View style={{ paddingRight: 20 }} />)
         };
-    };
+    };*/
     componentDidMount(){
         this.props.navigation.setParams({//给导航中增加监听事件
             goBackPage: this._goBackPage
@@ -74,8 +74,8 @@ export default class Recommend extends React.Component {
         this.webView.goBack();
     };
     getSource() {
-       // return 'http://192.168.0.5:8000'
-       return 'http://bitss.vip/dist/'
+        //return 'http://192.168.0.5:8000'
+       return 'http://bitss.pro/dist/'
     }
     onNavigationStateChange = navState => {
         //console.log(navState)
@@ -89,11 +89,12 @@ export default class Recommend extends React.Component {
        this.webView.goBack()
         return true
     }
-    onShare(){
+    onShare(data){
+        console.log(data)
         ActionSheet.showShareActionSheetWithOptions({
                 options: this.dataList,
                 title: '邀请好友',
-                message: `http://bitss.vip`,
+                message: data,
             },
             (buttonIndex) => {
                 this.setState({ clicked1: buttonIndex > -1 ? this.dataList[buttonIndex].title : 'cancel' });
@@ -106,6 +107,7 @@ export default class Recommend extends React.Component {
     }
     onMessage = ({nativeEvent}) => {
         const res = JSON.parse(nativeEvent.data);
+        console.log('数据源',res)
         switch (res.type) {
             case 'leave':
                 this.props.navigation.setParams({headerType: 1, keyword: ''});
@@ -114,11 +116,17 @@ export default class Recommend extends React.Component {
                 this.props.navigation.setParams({headerType: 0, keyword: ''});
                 break
             case 'share':
-                this.onShare();
+                this.onShare(res.data);
                 break;
+            case 'search':
+                this.openSearchPage();
+                break;
+
         }
     };
-
+    openSearchPage(){
+        this.props.navigation.navigate('Search')
+    }
   render() {
     return (
         <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>

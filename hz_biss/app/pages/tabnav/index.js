@@ -31,23 +31,23 @@ import User from '../User' // 用户
 import  Page from '../../router'
 import StackViewStyleInterpolator from "react-navigation-stack/dist/views/StackView/StackViewStyleInterpolator";
 
-
+/*screen:createStackNavigator(
+    {
+        Recommend:{
+            screen:Recommend,
+            navigationOptions: Object.assign({},common.defaultHeader,
+                {
+                    //headerRight:(<View/>),
+                    title: '币讯',
+                },)
+        }
+    }
+),*/
 
 const YuTab = createBottomTabNavigator(
     {
         Recommend:{
-            screen:createStackNavigator(
-                {
-                    Recommend:{
-                        screen:Recommend,
-                        navigationOptions: Object.assign({},common.defaultHeader,
-                            {
-                                //headerRight:(<View/>),
-                                title: '币讯',
-                            },)
-                    }
-                }
-            ),
+            screen:Recommend,
             navigationOptions:({navigation})=>({
                 headerTitle: "推荐",
                 tabBarLabel: "币讯",

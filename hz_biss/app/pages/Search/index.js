@@ -216,7 +216,7 @@ export default class Search extends PureComponent {
                 <WebView
                     onNavigationStateChange={(nav)=>this.onNavigationStateChange(nav)}
                     ref={view => this.webView = view}
-                    source={{uri: `http://bitss.vip/dist/SearchResult?keyword=${keyword}`}}
+                    source={{uri: `http://bitss.pro/dist/SearchResult?keyword=${keyword}`}}
                     onMessage={this.onMessage}
                     style={{width:deviceWidth,backgroundColor:'#fff'}}
                     injectedJavaScript={patchPostMessageJsCode}
@@ -226,7 +226,7 @@ export default class Search extends PureComponent {
         )
     }
     onBackButtonPressAndroid=()=>{
-        this.state.goback ? this.webView.goBack(): this.props.navigation.navigate('Home')
+        this.webView.goBack()
         return true;
     }
     render() {

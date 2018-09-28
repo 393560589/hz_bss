@@ -47,7 +47,7 @@ class Cityaddress extends PureComponent {
         return (
             <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <ScrollView style={styles.container}>
-               <Text style={styles.textStyle}>
+              {/* <Text style={styles.textStyle}>
                    定位得到位置
                </Text>
                 <List>
@@ -56,7 +56,7 @@ class Cityaddress extends PureComponent {
                     >
                         浙江省/杭州市
                     </ListItem>
-                </List>
+                </List>*/}
                 <Text style={styles.textStyle}>
                     全部
                 </Text>

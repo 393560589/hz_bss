@@ -211,7 +211,7 @@ class Home extends Component {
   render() {
       const {nav} = this.props;
       let navarr = chunk(nav,5);
-      console.log(navarr)
+     // console.log(navarr)
     return (
       <SafeAreaView backgroundColor='#fff'>
         <ScrollView
@@ -246,7 +246,7 @@ class Home extends Component {
             {this.renderSearchBar()}
             {this.renderSearchItems()}
           </View>
-        <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-45),zIndex:100}}>
+        <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-44),zIndex:100}}>
             {
                 navarr && <Swiper
                     key={navarr.length}
@@ -274,7 +274,7 @@ class Home extends Component {
                                                             onPress={()=>this.openWebView(item.url)}
                                                         >
                                                             <Image style={[styles.image]}
-                                                                   source={{uri:`http://bitss.vip/static${item.logo}`}}/>
+                                                                   source={{uri:`http://bitss.pro/static${item.logo}`}}/>
                                                         </TouchableOpacity>
 
 
