@@ -150,9 +150,7 @@ export default class EditPost extends PureComponent {
     const post_content = this.content._lastNativeText
     const {id} = this.props.navigation.state.params
 
-
-
-    const post_phone = this.props.phone || 13888888888 // to be
+    const post_phone = this.props.phone // to be
 
     let post_image = ''
     images.length > 0 && images.forEach(image => {
