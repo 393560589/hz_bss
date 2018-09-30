@@ -82,21 +82,16 @@ export default {
         },
         *trylogin({callback=()=>{},payload},{call,put}){
             const response = yield call(server.login,payload);
-            console.log(payload)
-            console.log(response);
             if(response.status !== 200 ) return Toast.fail(response.res,2,null,false);
             callback(response)
         },
         *loginpass({callback=()=>{},payload},{call,put}){
             const response = yield call(server.loginpass,payload);
-            console.log(payload)
-            console.log(response)
             if(response.status !== 200 ) return Toast.fail(response.res);
             callback(response)
         },
         *sign({callback=()=>{},payload},{call,put}){
             const response = yield call(server.sign,payload);
-            console.log(response)
             if(response.status !== 200 ) return Toast.fail(response.res,2,null,false);
             callback(response)
         },
@@ -116,7 +111,6 @@ export default {
             const { phone } = yield select(state => state.User);
             const response = yield call(server.setname,payload);
             if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
-            //console.log(response);
             yield put({
                 type:'userInfo',
                 payload:{
@@ -146,7 +140,7 @@ export default {
             const response = yield call(server.findpass,payload);
             if(response.status !== 200 ) return Toast.fail(response.res,2,null,false);
 
-            console.log(response)
+           // console.log(response)
             callback(response)
         },
         *headerimg({callback=()=>{},payload},{call,put,select}){
@@ -186,9 +180,9 @@ export default {
         },
         *weixinInfo({callback=()=>{},payload},{call,put,select}){
             //const { phone } = yield select(state => state.User);
-            yield put({type:'loading'});
+            //yield put({type:'loading'});
             const response = yield call(server.weixinInfo,payload);
-            yield put({type:'loadinghd'});
+            //yield put({type:'loadinghd'});
             //console.log(response);
             if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
             let arr=[];

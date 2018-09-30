@@ -20,6 +20,9 @@ import { connect } from 'dva'
 import {deviceWidth} from "../../styles";
 import { AndroidBackHandler } from 'react-navigation-backhandler'
 
+const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
+const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
+
 const patchPostMessageFunction = function() {
     var originalPostMessage = window.postMessage;
 
@@ -63,17 +66,24 @@ export default class Search extends PureComponent {
     constructor(props) {
         super(props)
         this.state = {
-            historyList: [],
+            historyList: new Set(),
             // isInputFocus: true,
             isWebViewVisiable: false,
             keyword: '',
-            goback:false
+            goback:false,
+            uri: ''
             // isHistoryVisiable: true
         }
     }
 
     componentDidMount() {
-        this.props.navigation.setParams({search: this.search, showHistory: this.showHistory, headerType: 0, backAction: this.webViewBack})
+        this.props.navigation.setParams({
+            search: this.search,
+            showHistory: this.showHistory,
+            headerType: 0,
+            backAction: this.webViewBack,
+            reload: this.webViewreload
+        })
         this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow);
         this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide);
         this.initHistoryList()
@@ -90,7 +100,7 @@ export default class Search extends PureComponent {
     }
 
     _keyboardDidHide = () => {
-        if (this.state.keyword) {
+        if (this.state.keyword && this.props.navigation.isFocused()) {
             this.setState({isWebViewVisiable: true})
         }
     }
@@ -99,38 +109,51 @@ export default class Search extends PureComponent {
         this.webView.goBack()
     }
 
+    goPostDetail = (id) => {
+        this.setState({uri: `${postDetailUrl}${id}`})
+    }
+
     initHistoryList = () => {
         StorageUtil.get('searchHistory')
             .then(historyList => {
                if(!historyList) return;
                 const { keyword } = this.state
                     if (keyword) {
-                        this.updateHistory(historyList, keyword)
+                        this.updateHistory(new Set(historyList), keyword)
                     } else {
-                        this.setState({historyList})
+                        this.setState({historyList: new Set(historyList)})
                     }
             })
        
     }
 
     updateHistory = (historyList, keyword) => {
-        const index = historyList.findIndex(h => h === keyword)
-        const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
-        this.setState({historyList: _history})
+        if (historyList.has(keyword)) {
+            historyList.delete(keyword) 
+        }
+        historyList.add(keyword)
+        // const history = new Set(historyList).add(keyword)
+        const _history = historyList.size > 6
+            ? [...historyList].slice(1, 7)
+            : [...historyList]
+        // const index = historyList.findIndex(h => h === keyword)
+        // const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
+        this.setState({historyList: new Set(_history)})
     }
 
     syncHistoryToLocalStorage = () => {
-        StorageUtil.save('searchHistory', this.state.historyList)
+        StorageUtil.save('searchHistory', [...this.state.historyList])
     }
 
-    clearOneHistory = (_index) => {
+    clearOneHistory = (item) => {
         const { historyList } = this.state
-        const _history = historyList.filter((_, index) => index !== _index)
-        this.setState({historyList: _history})
+        historyList.delete(item)
+        // const _history = historyList.filter((_, index) => index !== _index)
+        this.setState({historyList: new Set([...historyList])})
     }
 
     clearHistory = () => {
-        this.setState({historyList: []})
+        this.setState({historyList: new Set()})
     }
 
     search = (keyword) => {
@@ -141,10 +164,10 @@ export default class Search extends PureComponent {
             Keyboard.dismiss()
             // input = this.props.navigation.state.params.inputRef
             // input && input.blur()
-            const index = historyList.findIndex(h => h === keyword)
-            const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
-
-            this.setState({isWebViewVisiable: true, keyword}, () => this.updateHistory(_history, keyword))
+            // const index = historyList.findIndex(h => h === keyword)
+            // const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
+            // const _history = historyList.add(keyword)
+            this.setState({isWebViewVisiable: true, keyword, uri: `${baseUrl}${keyword}`}, () => this.updateHistory(historyList, keyword))
             this.props.navigation.setParams({keyword: ''})
         }
     }
@@ -157,8 +180,8 @@ export default class Search extends PureComponent {
         const res = JSON.parse(nativeEvent.data)
         switch (res.type) {
             case 'post':
-                if (!this.props.isLogin) { //gai
-                    this.props.navigation.push('EditPost', {id: res.id})
+                if (this.props.isLogin) { // 修改
+                    this.props.navigation.push('EditPost', {id: res.id, title: res.title, successCb: this.goPostDetail})
                 } else {
                     this.props.navigation.navigate('Login')
                 }
@@ -172,14 +195,14 @@ export default class Search extends PureComponent {
         }
     }
 
-    renderHistoryCell = (item, index) => (
+    renderHistoryCell = item => (
         <View style={styles.cellContainer}>
             <Text
                 style={{fontSize: px2p(14), color: '#666'}}
                 onPress={() => this.search(item)}
             >{item}</Text>
             <TouchableWithoutFeedback
-                onPress={() => this.clearOneHistory(index)}
+                onPress={() => this.clearOneHistory(item)}
             >
                 <Image source={require('../../image/search/close.png')} style={{width: px2p(10), height: px2p(10)}}/>
             </TouchableWithoutFeedback>
@@ -187,15 +210,17 @@ export default class Search extends PureComponent {
     )
 
     renderHistory = () => {
+      //  console.log(this.state.historyList, 'historyList')
+        const _history = ([...this.state.historyList])
         return (
             <KeyboardAvoidingView keyboardVerticalOffset={Platform.select({ios: 90, android: 50})}>
                 <View style={styles.container}>
                     <Text style={{fontSize: px2p(12), color: '#999'}}>搜索历史</Text>
-                    {this.state.historyList && this.state.historyList.map((item, index) => (
+                    {this.state.historyList && _history.reverse().map((item, index) => (
                         <TouchableOpacity
                             activeOpacity={1}
                             key={item + index}>
-                            {this.renderHistoryCell(item, index)}
+                            {this.renderHistoryCell(item)}
                         </TouchableOpacity>
                     ))}
                     <Text style={styles.clear} onPress={this.clearHistory}>清空搜索历史</Text>
@@ -204,19 +229,27 @@ export default class Search extends PureComponent {
         )
     }
     onNavigationStateChange(nav){
-
+     //   console.log(nav)
+        if (nav.canGoBack) {
+            this.props.navigation.setParams({headerType: 1, keyword: ''})
+        } else {
+            this.props.navigation.setParams({headerType: 0, keyword: ''})
+        }
         this.setState({
             goback:nav.canGoBack
         })
     }
     renderWebView = () => {
-        const { keyword } = this.state;
+        const { uri } = this.state;
         return (
             <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
                 <WebView
                     onNavigationStateChange={(nav)=>this.onNavigationStateChange(nav)}
                     ref={view => this.webView = view}
-                    source={{uri: `http://bitss.pro/dist/SearchResult?keyword=${keyword}`}}
+                    //source={{uri: `http://bitss.pro/dist/SearchResult?keyword=${keyword}`}}
+
+                    source={{uri}}
+
                     onMessage={this.onMessage}
                     style={{width:deviceWidth,backgroundColor:'#fff'}}
                     injectedJavaScript={patchPostMessageJsCode}
