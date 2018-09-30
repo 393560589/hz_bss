@@ -91,7 +91,7 @@ export default class EditPost extends PureComponent {
     return {
       // headerStyle: { paddingLeft: px2p(12), paddingRight: px2p(17) },
       headerTitleStyle: {fontSize: px2p(18)},
-      title: params.title || '发帖',
+      title: params && params.title || '发帖',
       // headerBackImage:
       // headerBackTitle: 'test',
       headerLeft: <TouchableOpacity onPress={() => navigation.pop()}><Image source={require('../../image/editPost/close.png')} style={{marginLeft: px2p(12)}}/></TouchableOpacity>,
@@ -133,9 +133,7 @@ export default class EditPost extends PureComponent {
       formData.append('file[]', {uri: response.uri, name: response.fileName, type})
       uploadImage(formData)
         .then(res => {
-
-
-
+          console.log(res, '图片res')
           const i = res.split('**')
           this.setState({images: [...images].concat({thumbnail: i[1], uri: i[0]}).slice(0, 4)})
         })
@@ -218,7 +216,7 @@ export default class EditPost extends PureComponent {
         <View>
           <View style={styles.imageUploadContainer}>
             <View style={styles.imagesContainer}>
-              {this.state.images.map(image => <Image key={image.thumbnail} source={{uri: `http://bitss.vip/static/${image.thumbnail}`}} style={{width: 80, height: 80, marginRight: 10}}/>)}
+              {this.state.images.map(image => <Image key={image.thumbnail} source={{uri: `http://bitss.pro/static/${image.thumbnail}`}} style={{width: 80, height: 80, marginRight: 10}}/>)}
             </View>
             <View>
                 <TouchableOpacity

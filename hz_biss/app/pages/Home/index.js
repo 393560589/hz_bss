@@ -237,7 +237,9 @@ class Home extends Component {
                       paginationStyle={{bottom: px2p(4)}}>
                       {
                           this.state.swipers.map((swiper,index) => (
-                              <Image source={{uri: `http://${swiper.img_url}`}} style={{width: px2p(375), height: px2p(211)}} key={swiper.img_url} resizeMode={'cover'}/>
+                              <TouchableOpacity onPress={()=>this.openWebView(swiper.url)}>
+                                <Image source={{uri: swiper.img_url}} style={{width: px2p(375), height: px2p(211)}} key={swiper.img_url} resizeMode={'cover'}/>
+                              </TouchableOpacity>
                           ))
                       }
                   </Swiper>
@@ -257,6 +259,7 @@ class Home extends Component {
                     showsPagination={true}
                     activeDotColor={common.theme}
                     paginationStyle={{bottom: px2p(7)}}
+                    loop={false}
                     //autoplayTimeout={2}
                     //autoplay={true}
                 >
@@ -267,7 +270,6 @@ class Home extends Component {
                                     {
 
                                         nav.map((item)=>{
-                                            console.log(item);
                                             return (
                                                 <View style={styles.entriesBlock}>
 
@@ -277,7 +279,7 @@ class Home extends Component {
                                                         >
                                                             <Image
                                                                 style={[styles.image]}
-                                                                source={{uri:`http://bitss.pro/static${item.logo}`}}/>
+                                                                source={{uri:item.logo}}/>
                                                         </TouchableOpacity>
 
 
@@ -410,7 +412,7 @@ const styles = StyleSheet.create({
         marginBottom:px2p(4),
         width: px2dp(44),
         height: px2dp(44),
-        borderRadius:1000,
+        // borderRadius:100,
     },
     entriesBlock:{
         width:((deviceWidth-30)/5),
