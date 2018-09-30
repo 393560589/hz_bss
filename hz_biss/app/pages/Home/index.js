@@ -276,7 +276,6 @@ class Home extends Component {
                                                             onPress={()=>this.openWebView(item.url)}
                                                         >
                                                             <Image
-                                                                resizeMode="cover"
                                                                 style={[styles.image]}
                                                                 source={{uri:`http://bitss.pro/static${item.logo}`}}/>
                                                         </TouchableOpacity>
