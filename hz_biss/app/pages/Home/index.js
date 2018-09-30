@@ -37,6 +37,9 @@ class Home extends Component {
   }
 
   componentDidMount(){
+      setTimeout(() => {
+          SplashScreen.hide();
+      }, 2000);
     const {dispatch} = this.props;
       StorageUtil.get('phone').then(res=>{
           res &&
@@ -62,7 +65,6 @@ class Home extends Component {
         });
 
     //console.log(history, 'history')
-      SplashScreen.hide();
     dispatch({
         type:'home/getBanner',
         callback:(data)=>{
@@ -265,7 +267,7 @@ class Home extends Component {
                                     {
 
                                         nav.map((item)=>{
-
+                                            console.log(item);
                                             return (
                                                 <View style={styles.entriesBlock}>
 
@@ -273,8 +275,10 @@ class Home extends Component {
                                                             activeOpacity={0.8}
                                                             onPress={()=>this.openWebView(item.url)}
                                                         >
-                                                            <Image style={[styles.image]}
-                                                                   source={{uri:`http://bitss.pro/static${item.logo}`}}/>
+                                                            <Image
+                                                                resizeMode="cover"
+                                                                style={[styles.image]}
+                                                                source={{uri:`http://bitss.pro/static${item.logo}`}}/>
                                                         </TouchableOpacity>
 
 

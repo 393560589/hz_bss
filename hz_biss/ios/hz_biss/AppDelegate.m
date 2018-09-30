@@ -11,7 +11,7 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 
-
+#import <RCTSplashScreen/RCTSplashScreen.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
@@ -71,8 +71,9 @@
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"hz_biss"
-                                               initialProperties:nil
+                                               initialProperties:nil                    
                                                    launchOptions:launchOptions];
+                                                    [RCTSplashScreen show:rootView];
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

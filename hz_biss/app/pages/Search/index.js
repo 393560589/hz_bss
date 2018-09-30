@@ -26,9 +26,9 @@ const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
 
 
 const patchPostMessageFunction = function() {
-    var originalPostMessage = window.postMessage;
+    let originalPostMessage = window.postMessage;
 
-    var patchedPostMessage = function(message, targetOrigin, transfer) {
+    let patchedPostMessage = function(message, targetOrigin, transfer) {
         originalPostMessage(message, targetOrigin, transfer);
     };
 

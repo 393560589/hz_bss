@@ -18,11 +18,9 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 class Login extends PureComponent {
     state={
         codelogin:false,
-
         pass:'',
         code:'',
     }
-
     login(){
         const { dispatch,phone } = this.props;
         dispatch({
