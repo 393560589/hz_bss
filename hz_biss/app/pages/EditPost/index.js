@@ -133,7 +133,6 @@ export default class EditPost extends PureComponent {
       formData.append('file[]', {uri: response.uri, name: response.fileName, type})
       uploadImage(formData)
         .then(res => {
-          console.log(res, '图片res')
           const i = res.split('**')
           this.setState({images: [...images].concat({thumbnail: i[1], uri: i[0]}).slice(0, 4)})
         })

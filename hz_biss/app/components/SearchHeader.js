@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react'
-import { StyleSheet, View, TouchableOpacity, SafeAreaView, TextInput, Image, Text } from 'react-native'
+import React, { PureComponent, Component } from 'react'
+import { StyleSheet, View, TouchableOpacity, SafeAreaView, TextInput, Image, Text, Platform } from 'react-native'
 import { px2p } from '../utils'
 import { StorageUtil } from '../utils/storage';
 
@@ -46,12 +46,33 @@ const searchBarStyles = StyleSheet.create({
   }
 })
 
-class SearchBar extends PureComponent {
+class FuckInput extends Component {
+  shouldComponentUpdate (nextProps){
+    return Platform.OS !== 'ios'
+      || (this.props.value === nextProps.value && (nextProps.defaultValue == undefined || nextProps.defaultValue == '' ))
+      || (this.props.defaultValue === nextProps.defaultValue && (nextProps.value == undefined || nextProps.value == '' ));
+  }
+
+  render() {
+    return (
+      <TextInput {...this.props} ref={this.props.inputRef}/>
+    )
+  }
+}
+class SearchBar extends Component {
   constructor() {
     super()
     this.state = {
-      input: ''
+      value: ''
     }
+  }
+
+  componentDidMount() {
+    this.props.navigation.setParams({updateKValue: this.updateKValue})
+  }
+
+  updateKValue = value => {
+    this.setState({value})
   }
 
   render() {
@@ -59,7 +80,7 @@ class SearchBar extends PureComponent {
     return (
       <View style={searchBarStyles.container}>
         <Image style={searchBarStyles.icon} source={require('../image/search/icon.png')}/>
-        <TextInput
+        {/* <TextInput
           autoFocus={autoFocus}
           ref={this.props.inputRef}
           flex={1}
@@ -71,6 +92,19 @@ class SearchBar extends PureComponent {
           returnKeyType={'search'}
           // onBlur={this.props.onBlur}
           underlineColorAndroid='transparent'
+        /> */}
+        <FuckInput
+          flex={1}
+          style={{padding: px2p(5)}}
+          autoFocus={autoFocus}
+          inputRef={this.props.inputRef}
+          value={this.state.value}
+          onChangeText={text => this.setState({value: text})}
+          clearButtonMode={'always'}
+          returnKeyType={'search'}
+          onSubmitEditing={this.props.onSubmit}
+          underlineColorAndroid='transparent'
+          placeholder="eos"
         />
       </View>
     )
@@ -105,6 +139,10 @@ class PhoneHeader extends PureComponent {
            this.input.blur()
           //  StorageUtil.save('searchHistory', [..._history])
       //  }
+    } else {
+      // 搜索默认词 && 设置state为默认词。
+      this.props.navigation.setParams({keyword: 'eos'})
+      this.input.blur()
     }
   }
   
