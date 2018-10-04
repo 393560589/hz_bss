@@ -129,7 +129,7 @@ class Home extends Component {
             onPress={() => this.props.navigation.navigate('Search')}>
             <BoxShadow setting={shadowOpt}>
               <View style={styles.searchBar}>
-                <Image source={require('../../image/home/search.png')} style={{width: px2p(22), height: px2p(22), margin: px2p(10)}}/>
+                <Image source={require('../../image/home/search.png')} style={{width: px2p(22), height: px2p(22),margin: px2p(10)}}/>
                 <View style={{width: px2p(1), height: px2p(15), backgroundColor: '#D2D2D2', marginRight: px2p(9)}}/>
                 <Text style={{fontSize: px2p(12), color: '#CCC'}}>搜一下区块链资讯、交易所、项目、百科</Text>
               </View>
@@ -272,17 +272,14 @@ class Home extends Component {
                                         nav.map((item)=>{
                                             return (
                                                 <View style={styles.entriesBlock}>
-
-                                                        <TouchableOpacity
-                                                            activeOpacity={0.8}
-                                                            onPress={()=>this.openWebView(item.url)}
-                                                        >
-                                                            <Image
-                                                                style={[styles.image]}
-                                                                source={{uri:item.logo}}/>
-                                                        </TouchableOpacity>
-
-
+                                                    <TouchableOpacity
+                                                        activeOpacity={0.8}
+                                                        onPress={()=>this.openWebView(item.url)}
+                                                    >
+                                                        <Image
+                                                            style={[styles.image]}
+                                                            source={{uri:item.logo}}/>
+                                                    </TouchableOpacity>
                                                     <TouchableOpacity
                                                         activeOpacity={0.8}
                                                         onPress={()=>this.openWebView(item.url)}
@@ -412,7 +409,7 @@ const styles = StyleSheet.create({
         marginBottom:px2p(4),
         width: px2dp(44),
         height: px2dp(44),
-        // borderRadius:100,
+        borderRadius:px2dp(22),
     },
     entriesBlock:{
         width:((deviceWidth-30)/5),

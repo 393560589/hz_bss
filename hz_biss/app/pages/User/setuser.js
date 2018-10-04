@@ -130,9 +130,8 @@ class SetUser extends PureComponent{
     render(){
         const {dispatch,userInfo} = this.props;
         //const { getFieldProps } = this.props.form;
-        let headSource= userInfo && userInfo.headimgurl? {
-            uri:`http://bitss.vip${userInfo.headimgurl}`
-        }:user.header;
+        let headers =false ;
+        headers = userInfo && userInfo.headimgurl
         return (
             <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
                 <View>
@@ -141,8 +140,8 @@ class SetUser extends PureComponent{
                            activeOpacity={0.9}
                            style={styles.bt} onPress={()=>this.chooseAction()}>
                            <Text>头像</Text>
-                           <Image style={{width:px2dp(60),height:px2dp(60),borderRadius:1000}}
-                                  source={headSource}/>
+                           <Image style={{width:px2dp(60),height:px2dp(60),borderRadius:px2dp(30)}}
+                                  source={ headers ? { uri:`${userInfo.headimgurl}` }:user.header }/>
                        </TouchableOpacity>
                     </List>
 

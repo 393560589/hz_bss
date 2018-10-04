@@ -17,7 +17,7 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 @connect(({User})=>({...User}))
 class Login extends PureComponent {
     state={
-        codelogin:false,
+        codelogin:true,
         pass:'',
         code:'',
     }

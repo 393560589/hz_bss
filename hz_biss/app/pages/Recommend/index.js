@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View,
+  View,SafeAreaView,
     TouchableOpacity, Text,Image
 } from 'react-native';
 import { ActionSheet } from 'antd-mobile-rn'
@@ -45,7 +45,7 @@ export default class Recommend extends React.Component {
           loading:true
       }
   }
-  /*  static navigationOptions = ({ navigation }) => {
+    static navigationOptions = ({ navigation }) => {
         const HeaderType= navigation.state.params && navigation.state.params.headerType;
         return {
             headerTitle: '币讯',   //导航标题
@@ -64,7 +64,7 @@ export default class Recommend extends React.Component {
             //导航左与导航右是为了让导航标题居中(Why?)
             headerRight: HeaderType === 1 && (<View style={{ paddingRight: 20 }} />)
         };
-    };*/
+    };
     componentDidMount(){
         this.props.navigation.setParams({//给导航中增加监听事件
             goBackPage: this._goBackPage
@@ -74,8 +74,8 @@ export default class Recommend extends React.Component {
         this.webView.goBack();
     };
     getSource() {
-        //return 'http://192.168.0.5:8000'
-       return 'http://bitss.pro/dist/'
+        return 'http://192.168.124.13:8000'
+       // return 'http://bitss.pro/dist/'
     }
     onNavigationStateChange = navState => {
         //console.log(navState)
@@ -107,7 +107,7 @@ export default class Recommend extends React.Component {
     }
     onMessage = ({nativeEvent}) => {
         const res = JSON.parse(nativeEvent.data);
-        console.log('数据源',res)
+       // console.log('数据源',res)
         switch (res.type) {
             case 'leave':
                 this.props.navigation.setParams({headerType: 1, keyword: ''});
@@ -130,7 +130,7 @@ export default class Recommend extends React.Component {
   render() {
     return (
         <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
-            <View style={{flex:1}}>
+            <SafeAreaView style={{flex:1}}>
                {/* <Loading/>*/}
                 <WebView
                     //startInLoadingState={this.state.loading}
@@ -142,7 +142,7 @@ export default class Recommend extends React.Component {
                     injectedJavaScript={patchPostMessageJsCode}
                     //onShouldStartLoadWithRequest={(ev)=>console.log(ev)}
                 />
-            </View>
+            </SafeAreaView>
         </AndroidBackHandler>
     )
   }

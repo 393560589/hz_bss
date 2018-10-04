@@ -20,9 +20,13 @@ import { connect } from 'dva'
 import {deviceWidth} from "../../styles";
 import { AndroidBackHandler } from 'react-navigation-backhandler'
 
+//  return 'http://192.168.124.13:8000'
 
-const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
-const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
+const baseUrl = 'http://192.168.124.13:8000/SearchResult?keyword=';
+const postDetailUrl = 'http://192.168.124.13:8000/BiBaDetail?id=';
+
+//const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
+//const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
 
 
 const patchPostMessageFunction = function() {
@@ -199,10 +203,12 @@ export default class Search extends PureComponent {
 
     renderHistoryCell = item => (
         <View style={styles.cellContainer}>
-            <Text
-                style={{fontSize: px2p(14), color: '#666'}}
-                onPress={() => this.search(item)}
-            >{item}</Text>
+            <TouchableOpacity activeOpacity={1} style={{flex:1}} onPress={() => this.search(item)}>
+                <Text
+                    style={{fontSize: px2p(14), color: '#666'}}
+                >{item}</Text>
+            </TouchableOpacity>
+
             <TouchableWithoutFeedback
                 onPress={() => this.clearOneHistory(item)}
             >
