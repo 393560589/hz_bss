@@ -22,10 +22,10 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 //  return 'http://192.168.124.13:8000'
 
-const baseUrl = 'http://localhost:8000/SearchResult?';
-const postDetailUrl = 'http://localhost:8000/BiBaDetail?id=';
+const baseUrl = 'http://192.168.2.222:8000/SearchResult?';
+const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
 
-// const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
+// const baseUrl = 'http://bitss.pro/dist/SearchResult?';
 // const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
 
 
@@ -54,9 +54,10 @@ export default class Search extends PureComponent {
         //   params.updateHistory(params.historyList)
         //   params.shouldHistoryUpdate = false
         // }
-        if (params && params.keyword && params.search) {
+        if (params && params.keyword && params.search && params.updateKValue) {
         //   console.log('search', params.keyword)
           params.search(params.keyword)
+          params.updateKValue(params.keyword)
         }
         if (params && params.toggleHistory) {
         //   console.log('toggleHistory', params.isHistoryVisiable)
@@ -167,19 +168,27 @@ export default class Search extends PureComponent {
 
     search = (keyword) => {
         let { historyList } = this.state
-
+       
         //console.log(keyword, 'keyword')
         if (keyword !== '' || keyword !== undefined) {
+            console.log('开始搜索');
             Keyboard.dismiss()
             // input = this.props.navigation.state.params.inputRef
             // input && input.blur()
             // const index = historyList.findIndex(h => h === keyword)
             // const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
             // const _history = historyList.add(keyword)
-            const cb = this.props.navigation.getParam('updateKValue', null);
-            cb && cb(keyword);
+            // const cb = this.props.navigation.getParam('updateKValue', null);
+            // cb && cb(keyword);
+            // if (cb) {
+            //     cb(keyword);
+            // } else {
+            //     return
+            // }
+            // console.log(cb, '回调');
             this.setState({isWebViewVisiable: true, keyword, uri: `${baseUrl}keyword=${keyword}&phone=${this.props.phone}`}, () => this.updateHistory(historyList, keyword))
             this.props.navigation.setParams({keyword: ''})
+            // cb && cb(keyword);
         }
     }
 
