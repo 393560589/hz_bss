@@ -103,7 +103,7 @@ class SearchBar extends Component {
           returnKeyType={'search'}
           onSubmitEditing={this.props.onSubmit}
           underlineColorAndroid='transparent'
-          placeholder="eos"
+          placeholder="搜资讯、交易所、项目、币种"
           onFocus={this.props.onFocus}
           onBlur={this.props.onBlur}
         />

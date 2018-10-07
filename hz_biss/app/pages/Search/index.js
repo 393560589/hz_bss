@@ -23,8 +23,15 @@ import {ActionSheet, Toast} from "antd-mobile-rn/lib/index.native";
 
 //  return 'http://192.168.124.13:8000'
 
+
 //const baseUrl = 'http://192.168.2.222:8000/SearchResult?';
 //const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
+/*
+
+const baseUrl = 'http://localhost:8000/SearchResult?';
+const postDetailUrl = 'http://localhost:8000/BiBaDetail?id=';
+*/
+
 
 
 const baseUrl = 'http://bitss.pro/dist/SearchResult?';
@@ -120,7 +127,12 @@ export default class Search extends PureComponent {
     }
 
     webViewBack = () => {
-        this.webView.goBack()
+        if (this.state.isWebViewVisiable) {
+            this.webView.goBack()
+        } else {
+            Keyboard.dismiss();
+            this.props.navigation.setParams({isHistoryVisiable: false})
+        }
     }
 
     goPostDetail = (id) => {
@@ -182,8 +194,8 @@ export default class Search extends PureComponent {
             // const index = historyList.findIndex(h => h === keyword)
             // const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
             // const _history = historyList.add(keyword)
-            // const cb = this.props.navigation.getParam('updateKValue', null);
-            // cb && cb(keyword);
+            const cb = this.props.navigation.getParam('updateKValue', null);
+            cb && cb(keyword);
             // if (cb) {
             //     cb(keyword);
             // } else {
@@ -227,6 +239,9 @@ export default class Search extends PureComponent {
                     isInSearch:false
                 })
                 this.props.navigation.setParams({headerType: 0, keyword: ''})
+                break
+            case 'search':
+                this.props.navigation.state.params.updateKValue(res.keyword);
                 break;
             case 'share':
                 this.onShare(res.data);
