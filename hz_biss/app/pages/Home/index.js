@@ -170,30 +170,30 @@ class Home extends Component {
     openWebView(url){
         this.props.dispatch({
             type:'home/ToWebview',
-            payload:{
-                webviewUrl:url
-            },
-            callback:()=>{
-                this.props.navigation.navigate('WebViews')
-            }
-        });
+          payload:{
+          webviewUrl:url
+      },
+          callback:()=>{
+          this.props.navigation.navigate('WebViews')
+      }
+          });
 
-    }
-  renderNewsCell = ({item : {title, resource, time_num, thumbnail , url}}) => {
-      console.log(thumbnail);
-    return (
-      <TouchableOpacity
+          }
+          renderNewsCell = ({item : {title, resource, time_num, thumbnail , url}}) => {
+          console.log(thumbnail);
+          return (
+          <TouchableOpacity
           activeOpacity={0.8}
           onPress={()=>this.openWebView(url)}
           style={styles.newsCellContainer}>
             <View flex={1} style={{justifyContent: 'space-between'}}>
-              <Text numberOfLines={2} style={{fontSize: px2p(15), color: '#070002'}}>{title}</Text>
-              <View style={{flexDirection: 'row', opacity: 0.6}}>
+              <Text numberOfLines={2} style={{fontSize: px2p(17), color: '#070002'}}>{title}</Text>
+              <View style={{flexDirection: 'row', opacity: 0.6,marginTop:px2dp(8)}}>
                 <Text>{resource} · </Text>
                 <Text>{formatData(time_num)}</Text>
               </View>
             </View>
-        {thumbnail && <Image source={{uri:thumbnail}} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
+        { thumbnail && <Image source={{uri:thumbnail}} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
       </TouchableOpacity>
     )
   }
