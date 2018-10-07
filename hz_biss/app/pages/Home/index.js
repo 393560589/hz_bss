@@ -16,7 +16,7 @@ import Swiper from 'react-native-swiper'
 import {Modal} from 'antd-mobile-rn'
 //import Entires from './components/Entries'
 import { connect } from '../../utils/dva';
-import {chunk, px2dp, px2p} from '../../utils';
+import {chunk, px2dp, px2p, formatData} from '../../utils';
 import { common,deviceWidth } from '../../styles';
 import {StorageUtil} from "../../utils/storage";
 import SplashScreen from "rn-splash-screen";
@@ -187,7 +187,7 @@ class Home extends Component {
               <Text numberOfLines={2} style={{fontSize: px2p(15), color: '#070002'}}>{title}</Text>
               <View style={{flexDirection: 'row', opacity: 0.6}}>
                 <Text>{resource} · </Text>
-                <Text>{time_num}</Text>
+                <Text>{formatData(time_num)}</Text>
               </View>
             </View>
         {thumbnail && <Image source={{uri:thumbnail}} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
