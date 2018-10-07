@@ -22,8 +22,8 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 //  return 'http://192.168.124.13:8000'
 
-const baseUrl = 'http://192.168.2.222:8000/SearchResult?';
-const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
+const baseUrl = 'http://localhost:8000/SearchResult?';
+const postDetailUrl = 'http://localhost:8000/BiBaDetail?id=';
 
 // const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
 // const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
@@ -116,7 +116,7 @@ export default class Search extends PureComponent {
     }
 
     goPostDetail = (id) => {
-        this.setState({uri: `${postDetailUrl}${id}`})
+        this.setState({uri: `${postDetailUrl}${id}?phone=${this.props.phone}`})
     }
 
     initHistoryList = () => {
@@ -263,7 +263,7 @@ export default class Search extends PureComponent {
                     onNavigationStateChange={(nav)=>this.onNavigationStateChange(nav)}
                     ref={view => this.webView = view}
                     //source={{uri: `http://bitss.pro/dist/SearchResult?keyword=${keyword}`}}
-
+                    domStorageEnabled={true}
                     source={{uri}}
 
                     onMessage={this.onMessage}
@@ -275,8 +275,7 @@ export default class Search extends PureComponent {
         )
     }
     onBackButtonPressAndroid=()=>{
-        // console.log(this.state.goback);
-        this.webView.goBack();
+        this.webView.goBack()
         return true;
     }
     render() {
