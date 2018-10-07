@@ -22,7 +22,7 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 //  return 'http://192.168.124.13:8000'
 
-const baseUrl = 'http://192.168.2.222:8000/SearchResult?keyword=';
+const baseUrl = 'http://192.168.2.222:8000/SearchResult?';
 const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
 
 // const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
@@ -175,7 +175,7 @@ export default class Search extends PureComponent {
             // const _history = historyList.add(keyword)
             const cb = this.props.navigation.getParam('updateKValue', null);
             cb && cb(keyword);
-            this.setState({isWebViewVisiable: true, keyword, uri: `${baseUrl}${keyword}&phone=${this.props.phone}`}, () => this.updateHistory(historyList, keyword))
+            this.setState({isWebViewVisiable: true, keyword, uri: `${baseUrl}keyword=${keyword}&phone=${this.props.phone}`}, () => this.updateHistory(historyList, keyword))
             this.props.navigation.setParams({keyword: ''})
         }
     }
@@ -186,7 +186,7 @@ export default class Search extends PureComponent {
 
     onMessage = ({nativeEvent}) => {
         const res = JSON.parse(nativeEvent.data);
-
+        // const { keyword } = 
         switch (res.type) {
             case 'post':
                 if (this.props.islogin) { // 修改
@@ -194,6 +194,11 @@ export default class Search extends PureComponent {
                 } else {
                     this.props.navigation.navigate('Login')
                 }
+                break
+            case 'login':
+                this.props.navigation.navigate('Login', {
+                    successCb: () => {this.setState({uri: `${postDetailUrl}${res.id}&phone=${this.props.phone}`})}
+                })
                 break
             case 'leave':
                 this.props.navigation.setParams({headerType: 1, keyword: ''})
