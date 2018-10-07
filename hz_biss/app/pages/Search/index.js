@@ -119,7 +119,12 @@ export default class Search extends PureComponent {
     }
 
     webViewBack = () => {
-        this.webView.goBack()
+        if (this.state.isWebViewVisiable) {
+            this.webView.goBack()
+        } else {
+            Keyboard.dismiss();
+            this.props.navigation.setParams({isHistoryVisiable: false})
+        }
     }
 
     goPostDetail = (id) => {
