@@ -175,7 +175,7 @@ export default class Search extends PureComponent {
             // const _history = historyList.add(keyword)
             const cb = this.props.navigation.getParam('updateKValue', null);
             cb && cb(keyword);
-            this.setState({isWebViewVisiable: true, keyword, uri: `${baseUrl}${keyword}`}, () => this.updateHistory(historyList, keyword))
+            this.setState({isWebViewVisiable: true, keyword, uri: `${baseUrl}${keyword}&phone=${this.props.phone}`}, () => this.updateHistory(historyList, keyword))
             this.props.navigation.setParams({keyword: ''})
         }
     }
