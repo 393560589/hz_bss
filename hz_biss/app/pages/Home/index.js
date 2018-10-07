@@ -170,24 +170,24 @@ class Home extends Component {
     openWebView(url){
         this.props.dispatch({
             type:'home/ToWebview',
-          payload:{
-          webviewUrl:url
-      },
-          callback:()=>{
-          this.props.navigation.navigate('WebViews')
-      }
+            payload:{
+                  webviewUrl:url
+            },
+            callback:()=>{
+            this.props.navigation.navigate('WebViews')
+        }
           });
 
           }
           renderNewsCell = ({item : {title, resource, time_num, thumbnail , url}}) => {
-          console.log(thumbnail);
+         // console.log(thumbnail);
           return (
           <TouchableOpacity
           activeOpacity={0.8}
           onPress={()=>this.openWebView(url)}
           style={styles.newsCellContainer}>
             <View flex={1} style={{justifyContent: 'space-between'}}>
-              <Text numberOfLines={2} style={{fontSize: px2p(17), color: '#070002'}}>{title}</Text>
+              <Text numberOfLines={2} style={{fontSize: px2p(14), color: '#070002'}}>{title}</Text>
               <View style={{flexDirection: 'row', opacity: 0.6,marginTop:px2dp(8)}}>
                 <Text>{resource} · </Text>
                 <Text>{formatData(time_num)}</Text>

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import {
-  WebView
+  WebView,
+    SafeAreaView
 } from 'react-native'
 import {deviceWidth} from "../../styles";
 import {connect} from "../../utils/dva";
@@ -14,7 +15,7 @@ export default class IndexPage extends PureComponent {
       return this.props.webviewUrl
     }
     onBackButtonPressAndroid=()=>{
-        this.state.goback ? this.webView.goBack(): this.props.navigation.navigate('Home')
+        this.state.goback ? this.webView.goBack(): this.props.navigation.pop()
         return true;
     }
     onNavigationStateChange(nav){
@@ -25,16 +26,18 @@ export default class IndexPage extends PureComponent {
   render() {
     return (
         <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
-            <WebView
-               // renderLoading={(re)=>console.log(re)}
-                source={{ uri: this.getSource() }}
-                onNavigationStateChange={(nav)=>this.onNavigationStateChange(nav)}
-                style={{width:deviceWidth,backgroundColor:'#fff'}}
-                ref={(webView)=> this.webView = webView}
-                javaScriptEnabled={true}
-                domStorageEnabled={true}
-                startInLoadingState={true}
-            />
+            <SafeAreaView style={{flex:1}}>
+                <WebView
+                    // renderLoading={(re)=>console.log(re)}
+                    source={{ uri: this.getSource() }}
+                    onNavigationStateChange={(nav)=>this.onNavigationStateChange(nav)}
+                    style={{width:deviceWidth,backgroundColor:'#fff'}}
+                    ref={(webView)=> this.webView = webView}
+                    javaScriptEnabled={true}
+                    domStorageEnabled={true}
+                    startInLoadingState={true}
+                />
+            </SafeAreaView>
         </AndroidBackHandler>
     )
   }

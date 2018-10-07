@@ -25,8 +25,11 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 const baseUrl = 'http://localhost:8000/SearchResult?';
 const postDetailUrl = 'http://localhost:8000/BiBaDetail?id=';
 
-// const baseUrl = 'http://bitss.pro/dist/SearchResult?';
-// const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
+
+ // const baseUrl = 'http://bitss.pro/dist/SearchResult?';
+ //const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
+
+
 
 
 const patchPostMessageFunction = function() {
@@ -226,6 +229,17 @@ export default class Search extends PureComponent {
                 break
             case 'search':
                 this.props.navigation.state.params.updateKValue(res.keyword);
+                break;
+            case 'WebViews':
+                this.props.dispatch({
+                    type:'home/ToWebview',
+                    payload:{
+                        webviewUrl:res.url
+                    },
+                    callback:()=>{
+                        this.props.navigation.navigate('WebViews')
+                    }
+                });
                 break;
         }
     }

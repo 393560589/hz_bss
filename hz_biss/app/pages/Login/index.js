@@ -85,11 +85,12 @@ class Login extends PureComponent {
     }
     onBackButtonPressAndroid(){
         this.props.navigation.pop();
+        return true
     }
     render() {
 
         return (
-            <AndroidBackHandler onBackPress={this.onBackButtonPressAndroid}>
+            <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
             <View style={styles.container}>
                 {
                     this.state.codelogin ? (<View style={styles.f_input_wrap}>
