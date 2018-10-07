@@ -178,7 +178,8 @@ class Home extends Component {
         });
 
     }
-  renderNewsCell = ({item : {title, resource, time_num, thubmnail,url}}) => {
+  renderNewsCell = ({item : {title, resource, time_num, thumbnail , url}}) => {
+      console.log(thumbnail);
     return (
       <TouchableOpacity
           activeOpacity={0.8}
@@ -191,7 +192,7 @@ class Home extends Component {
                 <Text>{formatData(time_num)}</Text>
               </View>
             </View>
-        {thubmnail && <Image source={thubmnail} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
+        {thumbnail && <Image source={{uri:thumbnail}} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
       </TouchableOpacity>
     )
   }

@@ -185,10 +185,11 @@ export default class Search extends PureComponent {
     }
 
     onMessage = ({nativeEvent}) => {
-        const res = JSON.parse(nativeEvent.data)
+        const res = JSON.parse(nativeEvent.data);
+
         switch (res.type) {
             case 'post':
-                if (this.props.isLogin) { // 修改
+                if (this.props.islogin) { // 修改
                     this.props.navigation.push('EditPost', {id: res.id, title: res.title, successCb: this.goPostDetail})
                 } else {
                     this.props.navigation.navigate('Login')

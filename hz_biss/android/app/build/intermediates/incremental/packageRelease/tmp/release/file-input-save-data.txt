@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Sep 25 18:24:57 CST 2018
+#Sun Oct 07 11:59:04 CST 2018
 5.base=/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/assets/release
 42.base=/Users/JerryC/Desktop/bss/hz_biss/android/app/build/intermediates/transforms/mergeJniLibs/release/0
 22.path=lib/x86/libglog.so
