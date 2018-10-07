@@ -93,6 +93,7 @@ class Home extends Component {
   }
 
   fetchNews = () => {
+      console.log(this.state.pageIndex);
     this.props.dispatch({
       type: 'home/getNews',
       payload: this.state.pageIndex
