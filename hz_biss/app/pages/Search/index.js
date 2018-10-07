@@ -22,11 +22,11 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 //  return 'http://192.168.124.13:8000'
 
-const baseUrl = 'http://192.168.124.13:8000/SearchResult?keyword=';
-const postDetailUrl = 'http://192.168.124.13:8000/BiBaDetail?id=';
+const baseUrl = 'http://192.168.2.222:8000/SearchResult?keyword=';
+const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
 
-//const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
-//const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
+// const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
+// const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
 
 
 const patchPostMessageFunction = function() {
@@ -58,10 +58,10 @@ export default class Search extends PureComponent {
           // console.log('search', params.keyword)
           params.search(params.keyword)
         }
-        // if (params && params.isHistoryVisiable && params.showHistory) {
-        //   console.log('showHistory')
-        //   params.showHistory()
-        // }
+        if (params && params.toggleHistory) {
+          console.log('toggleHistory')
+          params.toggleHistory(params.isHistoryVisiable)
+        }
         return (
             { header: <Header
                 navigation={navigation}
@@ -85,20 +85,20 @@ export default class Search extends PureComponent {
     componentDidMount() {
         this.props.navigation.setParams({
             search: this.search,
-            showHistory: this.showHistory,
+            toggleHistory: this.toggleHistory,
             headerType: 0,
             backAction: this.webViewBack,
             reload: this.webViewreload
         })
-        this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow);
-        this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide);
+        // this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow);
+        // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide);
         this.initHistoryList()
     }
 
     componentWillUnmount() {
         this.syncHistoryToLocalStorage()
-        this.keyboardDidShowListener.remove()
-        this.keyboardDidHideListener.remove()
+        // this.keyboardDidShowListener.remove()
+        // this.keyboardDidHideListener.remove()
     }
 
     _keyboardDidShow = () => {
@@ -180,8 +180,8 @@ export default class Search extends PureComponent {
         }
     }
 
-    showHistory = () => {
-        this.setState({isWebViewVisiable: false})
+    toggleHistory = (isHistoryVisiable = true) => {
+        this.setState({isWebViewVisiable: !isHistoryVisiable})
     }
 
     onMessage = ({nativeEvent}) => {

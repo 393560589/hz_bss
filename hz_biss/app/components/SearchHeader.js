@@ -105,6 +105,8 @@ class SearchBar extends Component {
           onSubmitEditing={this.props.onSubmit}
           underlineColorAndroid='transparent'
           placeholder="eos"
+          onFocus={this.props.onFocus}
+          onBlur={this.props.onBlur}
         />
       </View>
     )
@@ -146,13 +148,13 @@ class PhoneHeader extends PureComponent {
     }
   }
   
-  // onFocus = () => {
-  //   this.props.navigation.setParams({inputRef: this.input, isHistoryVisiable: true})
-  // }
+  onFocus = () => {
+    this.props.navigation.setParams({isHistoryVisiable: true})
+  }
 
-  // onBlur = () => {
-  //   this.props.navigation.setParams({isHistoryVisiable: false})
-  // }
+  onBlur = () => {
+    this.props.navigation.setParams({isHistoryVisiable: false})
+  }
 
   render() {
     const headerType = this.props.navigation.getParam('headerType', 1)
@@ -166,8 +168,8 @@ class PhoneHeader extends PureComponent {
             navigation={this.props.navigation}
             inputRef={view => this.input = view}
             onSubmit={this.onSubmit}
-            // onFocus={this.onFocus}
-            // onBlur={this.onBlur}
+            onFocus={this.onFocus}
+            onBlur={this.onBlur}
           />
           {headerType === 0 && <TouchableOpacity onPress={this.goBack}>
             <Text style={{fontSize: px2p(15), color: '#070002'}}>取消</Text>
