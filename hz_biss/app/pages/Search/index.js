@@ -77,7 +77,8 @@ export default class Search extends PureComponent {
             isWebViewVisiable: false,
             keyword: '',
             goback:false,
-            uri: ''
+            uri: '',
+            isInSearch:false,
             // isHistoryVisiable: true
         }
     }
@@ -96,7 +97,9 @@ export default class Search extends PureComponent {
     }
 
     componentWillUnmount() {
+
         this.syncHistoryToLocalStorage()
+
         // this.keyboardDidShowListener.remove()
         // this.keyboardDidHideListener.remove()
     }
@@ -201,9 +204,15 @@ export default class Search extends PureComponent {
                 })
                 break
             case 'leave':
+                this.setState({
+                    isInSearch:true
+                })
                 this.props.navigation.setParams({headerType: 1, keyword: ''})
                 break
             case 'enter':
+                this.setState({
+                    isInSearch:false
+                })
                 this.props.navigation.setParams({headerType: 0, keyword: ''})
                 break
         }
@@ -275,7 +284,14 @@ export default class Search extends PureComponent {
         )
     }
     onBackButtonPressAndroid=()=>{
-        this.webView.goBack()
+       const { isInSearch, goback } = this.state;
+       if(!isInSearch && !goback){
+           this.props.navigation.pop()
+       }else{
+           this.webView.goBack();
+       }
+
+
         return true;
     }
     render() {
