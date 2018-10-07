@@ -74,8 +74,8 @@ export default class Recommend extends React.Component {
         this.webView.goBack();
     };
     getSource() {
-        return 'http://192.168.2.222:8000'
-       //return 'http://bitss.pro/dist/'
+       // return 'http://192.168.2.222:8000'
+       return 'http://bitss.pro/dist/'
     }
     onNavigationStateChange = navState => {
         //console.log(navState)
@@ -90,7 +90,7 @@ export default class Recommend extends React.Component {
         return true
     }
     onShare(data){
-        console.log(data)
+        //console.log(data)
         ActionSheet.showShareActionSheetWithOptions({
                 options: this.dataList,
                 title: '邀请好友',
