@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
   container: {
     height: px2p(42),
     // paddingLeft: px2p(11),
-    paddingRight: px2p(15),
     paddingLeft: px2p(15),
     flexDirection: 'row',
     alignItems: 'center'
@@ -159,10 +158,10 @@ class PhoneHeader extends PureComponent {
   render() {
     const headerType = this.props.navigation.getParam('headerType', 1)
     const backAction = this.props.navigation.getParam('backAction', null)
-    const Back = (<TouchableOpacity style={{marginRight: px2p(14)}} onPress={backAction}><Image source={require('../image/search/back.png')}/></TouchableOpacity>)
+    const Back = (<TouchableOpacity style={{paddingRight: px2p(14), paddingLeft: px2p(14)}} onPress={backAction}><Image source={require('../image/search/back.png')}/></TouchableOpacity>)
     return (
       <SafeAreaView backgroundColor="#fff">
-        <View style={styles.container}>
+        <View style={[styles.container, {paddingLeft: headerType === 1 ? 0 : px2p(15)}]}>
           {headerType === 1 && Back}
           <SearchBar
             navigation={this.props.navigation}
