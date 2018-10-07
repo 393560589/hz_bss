@@ -24,7 +24,8 @@ export default class Setting extends PureComponent{
             type:'User/logout',
             payload:{
                 userInfo:undefined,
-                islogin:false
+                islogin:false,
+                phone:'',
             },
             callback:()=>{
                 Toast.success('已登出',2,null,false);

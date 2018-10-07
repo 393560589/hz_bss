@@ -116,7 +116,7 @@ export default class Search extends PureComponent {
     }
 
     goPostDetail = (id) => {
-        this.setState({uri: `${postDetailUrl}${id}?phone=${this.props.phone}`})
+        this.setState({uri: `${postDetailUrl}${id}`})
     }
 
     initHistoryList = () => {
@@ -270,7 +270,8 @@ export default class Search extends PureComponent {
         )
     }
     onBackButtonPressAndroid=()=>{
-        this.webView.goBack()
+        // console.log(this.state.goback);
+        this.webView.goBack();
         return true;
     }
     render() {
