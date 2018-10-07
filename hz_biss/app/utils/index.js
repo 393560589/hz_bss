@@ -14,6 +14,28 @@ const chunk=(arr, size) =>{
     }
     return arr2;
 }//数组分组
+
+// 时间格式化
+export function formatData(time) {
+
+    var d = time ? new Date(time * 1000) : new Date();
+    var year = d.getFullYear();
+    var month = change(d.getMonth()+1);
+    var day = change(d.getDate());
+    var hour = change(d.getHours());
+    var minute = change(d.getMinutes());
+    var second = change(d.getSeconds());
+
+    function change(t){
+        if(t<10){
+        return "0"+t;
+        }else{
+        return t;
+        }
+    }
+    return year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second;
+}
+
 export {
     px2dp,
     px2p,
