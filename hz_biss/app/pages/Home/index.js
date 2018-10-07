@@ -187,10 +187,10 @@ class Home extends Component {
           onPress={()=>this.openWebView(url)}
           style={styles.newsCellContainer}>
             <View flex={1} style={{justifyContent: 'space-between'}}>
-              <Text numberOfLines={2} style={{fontSize: px2p(14), color: '#070002'}}>{title}</Text>
+              <Text numberOfLines={2} style={{fontSize: px2p(14),lineHeight:px2dp(18) ,color: '#070002'}}>{title}</Text>
               <View style={{flexDirection: 'row', opacity: 0.6,marginTop:px2dp(8)}}>
-                <Text>{resource} · </Text>
-                <Text>{formatData(time_num)}</Text>
+                <Text style={{fontSize:px2dp(10)}}>{resource} · </Text>
+                <Text style={{fontSize:px2dp(10)}}>{formatData(time_num)}</Text>
               </View>
             </View>
         { thumbnail && <Image source={{uri:thumbnail}} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
@@ -254,7 +254,7 @@ class Home extends Component {
             {this.renderSearchBar()}
             {this.renderSearchItems()}
           </View>
-        <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-44),zIndex:100}}>
+        <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-45),zIndex:100}}>
             {
                 navarr && <Swiper
                     key={navarr.length}
@@ -286,9 +286,10 @@ class Home extends Component {
                                                     </TouchableOpacity>
                                                     <TouchableOpacity
                                                         activeOpacity={0.8}
+                                                        style={{marginTop:px2dp(2)}}
                                                         onPress={()=>this.openWebView(item.url)}
                                                     >
-                                                        <Text>{item.title}</Text>
+                                                        <Text style={{fontSize:px2dp(12)}}>{item.title}</Text>
                                                     </TouchableOpacity>
                                                 </View>
                                             )

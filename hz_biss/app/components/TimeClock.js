@@ -20,13 +20,21 @@ class IndexPage extends PureComponent {
             phone:'',
             code:'',
             pass:'',
-            time: 60,
+            time: 30,
             pwdf:'',
-            timeTxt:'60s',
+            timeTxt:'30s',
             btnTxt: '获取验证码'
         }
     }
     componentWillUnmount(){
+        const {dispatch} = this.props
+        dispatch({
+            type: 'User/setNetDone',
+            payload: {
+                name: 'codeSuccess',
+                status: false
+            }
+        });
         timer && clearInterval(timer);
     }
     getCode(phone){
@@ -61,7 +69,7 @@ class IndexPage extends PureComponent {
         timer = setInterval(function() {
             if(count <= 0) {
                 that.setState({
-                    timeTxt: '60s'
+                    timeTxt: '30s'
                 });
                 dispatch({
                     type: 'User/setNetDone',

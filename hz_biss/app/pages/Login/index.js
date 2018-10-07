@@ -17,7 +17,7 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 @connect(({User})=>({...User}))
 class Login extends PureComponent {
     state={
-        codelogin:true,
+        codelogin:false,
         pass:'',
         code:'',
     }
@@ -74,7 +74,7 @@ class Login extends PureComponent {
                 //console.log(data);
                 Toast.success('登录成功',2,null,false)
                 navigation.pop();
-                if (navigation.state.params.successCb) {
+                if (navigation.state.params && navigation.state.params.successCb) {
                     navigation.state.params.successCb()
                 }
             }
@@ -170,11 +170,11 @@ class Login extends PureComponent {
                             />
                         </List>
                         <WhiteSpace/>
-                        <Text
+                       {/* <Text
                             onPress={()=>this.setState({codelogin:!this.state.codelogin})}
                             style={{color:common.theme,paddingLeft:px2dp(12)}}>
                             快捷登录
-                        </Text>
+                        </Text>*/}
                         <View style={commonStyle.btn_wrap}>
                             <Button style={styles.setbtn}
                                 onClick={()=>{

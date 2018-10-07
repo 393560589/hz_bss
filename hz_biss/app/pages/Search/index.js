@@ -19,15 +19,16 @@ import { StorageUtil } from '../../utils/storage';
 import { connect } from 'dva'
 import {deviceWidth} from "../../styles";
 import { AndroidBackHandler } from 'react-navigation-backhandler'
+import {ActionSheet, Toast} from "antd-mobile-rn/lib/index.native";
 
 //  return 'http://192.168.124.13:8000'
 
-const baseUrl = 'http://192.168.2.222:8000/SearchResult?';
-const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
+//const baseUrl = 'http://192.168.2.222:8000/SearchResult?';
+//const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
 
 
- // const baseUrl = 'http://bitss.pro/dist/SearchResult?';
- //const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
+const baseUrl = 'http://bitss.pro/dist/SearchResult?';
+const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
 
 
 
@@ -227,6 +228,9 @@ export default class Search extends PureComponent {
                 })
                 this.props.navigation.setParams({headerType: 0, keyword: ''})
                 break;
+            case 'share':
+                this.onShare(res.data);
+                break;
             case 'WebViews':
                 this.props.dispatch({
                     type:'home/ToWebview',
@@ -240,7 +244,22 @@ export default class Search extends PureComponent {
                 break;
         }
     }
-
+    onShare(data){
+        //console.log(data)
+        ActionSheet.showShareActionSheetWithOptions({
+                options: this.dataList,
+                title: '邀请好友',
+                message: data,
+            },
+            (buttonIndex) => {
+                this.setState({ clicked1: buttonIndex > -1 ? this.dataList[buttonIndex].title : 'cancel' });
+                // also support Promise
+                return new Promise((resolve) => {
+                    Toast.info('取消分享');
+                    setTimeout(resolve, 1000);
+                });
+            });
+    }
     renderHistoryCell = item => (
         <View style={styles.cellContainer}>
             <TouchableOpacity activeOpacity={1} style={{flex:1}} onPress={() => this.search(item)}>

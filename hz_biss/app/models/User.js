@@ -30,6 +30,7 @@ export default {
                 [payload.name]: payload.status
             }
         },
+
     },
     effects: {
         *loading({callback=()=>{},payload},{put}){
@@ -89,7 +90,7 @@ export default {
         *loginpass({callback=()=>{},payload},{call,put}){
             const response = yield call(server.loginpass,payload);
             if(response.status !== 200 ) return Toast.fail(response.res);
-            console.log(response)
+            //console.log(response)
             callback(response)
         },
         *sign({callback=()=>{},payload},{call,put}){

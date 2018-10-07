@@ -30,7 +30,7 @@ class Fpassword extends PureComponent {
     };
     dochange(){
         const { pwd,pwdf } = this.state;
-        const {dispatch} = this.props;
+        const {dispatch,navigation} = this.props;
         if(pwd !== pwdf){
             return Toast.info('两次输入密码不一致')
         }
@@ -43,6 +43,7 @@ class Fpassword extends PureComponent {
             },
             callback:(data)=>{
                 Toast.info(data.res,2,null,false);
+                navigation.pop();
             }
         })
     }
