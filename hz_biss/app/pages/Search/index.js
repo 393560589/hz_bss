@@ -116,7 +116,7 @@ export default class Search extends PureComponent {
     }
 
     goPostDetail = (id) => {
-        this.setState({uri: `${postDetailUrl}${id}`})
+        this.setState({uri: `${postDetailUrl}${id}?phone=${this.props.phone}`})
     }
 
     initHistoryList = () => {
