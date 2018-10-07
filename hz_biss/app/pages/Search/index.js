@@ -22,8 +22,8 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 //  return 'http://192.168.124.13:8000'
 
-const baseUrl = 'http://192.168.124.13:8000/SearchResult?keyword=';
-const postDetailUrl = 'http://192.168.124.13:8000/BiBaDetail?id=';
+const baseUrl = 'http://192.168.2.222:8000/SearchResult?keyword=';
+const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
 
 //const baseUrl = 'http://bitss.pro/dist/SearchResult?keyword=';
 //const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
@@ -185,10 +185,11 @@ export default class Search extends PureComponent {
     }
 
     onMessage = ({nativeEvent}) => {
-        const res = JSON.parse(nativeEvent.data)
+        const res = JSON.parse(nativeEvent.data);
+
         switch (res.type) {
             case 'post':
-                if (this.props.isLogin) { // 修改
+                if (this.props.islogin) { // 修改
                     this.props.navigation.push('EditPost', {id: res.id, title: res.title, successCb: this.goPostDetail})
                 } else {
                     this.props.navigation.navigate('Login')

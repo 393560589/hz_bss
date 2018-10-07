@@ -44,7 +44,7 @@ export default {
         },
         *getNavigation({callback=()=>{}}, {call, put}) {
             const res = yield call(server.navigatioin);
-            console.log(res);
+           // console.log(res);
             if (res.status === 200) {
                 yield put({
                     type: 'update',
@@ -63,7 +63,7 @@ export default {
 
         *getNews ({payload}, {call, put}) {
             const res = yield call(server.indexNews, payload);
-            //console.log(res);
+            console.log(res);
             if (res.status === 200) {
                 yield put({
                     type: 'updateNewsList',

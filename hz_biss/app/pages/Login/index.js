@@ -30,11 +30,12 @@ class Login extends PureComponent {
                 code:this.state.code
             },
             callback:(data)=>{
-                console.log(data);
+                //console.log(data);
                 dispatch({
                     type:'User/update',
                     payload:{
-                        phone:phone
+                        phone:phone,
+                        islogin:true
                     }
                 })
                 StorageUtil.save('phone',phone);
@@ -70,7 +71,7 @@ class Login extends PureComponent {
                 phone:this.props.phone,
             },
             callback:(data)=>{
-                console.log(data);
+                //console.log(data);
                 Toast.success('登录成功',2,null,false)
                 navigation.pop();
             }
