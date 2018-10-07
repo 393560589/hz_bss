@@ -74,7 +74,7 @@ class Login extends PureComponent {
                 //console.log(data);
                 Toast.success('登录成功',2,null,false)
                 navigation.pop();
-                if (navigation.state.params.successCb) {
+                if (navigation.state.params && navigation.state.params.successCb) {
                     navigation.state.params.successCb()
                 }
             }

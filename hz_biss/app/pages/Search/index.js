@@ -22,8 +22,8 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'
 
 //  return 'http://192.168.124.13:8000'
 
-const baseUrl = 'http://192.168.2.222:8000/SearchResult?';
-const postDetailUrl = 'http://192.168.2.222:8000/BiBaDetail?id=';
+const baseUrl = 'http://localhost:8000/SearchResult?';
+const postDetailUrl = 'http://localhost:8000/BiBaDetail?id=';
 
 // const baseUrl = 'http://bitss.pro/dist/SearchResult?';
 // const postDetailUrl = 'http://bitss.pro/dist/BiBaDetail?id=';
@@ -178,8 +178,8 @@ export default class Search extends PureComponent {
             // const index = historyList.findIndex(h => h === keyword)
             // const _history = [keyword].concat(historyList.slice(0, index), historyList.slice(index + 1)).slice(0, 6)
             // const _history = historyList.add(keyword)
-            // const cb = this.props.navigation.getParam('updateKValue', null);
-            // cb && cb(keyword);
+            const cb = this.props.navigation.getParam('updateKValue', null);
+            cb && cb(keyword);
             // if (cb) {
             //     cb(keyword);
             // } else {
@@ -224,6 +224,9 @@ export default class Search extends PureComponent {
                 })
                 this.props.navigation.setParams({headerType: 0, keyword: ''})
                 break
+            case 'search':
+                this.props.navigation.state.params.updateKValue(res.keyword);
+                break;
         }
     }
 
