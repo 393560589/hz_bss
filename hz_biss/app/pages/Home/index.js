@@ -95,7 +95,9 @@ class Home extends Component {
   fetchNews = () => {
     this.props.dispatch({
       type: 'home/getNews',
-      payload: this.state.pageIndex
+      payload: {
+        page: this.state.pageIndex
+      }
     })
   }
 

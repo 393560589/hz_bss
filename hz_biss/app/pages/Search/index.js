@@ -55,11 +55,11 @@ export default class Search extends PureComponent {
         //   params.shouldHistoryUpdate = false
         // }
         if (params && params.keyword && params.search) {
-          // console.log('search', params.keyword)
+        //   console.log('search', params.keyword)
           params.search(params.keyword)
         }
         if (params && params.toggleHistory) {
-          console.log('toggleHistory')
+        //   console.log('toggleHistory', params.isHistoryVisiable)
           params.toggleHistory(params.isHistoryVisiable)
         }
         return (
@@ -180,7 +180,7 @@ export default class Search extends PureComponent {
         }
     }
 
-    toggleHistory = (isHistoryVisiable = true) => {
+    toggleHistory = (isHistoryVisiable = false) => {
         this.setState({isWebViewVisiable: !isHistoryVisiable})
     }
 
