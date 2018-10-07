@@ -83,6 +83,9 @@ class Login extends PureComponent {
     onPushPage(page){
         this.props.navigation.navigate(page)
     }
+    onBackButtonPressAndroid(){
+        this.props.navigation.pop();
+    }
     render() {
 
         return (
