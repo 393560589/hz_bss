@@ -225,12 +225,13 @@ class Home extends Component {
             bounces={true}
             maximumZoomScale={1.2}
             minimumZoomScale={1}*/
+            stickyHeaderIndices={[1]}
             backgroundColor={common.gray_bg}
             //alwaysBounceVertical={true}
-             onScroll={this._onMomentumScrollEnd}
+            onScroll={this._onMomentumScrollEnd}
         >
 
-          <View style={{zIndex: 99}}>
+          <View>
               {
                   this.state.swipers &&  <Swiper
                       autoplay
@@ -251,9 +252,9 @@ class Home extends Component {
 
 
             {/* {this.renderStaticSearchBar()} */}
+          </View>
             {this.renderSearchBar()}
             {this.renderSearchItems()}
-          </View>
         <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-45),zIndex:100}}>
             {
                 navarr && <Swiper

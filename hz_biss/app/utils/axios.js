@@ -19,7 +19,7 @@ import { StringName } from '../config/keyword'
  * @param msg       接口异常提示
  * @param headers   接口所需header配置
  */
-const MOCK_AUTH_ADMIN = 'http://bitss.pro/mobile/';
+const MOCK_AUTH_ADMIN = 'https://bitss.pro/mobile/';
 //http://bitss.vip/mobile/
 
 /*
