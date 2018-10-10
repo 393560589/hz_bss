@@ -36,6 +36,7 @@ export default class IndexPage extends PureComponent {
                     javaScriptEnabled={true}
                     domStorageEnabled={true}
                     startInLoadingState={true}
+                    renderError={ (e) => {if (e === 'WebKitErrorDomain') {return}}}
                 />
             </SafeAreaView>
         </AndroidBackHandler>

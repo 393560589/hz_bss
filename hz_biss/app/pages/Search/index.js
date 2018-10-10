@@ -325,6 +325,7 @@ export default class Search extends PureComponent {
         const { uri } = this.state;
         return (
             <View style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, zIndex: 99}}>
+                <SafeAreaView style={{flex:1}}>
                 <WebView
                     onNavigationStateChange={(nav)=>this.onNavigationStateChange(nav)}
                     ref={view => this.webView = view}
@@ -336,7 +337,7 @@ export default class Search extends PureComponent {
                     style={{width:deviceWidth,backgroundColor:'#fff'}}
                     injectedJavaScript={patchPostMessageJsCode}
                 />
-
+                </SafeAreaView>
             </View>
         )
     }

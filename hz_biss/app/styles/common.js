@@ -8,7 +8,7 @@ import {px2dp} from "../utils";
 export const common={
     f1:'#f1f1f1',
     fff:'#fff',
-    gray_bg: '#f1f1f1',
+    gray_bg: '#f2f2f5',
     gary_e:'#e5e5e5',
     gary_9:'#999',
     gary_6:'#666',

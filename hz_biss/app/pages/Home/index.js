@@ -193,7 +193,7 @@ class Home extends Component {
                 <Text style={{fontSize:px2dp(10)}}>{formatData(time_num)}</Text>
               </View>
             </View>
-        { thumbnail && <Image source={{uri:thumbnail}} style={{width: 101, height: 64, resizeMode: 'contain', marginLeft: px2p(20)}}/>}
+        { thumbnail && <Image source={{uri:thumbnail}} style={{width: px2dp(101), height: px2dp(64), resizeMode: 'contain', marginLeft: px2p(20)}}/>}
       </TouchableOpacity>
     )
   }
@@ -321,7 +321,7 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         alignItems:'flex-start',
         height:px2dp(100),
-         backgroundColor:'#fff',
+        backgroundColor:'#fff',
     },
   swiper: {
     height: px2p(211)
@@ -381,7 +381,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems:'stretch',
     padding: px2p(15),
-    height: px2p(90),
+    minHeight: px2p(90),
     width: '100%',
     backgroundColor: '#fff',
     borderBottomWidth: StyleSheet.hairlineWidth,
