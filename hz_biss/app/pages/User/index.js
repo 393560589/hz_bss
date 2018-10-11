@@ -262,14 +262,14 @@ export default class Users extends PureComponent {
                                 hasborder
                                 onClick={()=>this.props.navigation.navigate('AboutUS')}
                                 Icons={'arrow'}>
-                                联系我们
+                                <Text style={styles.font_14}>联系我们</Text>
                             </ListItem>
                             <ListItem
                                 thumb={<Image style={styles.Iconstyle} source={user.feedback}/>}
                                 Icons={'arrow'}
                                 onClick={()=>this.onPushPage('FeedBack')}
                             >
-                                意见反馈
+                                <Text style={styles.font_14}>意见反馈</Text>
                             </ListItem>
                         </List>
                         <List
@@ -280,7 +280,7 @@ export default class Users extends PureComponent {
                                 Icons={'arrow'}
                                 onClick={()=>this.onPushPage('Settings')}
                             >
-                                设置
+                                <Text style={styles.font_14}>设置</Text>
                             </ListItem>
                         </List>
 
@@ -313,6 +313,9 @@ const styles = StyleSheet.create({
         right:px2dp(27),
         top:px2dp(25),
 
+    },
+    font_14:{
+      fontSize:px2dp(14)
     },
     top_list:{
         paddingTop:px2dp(20),

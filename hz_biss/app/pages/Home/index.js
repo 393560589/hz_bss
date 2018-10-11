@@ -93,7 +93,7 @@ class Home extends Component {
   }
 
   fetchNews = () => {
-      console.log(this.state.pageIndex);
+      //console.log(this.state.pageIndex);
     this.props.dispatch({
       type: 'home/getNews',
       payload: {
@@ -255,7 +255,7 @@ class Home extends Component {
           </View>
             {this.renderSearchBar()}
             {this.renderSearchItems()}
-        <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-45),zIndex:100}}>
+        <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-45),zIndex:2}}>
             {
                 navarr && <Swiper
                     key={navarr.length}
