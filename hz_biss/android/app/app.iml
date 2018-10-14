@@ -157,12 +157,12 @@
     <orderEntry type="module" module-name="react-native-svg" />
     <orderEntry type="module" module-name="react-native-webview-plugin" />
     <orderEntry type="module" module-name="jcore-react-native" />
-    <orderEntry type="module" module-name="RCTWeChat" />
     <orderEntry type="module" module-name="react-native-device-info" />
     <orderEntry type="module" module-name="jpush-react-native" />
     <orderEntry type="module" module-name="react-native-vector-icons" />
     <orderEntry type="module" module-name="rn-splash-screen" />
     <orderEntry type="module" module-name="react-native-image-picker" />
+    <orderEntry type="module" module-name="react-native-wechat" />
     <orderEntry type="module" module-name="react-native-view-shot" />
   </component>
 </module>

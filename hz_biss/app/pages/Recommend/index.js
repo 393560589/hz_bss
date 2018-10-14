@@ -72,8 +72,8 @@ export default class Recommend extends React.Component {
         this.webView.goBack();
     };
     getSource() {
-       return 'http://192.168.124.13:8000'
-       //return 'http://bitss.pro/dist/'
+       //return 'http://192.168.124.13:8000'
+       return 'http://bitss.pro/dist/'
     }
     onNavigationStateChange = navState => {
         //console.log(navState)
