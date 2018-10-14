@@ -154,7 +154,6 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-wechat')
     compile project(':react-native-view-shot')
     compile project(':react-native-image-picker')
     compile project(':react-native-webview-plugin')
@@ -164,6 +163,7 @@ dependencies {
     compile project(':react-native-svg')
     compile project(':react-native-device-info')
     compile project(':react-native-vector-icons')
+    compile project(':RCTWeChat')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.facebook.react:react-native:+'
