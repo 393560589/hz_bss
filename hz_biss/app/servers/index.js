@@ -66,3 +66,6 @@ export const uploadImage = (params) => {
         data: params
     })
 }
+export const getCoinDetail=(params)=> {
+    return instance.get('mobile_interface/flashNewsDetail', { params })
+}

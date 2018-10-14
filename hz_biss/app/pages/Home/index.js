@@ -10,6 +10,8 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   FlatList,
+    BackHandler,
+    NativeModules,
   RefreshControl
 } from 'react-native';
 import Swiper from 'react-native-swiper'
@@ -20,7 +22,9 @@ import {chunk, px2dp, px2p, formatData} from '../../utils';
 import { common,deviceWidth } from '../../styles';
 import {StorageUtil} from "../../utils/storage";
 import SplashScreen from "rn-splash-screen";
-import {BoxShadow} from 'react-native-shadow'
+import { BoxShadow } from 'react-native-shadow'
+
+import { AndroidBackHandler } from 'react-navigation-backhandler'
 const alert = Modal.alert;
 
 @connect(({home, loading}) => ({...home, isLoading: loading}))
@@ -32,7 +36,8 @@ class Home extends Component {
       swipers: [],
       entries: [],
       pageIndex: 1,
-      refreshing: true
+      refreshing: true,
+        isRefreshing:false,
     }
   }
 
@@ -92,12 +97,12 @@ class Home extends Component {
    // console.log(this.props.isLoading)
   }
 
-  fetchNews = () => {
+  fetchNews = (page) => {
       //console.log(this.state.pageIndex);
     this.props.dispatch({
       type: 'home/getNews',
       payload: {
-        page: this.state.pageIndex
+        page: page ? page : this.state.pageIndex
       }
     })
   }
@@ -213,12 +218,33 @@ class Home extends Component {
     )
 
   }
+    onRefresh(){
+        this.setState({isRefreshing: true});
+        //console.log("开始新的刷新方法");
+        this.props.dispatch({
+            type:'home/update',
+            payload:{
+                newsList:[]
+            }
+        })
+        setTimeout(() => {
+            //你的刷新逻辑
+            //逻辑执行完之后，修改刷新状态为false
 
+            this.fetchNews(1);
+            this.setState({isRefreshing: false});
+        }, 1);
+    }
+    onBackButtonPressAndroid(){
+        BackHandler.exitApp();
+        return true
+    }
   render() {
       const {nav} = this.props;
       let navarr = chunk(nav,5);
      // console.log(navarr)
     return (
+        <AndroidBackHandler onBackPress={()=>this.onBackButtonPressAndroid()}>
       <SafeAreaView backgroundColor='#fff'>
         <ScrollView
          /*   bouncesZoom={true}
@@ -229,6 +255,15 @@ class Home extends Component {
             backgroundColor={common.gray_bg}
             //alwaysBounceVertical={true}
             onScroll={this._onMomentumScrollEnd}
+            refreshControl={  //设置下拉刷新组件
+                <RefreshControl
+                    refreshing={this.state.isRefreshing}
+                    onRefresh={this.onRefresh.bind(this)}  //(()=>this.onRefresh)或者通过bind来绑定this引用来调用方法
+                    tintColor='#333'
+                    titleColor="#333"
+                    title= {this.state.isRefreshing? '刷新中....':'下拉刷新'}
+                />
+            }
         >
 
           <View>
@@ -255,7 +290,7 @@ class Home extends Component {
           </View>
             {this.renderSearchBar()}
             {this.renderSearchItems()}
-        <View style={{height:px2dp(100),marginBottom:px2dp(8),marginTop:px2dp(-45),zIndex:2}}>
+        <View style={{height:px2dp(100),marginBottom:px2dp(8),zIndex:2}}>
             {
                 navarr && <Swiper
                     key={navarr.length}
@@ -313,6 +348,7 @@ class Home extends Component {
           </View>
         </ScrollView>
       </SafeAreaView>
+        </AndroidBackHandler>
     )
   }
 }
@@ -350,16 +386,19 @@ const styles = StyleSheet.create({
   searchBarContainer: {
     // position: 'absolute',
     borderRadius:px2p(2),
-    top: px2p(-25),
+    //top: px2p(-25),
     width: px2p(355),
     height: px2p(50),
     alignSelf: 'center',
     zIndex: 20,
+      marginTop:px2dp(-25)
     //elevation: 4
   },
   searchItems: {
     // flex: 1,
-    top: px2p(-50),
+    //top: px2p(-50),
+      marginTop:px2dp(-30),
+      marginBottom:px2dp(8),
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'center',

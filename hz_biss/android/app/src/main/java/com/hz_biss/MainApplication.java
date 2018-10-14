@@ -3,6 +3,7 @@ package com.hz_biss;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import fr.greweb.reactnativeviewshot.RNViewShotPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.webview.code4android.WebViewPackage;
 import com.mehcode.reactnative.splashscreen.SplashScreenPackage;
@@ -13,6 +14,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.theweflex.react.WeChatPackage;
 
 import cn.jpush.reactnativejpush.JPushPackage;
 import java.util.Arrays;
@@ -27,6 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
     public boolean getUseDeveloperSupport() {
       return BuildConfig.DEBUG;
     }
+
     @Override
     protected String getJSMainModuleName() {
       return "index";
@@ -35,8 +38,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNViewShotPackage(),
             new ImagePickerPackage(),
             new WebViewPackage(),
+            new WeChatPackage() ,
             new SplashScreenPackage(),
             new SvgPackage(),
             new RNDeviceInfo(),

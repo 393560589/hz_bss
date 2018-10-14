@@ -8,7 +8,8 @@ export default {
         nav: [],
         newsList: [],
         x: false,
-        webviewUrl:''
+        webviewUrl:'',
+
     },
     reducers: {
         /**
@@ -22,8 +23,8 @@ export default {
         },
         updateNewsList(state, { payload }) {
             return {...state, newsList: [...state.newsList].concat(...payload.newsList)}
-        }
-        
+        },
+
     },
     effects: {
         /**
@@ -42,6 +43,7 @@ export default {
             })
             callback()
         },
+
         *getNavigation({callback=()=>{}}, {call, put}) {
             const res = yield call(server.navigatioin);
            // console.log(res);
@@ -63,7 +65,7 @@ export default {
 
         *getNews ({payload}, {call, put}) {
             const res = yield call(server.indexNews, payload);
-            console.log(res);
+
             if (res.status === 200) {
                 yield put({
                     type: 'updateNewsList',

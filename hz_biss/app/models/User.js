@@ -14,7 +14,13 @@ export default {
         phone:'',
         server:[],
         erm:false,
+
+        shareOpen:false,
+        shareData:'',
+        shareUrl:'',
+
         loading: false,
+        coinDetail: '',
         codeSuccess: false,		//获取验证码是否成功
     },
     reducers: {
@@ -30,9 +36,28 @@ export default {
                 [payload.name]: payload.status
             }
         },
-
+        setCoinDetail(state, { payload }) {
+            return {
+                ...state,
+                coinDetail: payload
+            }
+        }
     },
     effects: {
+        *getCoinDetail({payload,callback=()=>{}},{call,put}){
+            const res = yield call(server.getCoinDetail, payload)
+            console.log(res);
+
+            if(res && res.status === 200) {
+                yield put({
+                    type: 'update',
+                    payload: {
+                        coinDetail:res.res
+                    }
+                });
+                callback(res.res)
+            }
+        },
         *loading({callback=()=>{},payload},{put}){
             yield put({
                 type:'update',
@@ -135,7 +160,7 @@ export default {
             const response = yield call(server.invite,payload);
             //let data = JSON.stringify(response)
             //console.log(data)
-            //if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
+            if(response.status !== 200 ) return Toast.fail(response.message,2,null,false);
             callback(response);
 
         },

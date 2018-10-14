@@ -476,15 +476,15 @@ public final class R {
         public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f02003b;
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f02003c;
         public static final int abc_textfield_search_material = 0x7f02003d;
-        public static final int ic_launcher = 0x7f020082;
-        public static final int ic_richpush_actionbar_back = 0x7f020083;
-        public static final int ic_richpush_actionbar_divider = 0x7f020084;
-        public static final int jpush_ic_richpush_actionbar_back = 0x7f020085;
-        public static final int jpush_ic_richpush_actionbar_divider = 0x7f020086;
-        public static final int jpush_richpush_btn_selector = 0x7f020087;
-        public static final int jpush_richpush_progressbar = 0x7f020088;
-        public static final int notification_template_icon_bg = 0x7f0200ae;
-        public static final int richpush_btn_selector = 0x7f0200ac;
+        public static final int ic_launcher = 0x7f020087;
+        public static final int ic_richpush_actionbar_back = 0x7f020088;
+        public static final int ic_richpush_actionbar_divider = 0x7f020089;
+        public static final int jpush_ic_richpush_actionbar_back = 0x7f02008a;
+        public static final int jpush_ic_richpush_actionbar_divider = 0x7f02008b;
+        public static final int jpush_richpush_btn_selector = 0x7f02008c;
+        public static final int jpush_richpush_progressbar = 0x7f02008d;
+        public static final int notification_template_icon_bg = 0x7f0200b3;
+        public static final int richpush_btn_selector = 0x7f0200b1;
     }
     public static final class id {
         public static final int action0 = 0x7f0e0074;

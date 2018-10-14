@@ -1,4 +1,4 @@
-import {common,deviceWidth} from './common.js'
+import {common,deviceWidth,deviceHeight} from './common.js'
 
 const commonCSS={
     li:{
@@ -10,6 +10,6 @@ const commonCSS={
 export {
     common,
     deviceWidth,
-
+    deviceHeight,
     commonCSS
 }

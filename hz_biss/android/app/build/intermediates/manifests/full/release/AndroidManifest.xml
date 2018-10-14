@@ -61,6 +61,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.hz_biss.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.hz_biss.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
 
         <meta-data
             android:name="JPUSH_APPKEY"
@@ -71,6 +79,15 @@
 
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
 
+        <provider
+            android:name="com.imagepicker.FileProvider"
+            android:authorities="com.hz_biss.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.hz_biss.provider"
@@ -170,17 +187,6 @@
                 <category android:name="com.hz_biss" />
             </intent-filter>
         </receiver>
-
-        <provider
-            android:name="com.imagepicker.FileProvider"
-            android:authorities="com.hz_biss.provider"
-            android:exported="false"
-            android:grantUriPermissions="true" >
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
-        </provider>
-
         <receiver
             android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver"
             android:enabled="true"

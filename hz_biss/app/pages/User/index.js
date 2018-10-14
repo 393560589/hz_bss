@@ -22,7 +22,7 @@ import { ListItem,List } from '../../components/ListItem'
 import Geolocation from 'Geolocation';
 import {StorageUtil} from "../../utils/storage";
 import { AndroidBackHandler } from 'react-navigation-backhandler'
-
+import ShareBox from '../../components/sharebox'
 
 @connect(({User})=>({...User}))
 export default class Users extends PureComponent {
@@ -31,16 +31,7 @@ export default class Users extends PureComponent {
         this.state={
             isRefreshing:false,
         }
-        this.dataList = [
-            { url: 'OpHiXAcYzmPQHcdlLFrc', title: '发送给朋友' },
-            { url: 'wvEzCMiDZjthhAOcwTOu', title: '新浪微博' },
-            { url: 'cTTayShKtEIdQVEMuiWt', title: '生活圈' },
-            { url: 'umnHwvEgSyQtXlZjNJTt', title: '微信好友' },
-            { url: 'SxpunpETIwdxNjcJamwB', title: 'QQ' },
-        ].map(obj => ({
-            icon: <Image alt={obj.title} style={{ width: 36 }} />,
-            title: obj.title,
-        }));
+
     }
 
 
@@ -136,27 +127,25 @@ export default class Users extends PureComponent {
         this.invites();
     }
     invites(){
-        const { dispatch,phone } = this.props;
+        const { dispatch,phone,islogin } = this.props;
+        if(!islogin) return Toast.info('请先登录',2,null,false);
         dispatch({
             type:'User/invites',
             payload:{
                 phone:phone
             },
             callback:(data)=>{
+                //console.log(data);
                 //console.log()
-                ActionSheet.showShareActionSheetWithOptions({
-                        options: this.dataList,
-                        title: '邀请好友',
-                        message: `http://bitss.vip${data.res}`,
-                    },
-                    (buttonIndex) => {
-                        this.setState({ clicked1: buttonIndex > -1 ? this.dataList[buttonIndex].title : 'cancel' });
-                        // also support Promise
-                        return new Promise((resolve) => {
-                            Toast.info('closed after 1000ms');
-                            setTimeout(resolve, 1000);
-                        });
-                    });
+                console.log(data.res);
+                dispatch({
+                    type:'User/update',
+                    payload:{
+                        shareOpen:true,
+                        shareData:data.res
+                    }
+                })
+
             }
         })
     }
@@ -285,6 +274,9 @@ export default class Users extends PureComponent {
                         </List>
 
                     </View>
+                    <ShareBox
+                        type={'img'}
+                    />
                 </ScrollView>
             </AndroidBackHandler>
         );

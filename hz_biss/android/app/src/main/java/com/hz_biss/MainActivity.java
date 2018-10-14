@@ -13,6 +13,9 @@ import com.mehcode.reactnative.splashscreen.SplashScreen;
 
 public class MainActivity extends ReactActivity implements DefaultHardwareBackBtnHandler {
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

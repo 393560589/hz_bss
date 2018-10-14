@@ -1,23 +1,24 @@
 -- Merging decision tree log ---
 meta-data#JPUSH_APPKEY
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:43:5-45:43
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:53:5-55:43
 	android:value
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:45:9-40
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:55:9-40
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:44:9-36
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:54:9-36
 meta-data#JPUSH_CHANNEL
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:46:5-48:42
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:56:5-58:42
 	android:value
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:48:9-39
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:58:9-39
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:47:9-37
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:57:9-37
 manifest
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
+MERGED from [:react-native-view-shot] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-view-shot/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-27:12
 MERGED from [:rn-splash-screen] /Users/JerryC/Desktop/bss/hz_biss/node_modules/rn-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
@@ -26,6 +27,7 @@ MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules
 MERGED from [:react-native-svg] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-svg/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-22:12
 MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-gcm:16.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.0.0.aar/40aed60bba906256af509c8030102ab3/AndroidManifest.xml:17:1-28:12
@@ -50,20 +52,20 @@ MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/JerryC/.gradle/cach
 MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a70b8565cce5998e83cafdaa423835c5/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/49028dcf886ff0a9b3e2e6d49cf396e6/AndroidManifest.xml:2:1-9:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/23f5844c25a38ca8436d6bd5ca56b32e/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
-INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
+INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
 	package
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:2:5-26
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-53:12
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:1-63:12
 		INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -71,12 +73,16 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:5-79
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:5-79
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:5-79
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-79
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:5-79
 	android:name
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:4:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:5-76
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:5-76
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:5-76
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-76
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:5-76
 	android:name
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:6:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
@@ -93,6 +99,8 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:11:5-67
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:5-67
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:5-67
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-67
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-gcm:16.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.0.0.aar/40aed60bba906256af509c8030102ab3/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-gcm:16.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.0.0.aar/40aed60bba906256af509c8030102ab3/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-iid:16.0.0] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.0.aar/40383a487ff957eef861aebd9e81de74/AndroidManifest.xml:24:5-67
@@ -131,6 +139,8 @@ MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/nod
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-81
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:5-81
 MERGED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:5-81
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-81
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-81
 	android:name
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:20:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -148,7 +158,7 @@ MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/nod
 	android:name
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:24:22-62
 application
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:26:5-51:19
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:26:5-61:19
 MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:5-25:19
@@ -225,14 +235,32 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:40:13-73
 	android:name
 		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:40:23-70
-activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:50:7-84
+activity#com.hz_biss.wxapi.WXEntryActivity
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:43:9-47:11
+	android:label
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:45:17-49
+	android:exported
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:46:17-40
 	android:name
-		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:50:17-81
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:44:17-54
+activity#com.hz_biss.wxapi.WXPayEntryActivity
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:48:9-52:11
+	android:label
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:50:17-49
+	android:exported
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:51:17-40
+	android:name
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:49:17-57
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:60:7-84
+	android:name
+		ADDED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml:60:17-81
 uses-sdk
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/JerryC/Desktop/bss/hz_biss/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-view-shot] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-view-shot/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-view-shot] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-view-shot/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview-plugin] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-webview-plugin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
@@ -249,6 +277,8 @@ MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_m
 MERGED from [:react-native-device-info] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-device-info/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/9e645cd52b03421917a27d42875ad765/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/JerryC/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/063cd3aceb785891eb7bffe6c1f354c0/AndroidManifest.xml:20:5-43
@@ -453,6 +483,8 @@ ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/
 		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:19:22-65
 uses-permission#android.permission.READ_PHONE_STATE
 ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:5-75
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:5-75
+MERGED from [:RCTWeChat] /Users/JerryC/Desktop/bss/hz_biss/node_modules/react-native-wechat/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:5-75
 	android:name
 		ADDED from [:jpush-react-native] /Users/JerryC/Desktop/bss/hz_biss/node_modules/jpush-react-native/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:22-72
 uses-permission#android.permission.WRITE_SETTINGS

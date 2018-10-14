@@ -41,6 +41,9 @@
   *** get*();
 }
 
+-keep class com.tencent.mm.sdk.** {
+   *;
+}
 -keep class * extends com.facebook.react.bridge.JavaScriptModule { *; }
 -keep class * extends com.facebook.react.bridge.NativeModule { *; }
 -keepclassmembers,includedescriptorclasses class * { native <methods>; }
